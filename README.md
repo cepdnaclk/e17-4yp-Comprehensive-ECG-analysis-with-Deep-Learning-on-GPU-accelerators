@@ -4,7 +4,7 @@ ___
 
 #### Description
 
-Objective: Developing a GPU accelerated Deep Learning algorithm for ECG analysis which works like the MUSE ECG system (https://www.gehealthcare.com/-/jssmedia/gehc/us/images/products/diagnostic-ecg/muse-nx/redesign/brochure-muse-nx-r2-dcar-en-jb21221xx.pdf?rev=-1) and optimising it as an open-source, portable, and low-power GPU alternative, capable of providing comprehensive analysis. 
+Objective: Developing a GPU accelerated Deep Learning algorithm for ECG analysis which works like the MUSE ECG system and optimising it as an open-source, portable, and low-power GPU alternative, capable of providing comprehensive analysis. 
 
 
 #### Team

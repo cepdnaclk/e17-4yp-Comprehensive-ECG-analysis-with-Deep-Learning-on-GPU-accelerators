@@ -9,7 +9,7 @@ title: Comprehensive ECG analysis with Deep Learning on GPU accelerators
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-# Project Title
+# Comprehensive ECG analysis with Deep Learning on GPU accelerators
 
 #### Team
 

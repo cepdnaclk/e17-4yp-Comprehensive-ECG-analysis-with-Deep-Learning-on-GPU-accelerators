@@ -3,8 +3,8 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: eYY-4yp-project-template
-title:
+repository-name: e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators
+title: Comprehensive ECG analysis with Deep Learning on GPU accelerators
 ---
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"

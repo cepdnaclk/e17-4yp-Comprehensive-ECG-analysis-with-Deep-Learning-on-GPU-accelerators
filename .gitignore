@@ -1,3 +1,4 @@
 data/
 tutorials/hansa/data
+notebooks/wandb
 .DS_Store

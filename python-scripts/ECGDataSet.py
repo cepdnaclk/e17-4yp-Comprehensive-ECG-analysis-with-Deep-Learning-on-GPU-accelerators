@@ -1,14 +1,7 @@
 import torch
-from torch import nn
-from torch.utils.data import DataLoader, Dataset # wraps an iterable around the dataset
-from torchvision import datasets    # stores the samples and their corresponding labels
-from torchvision.transforms import transforms  # transformations we can perform on our dataset
-from torchvision.transforms import ToTensor
+from torch.utils.data import  Dataset # wraps an iterable around the dataset
 import pandas as pd
-import numpy as np
 import os
-import wandb
-import matplotlib.pyplot as plt
 
 class ECGDataSet(Dataset):
     
@@ -35,7 +28,7 @@ class ECGDataSet(Dataset):
         
         # file path
         filename= self.df['patid'].values[index]
-        asc_path = os.path.join(self.parent_directory, 'data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
+        asc_path = os.path.join(self.parent_directory,  'data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
         
         ecg_signals = pd.read_csv( asc_path, header=None, sep=" ") # read into dataframe
         ecg_signals = torch.tensor(ecg_signals.values) # convert dataframe values to tensor

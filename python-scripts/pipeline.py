@@ -2,12 +2,24 @@ from ECGDataSet import ECGDataSet
 from ResidualCNN import ResidualCNN
 import torch
 from torch import nn
-from torch.utils.data import DataLoader, Dataset # wraps an iterable around the dataset
-from utils import *
+from torch.utils.data import DataLoader
+import numpy as np
+import wandb
+import os
+
+# Set API Key
+os.environ["WANDB_API_KEY"] = "cf61e02cee13abdd3d8a232d29df527bd6cc7f89"
+# Set the WANDB_NOTEBOOK_NAME environment variable to the name of your notebook (manually)
+# os.environ["WANDB_NOTEBOOK_NAME"] = "DataLoader.ipynb"
+# set the WANDB_TEMP environment variable to a directory where we have write permissions
+os.environ["WANDB_TEMP"] = os.getcwd()
+os.environ["WANDB_DIR"] = os.getcwd()
+os.environ["WANDB_CONFIG_DIR"] = os.getcwd()
+wandb.init(project='ECG-analysis-with-Deep-Learning-on-GPU-accelerators')
 
 # hyperparameters
 num_classes = 1  # Number of output classes
-num_epochs = 100
+num_epochs = 20
 learning_rate = 0.000001
 
 # ECG dataset
@@ -50,7 +62,7 @@ for epoch in range(num_epochs):
         optimizer.step()
 
     
-    train_loss = MAE(train_losses_epoch)
+    train_loss = np.mean(np.abs(train_losses_epoch))
     train_losses.append(train_loss)
 
 
@@ -65,8 +77,17 @@ for epoch in range(num_epochs):
 
             val_losses_epoch.append(int(val_loss))
 
-        val_loss = MAE(val_losses_epoch)
+        val_loss = np.mean(np.abs(val_losses_epoch))
         val_losses.append(val_loss)
 
+    wandb.log({"ResNet: loss [mean absolute error] vs epoch" : wandb.plot.line_series(
+                       xs=epochs, 
+                       ys=[train_losses, val_losses],
+                       keys=["training", "validation"],
+                       title="",
+                       xname="epochs")})
+
 print("Done!")
+# finish
+wandb.finish()
 

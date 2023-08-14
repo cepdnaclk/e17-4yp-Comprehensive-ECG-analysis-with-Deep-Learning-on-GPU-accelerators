@@ -1,0 +1,41 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-08-12T16:17:50.612857",
+    "startedAt": "2023-08-12T16:17:49.200870",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/Ruchika-Perera/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators.git",
+        "commit": "8fe621f6b2b2d51665e5aea0d48793626b627d9b"
+    },
+    "email": "pereraruchika7@gmail.com",
+    "root": "D:/Git/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators",
+    "host": "DESKTOP-5K5IDH4",
+    "username": "DELL",
+    "executable": "C:\\Users\\Ruchika Perera\\anaconda3\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1600.0,
+        "min": 0.0,
+        "max": 1800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1600.0,
+            "min": 0.0,
+            "max": 1800.0
+        }
+    ],
+    "disk": {
+        "total": 207.93847274780273,
+        "used": 140.2648162841797
+    },
+    "memory": {
+        "total": 11.89950942993164
+    }
+}

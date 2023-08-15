@@ -1,0 +1,29 @@
+2023-08-12 19:37:50,612 INFO    MainThread:20672 [wandb_setup.py:_flush():76] Current SDK version is 0.15.8
+2023-08-12 19:37:50,612 INFO    MainThread:20672 [wandb_setup.py:_flush():76] Configure stats pid to 20672
+2023-08-12 19:37:50,612 INFO    MainThread:20672 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Ruchika Perera\.config\wandb\settings
+2023-08-12 19:37:50,612 INFO    MainThread:20672 [wandb_setup.py:_flush():76] Loading settings from D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\settings
+2023-08-12 19:37:50,612 WARNING MainThread:20672 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_CONFIG_DIR
+2023-08-12 19:37:50,612 WARNING MainThread:20672 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_SERVICE
+2023-08-12 19:37:50,613 WARNING MainThread:20672 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_TEMP
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'root_dir': 'D:\\Git\\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\\python-scripts'}
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_init.py:_log_setup():507] Logging user logs to D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230812_193750-000gny3j\logs\debug.log
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_init.py:_log_setup():508] Logging internal logs to D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230812_193750-000gny3j\logs\debug-internal.log
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_init.py:init():547] calling init triggers
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_init.py:init():596] starting backend
+2023-08-12 19:37:50,614 INFO    MainThread:20672 [wandb_init.py:init():600] setting up manager
+2023-08-12 19:37:50,621 INFO    MainThread:20672 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-08-12 19:37:50,625 INFO    MainThread:20672 [wandb_init.py:init():606] backend started and connected
+2023-08-12 19:37:50,628 INFO    MainThread:20672 [wandb_init.py:init():697] updated telemetry
+2023-08-12 19:37:50,684 INFO    MainThread:20672 [wandb_init.py:init():730] communicating run to backend with 60.0 second timeout
+2023-08-12 19:37:51,755 INFO    MainThread:20672 [wandb_run.py:_on_init():2180] communicating current version
+2023-08-12 19:37:52,183 INFO    MainThread:20672 [wandb_run.py:_on_init():2189] got version response 
+2023-08-12 19:37:52,183 INFO    MainThread:20672 [wandb_init.py:init():781] starting run threads in backend
+2023-08-12 19:38:07,324 INFO    MainThread:20672 [wandb_run.py:_console_start():2159] atexit reg
+2023-08-12 19:38:07,324 INFO    MainThread:20672 [wandb_run.py:_redirect():2014] redirect: wrap_raw
+2023-08-12 19:38:07,324 INFO    MainThread:20672 [wandb_run.py:_redirect():2079] Wrapping output streams.
+2023-08-12 19:38:07,324 INFO    MainThread:20672 [wandb_run.py:_redirect():2104] Redirects installed.
+2023-08-12 19:38:07,325 INFO    MainThread:20672 [wandb_init.py:init():822] run started, returning control to user process

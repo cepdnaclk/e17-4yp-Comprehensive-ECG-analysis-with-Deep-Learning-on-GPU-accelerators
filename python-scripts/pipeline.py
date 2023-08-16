@@ -1,5 +1,7 @@
 from ECGDataSet import ECGDataSet 
 from ResidualCNN import ResidualCNN
+from utils import checkpoint
+from utils import resume
 import torch
 from torch import nn
 from torch.utils.data import DataLoader
@@ -44,6 +46,11 @@ train_losses = []
 val_losses = []
 epochs = []
 
+start_epoch = 0
+if start_epoch > 0:
+    resume_epoch = start_epoch - 1
+    resume(model, f"epoch-{resume_epoch}.pth")
+
 for epoch in range(num_epochs):
     print(f"Epoch {epoch+1}\n-------------------------------")
     epochs.append(epoch)
@@ -86,6 +93,7 @@ for epoch in range(num_epochs):
                        keys=["training", "validation"],
                        title="",
                        xname="epochs")})
+    checkpoint(model, f"epoch-{epoch}.pth")
 
 print("Done!")
 # finish

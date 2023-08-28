@@ -1,5 +1,5 @@
 import torch
-from utils import train, validate
+from utils import SaveBestModel, save_model, train, validate
 import torch.optim as optim
 from torch import nn
 import matplotlib.pyplot as plt
@@ -69,9 +69,21 @@ class ConvolutionalResNet():
             train_loss = train(train_dataloader, self.model, self.loss_fn, self.optimizer, self.device)
             train_losses.append(train_loss)
 
+            print(f"Training loss: {train_loss:.3f}")            
+
             # validation
             val_loss = validate(validate_dataloader, self.model, self.loss_fn, self.device)
             val_losses.append(val_loss)
+
+            print(f"Validation loss: {val_loss:.3f}")
+
+            # save the best model till now if we have the least loss in the current epoch
+            SaveBestModel(
+                val_loss, epoch, self.model, self.optimizer, self.loss_fn
+            )
+
+        # save the trained model weights for a final time
+        save_model(self.epochs, self.model, self.optimizer, self.loss_fn)
 
         # plot graph
         self.plot_graph(epochs, train_losses, val_losses)

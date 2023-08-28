@@ -1,7 +1,7 @@
 import datetime
 from ECGDataSet import ECGDataSet 
 from KanResWide_X2 import KanResWide_X2
-from utils import checkpoint, resume, train, validate
+from utils import train, validate
 from ConvolutionalResNet import ConvolutionalResNet
 import torch
 from torch import nn

@@ -1,7 +1,7 @@
 from ECGDataSet import ECGDataSet 
 from ResidualCNN import ResidualCNN
-from utils import checkpoint
-from utils import resume
+from utils import SaveBestModel, save_model
+# from utils import checkpoint, resume
 import torch
 from torch import nn
 from torch.utils.data import DataLoader
@@ -42,14 +42,17 @@ criterion = nn.MSELoss()
 # optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
+# initialize SaveBestModel class
+save_best_model = SaveBestModel()
+
 train_losses = []
 val_losses = []
 epochs = []
 
-start_epoch = 0
-if start_epoch > 0:
-    resume_epoch = start_epoch - 1
-    resume(model, f"epoch-{resume_epoch}.pth")
+# start_epoch = 0
+# if start_epoch > 0:
+#     resume_epoch = start_epoch - 1
+#     resume(model, f"epoch-{resume_epoch}.pth")
 
 for epoch in range(num_epochs):
     print(f"Epoch {epoch+1}\n-------------------------------")
@@ -72,6 +75,8 @@ for epoch in range(num_epochs):
     train_loss = np.mean(np.abs(train_losses_epoch))
     train_losses.append(train_loss)
 
+    print(f"Training loss: {train_loss:.3f}")
+
 
     model.eval()
     with torch.no_grad():
@@ -93,9 +98,20 @@ for epoch in range(num_epochs):
                        keys=["training", "validation"],
                        title="",
                        xname="epochs")})
-    checkpoint(model, f"epoch-{epoch}.pth")
+    
+    # checkpoint(model, f"epoch-{epoch}.pth")
 
-print("Done!")
+    print(f"Validation loss: {val_loss:.3f}")
+
+    # save the best model till now if we have the least loss in the current epoch
+    save_best_model(
+        val_loss, epoch, model, optimizer, criterion
+    )
+
+# save the trained model weights for a final time
+save_model(num_epochs, model, optimizer, criterion)
+
+print("TRAINING COMPLETE")
 # finish
 wandb.finish()
 

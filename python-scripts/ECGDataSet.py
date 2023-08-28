@@ -12,11 +12,15 @@ class ECGDataSet(Dataset):
         # data loading
         current_directory = os.getcwd()
         # print("current = "+current_directory)
+
         self.parent_directory = os.path.dirname(current_directory)
-        # print("parent = "+self.parent_directory)
+        # print(current_directory)
+        # print(self.parent_directory)
+
         train_small_path = os.path.join(self.parent_directory, 'data', 'deepfake-ecg-small', str(self.split) + '.csv')
         # train_small_path = os.path.join(current_directory, 'data', 'deepfake-ecg-small', str(self.split) + '.csv')
-        # print("current = "+train_small_path)
+        # print(train_small_path)
+
         self.df = pd.read_csv(train_small_path)  # Skip the header row
         
         # Avg RR interval
@@ -32,8 +36,10 @@ class ECGDataSet(Dataset):
         
         # file path
         filename= self.df['patid'].values[index]
+
         asc_path = os.path.join(self.parent_directory,  'data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
         # asc_path = os.path.join(os.getcwd(),  'data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
+        
         
         ecg_signals = pd.read_csv( asc_path, header=None, sep=" ") # read into dataframe
         ecg_signals = torch.tensor(ecg_signals.values) # convert dataframe values to tensor

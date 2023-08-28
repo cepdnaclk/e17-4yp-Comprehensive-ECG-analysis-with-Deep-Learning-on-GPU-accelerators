@@ -4,27 +4,26 @@ import pandas as pd
 import os
 
 class ECGDataSet(Dataset):
-    
-    def __init__(self, split='train'):
+    def __init__(self, split='train', parameter='hr'):
 
         self.split = split
 
         # data loading
         current_directory = os.getcwd()
-        # print("current = "+current_directory)
         self.parent_directory = os.path.dirname(current_directory)
-        # print("parent = "+self.parent_directory)
         train_small_path = os.path.join(self.parent_directory, 'data', 'deepfake-ecg-small', str(self.split) + '.csv')
-        # train_small_path = os.path.join(current_directory, 'data', 'deepfake-ecg-small', str(self.split) + '.csv')
-        # print("current = "+train_small_path)
-        self.df = pd.read_csv(train_small_path)  # Skip the header row
+        # Skip the header row
+        self.df = pd.read_csv(train_small_path)  
         
-        # Avg RR interval
-        # in milli seconds
-        RR = torch.tensor(self.df['avgrrinterval'].values, dtype=torch.float32)
-        # calculate HR
-        self.y = 60 * 1000/RR
-
+        if parameter == 'hr':
+            # Avg RR interval
+            # in milli seconds
+            RR = torch.tensor(self.df['avgrrinterval'].values, dtype=torch.float32)
+            # calculate HR
+            self.y = 60 * 1000/RR
+        else:
+            self.y = torch.tensor(self.df[parameter].values, dtype=torch.float32)
+        
         # Size of the dataset
         self.samples = self.df.shape[0]
 

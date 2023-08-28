@@ -35,15 +35,8 @@ def train(dataloader, model, loss_fn, optimizer, device):
         loss.backward()
         optimizer.step()
         optimizer.zero_grad()
-
-        #if batch % 100 == 0:
-         #   loss, current = loss.item(), (batch + 1) * len(X)
-          #  print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
         
-        # loss, current = loss.item(), (batch + 1) * len(X)
-        # print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
-        
-        train_losses_epoch.append(loss)
+        train_losses_epoch.append(loss.item())
     
     return np.mean(np.abs(train_losses_epoch))
 
@@ -60,6 +53,6 @@ def validate(dataloader, model, loss_fn, device):
             pred = model(X)
             loss = loss_fn(pred, y)
 
-            val_losses_epoch.append(loss)
+            val_losses_epoch.append(loss.item())
 
     return np.mean(np.abs(val_losses_epoch))

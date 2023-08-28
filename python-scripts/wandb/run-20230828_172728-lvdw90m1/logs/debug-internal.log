@@ -1,0 +1,95 @@
+2023-08-28 17:27:28,279 INFO    StreamThr :15644 [internal.py:wandb_internal():86] W&B internal server running at pid: 15644, started at: 2023-08-28 17:27:28.278415
+2023-08-28 17:27:28,282 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status
+2023-08-28 17:27:28,287 INFO    WriterThread:15644 [datastore.py:open_for_write():85] open: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\run-lvdw90m1.wandb
+2023-08-28 17:27:28,288 DEBUG   SenderThread:15644 [sender.py:send():379] send: header
+2023-08-28 17:27:28,341 DEBUG   SenderThread:15644 [sender.py:send():379] send: run
+2023-08-28 17:27:29,187 INFO    SenderThread:15644 [dir_watcher.py:__init__():211] watching files in: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files
+2023-08-28 17:27:29,189 INFO    SenderThread:15644 [sender.py:_start_run_threads():1121] run started: lvdw90m1 with start time 1693223848.279407
+2023-08-28 17:27:29,218 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: summary_record
+2023-08-28 17:27:29,221 INFO    SenderThread:15644 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-28 17:27:29,255 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: check_version
+2023-08-28 17:27:29,256 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: check_version
+2023-08-28 17:27:29,958 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: run_start
+2023-08-28 17:27:29,971 DEBUG   HandlerThread:15644 [system_info.py:__init__():31] System info init
+2023-08-28 17:27:29,971 DEBUG   HandlerThread:15644 [system_info.py:__init__():46] System info init done
+2023-08-28 17:27:29,971 INFO    HandlerThread:15644 [system_monitor.py:start():181] Starting system monitor
+2023-08-28 17:27:29,972 INFO    SystemMonitor:15644 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-28 17:27:29,972 INFO    HandlerThread:15644 [system_monitor.py:probe():201] Collecting system info
+2023-08-28 17:27:29,975 INFO    SystemMonitor:15644 [interfaces.py:start():190] Started cpu monitoring
+2023-08-28 17:27:29,976 DEBUG   HandlerThread:15644 [system_info.py:probe():195] Probing system
+2023-08-28 17:27:29,976 INFO    SystemMonitor:15644 [interfaces.py:start():190] Started disk monitoring
+2023-08-28 17:27:29,977 INFO    SystemMonitor:15644 [interfaces.py:start():190] Started memory monitoring
+2023-08-28 17:27:29,990 INFO    SystemMonitor:15644 [interfaces.py:start():190] Started network monitoring
+2023-08-28 17:27:29,991 DEBUG   HandlerThread:15644 [system_info.py:_probe_git():180] Probing git
+2023-08-28 17:27:30,088 DEBUG   HandlerThread:15644 [system_info.py:_probe_git():188] Probing git done
+2023-08-28 17:27:30,089 DEBUG   HandlerThread:15644 [system_info.py:probe():240] Probing system done
+2023-08-28 17:27:30,089 DEBUG   HandlerThread:15644 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.9', 'heartbeatAt': '2023-08-28T11:57:29.976016', 'startedAt': '2023-08-28T11:57:28.259405', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/Ruchika-Perera/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators.git', 'commit': 'b72171fe1e306d7efcf092d9ea1e728780644bd2'}, 'email': 'pereraruchika7@gmail.com', 'root': 'D:/Git/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators', 'host': 'DESKTOP-5K5IDH4', 'username': 'DELL', 'executable': 'C:\\Users\\Ruchika Perera\\anaconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1600.0, 'min': 0.0, 'max': 1800.0}, 'cpu_freq_per_core': [{'current': 1600.0, 'min': 0.0, 'max': 1800.0}], 'disk': {'total': 207.93847274780273, 'used': 140.37962341308594}, 'memory': {'total': 11.89950942993164}}
+2023-08-28 17:27:30,089 INFO    HandlerThread:15644 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-28 17:27:30,089 INFO    HandlerThread:15644 [system_monitor.py:probe():214] Publishing system info
+2023-08-28 17:27:30,089 DEBUG   HandlerThread:15644 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-28 17:27:30,090 DEBUG   HandlerThread:15644 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-28 17:27:30,090 DEBUG   HandlerThread:15644 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-28 17:27:30,195 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\wandb-summary.json
+2023-08-28 17:27:30,196 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\conda-environment.yaml
+2023-08-28 17:27:30,196 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\requirements.txt
+2023-08-28 17:27:32,934 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:34,781 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-28 17:27:34,782 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: stop_status
+2023-08-28 17:27:38,122 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:43,147 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:44,713 DEBUG   HandlerThread:15644 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-28 17:27:44,714 INFO    HandlerThread:15644 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-28 17:27:44,714 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:44,714 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-28 17:27:44,715 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:44,715 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-28 17:27:44,715 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:44,716 DEBUG   SenderThread:15644 [sender.py:send():379] send: files
+2023-08-28 17:27:44,716 INFO    SenderThread:15644 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-08-28 17:27:44,724 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-28 17:27:44,725 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: stop_status
+2023-08-28 17:27:45,079 DEBUG   SenderThread:15644 [sender.py:send():379] send: telemetry
+2023-08-28 17:27:45,321 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\conda-environment.yaml
+2023-08-28 17:27:45,321 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\wandb-metadata.json
+2023-08-28 17:27:45,963 INFO    wandb-upload_0:15644 [upload_job.py:push():131] Uploaded file C:\Users\RUCHIK~1\AppData\Local\Temp\tmp2ejir_h1wandb\086330kd-wandb-metadata.json
+2023-08-28 17:27:46,332 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\output.log
+2023-08-28 17:27:48,072 INFO    memory    :15644 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2023-08-28 17:27:48,074 DEBUG   SystemMonitor:15644 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-28 17:27:48,075 DEBUG   SystemMonitor:15644 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-08-28 17:27:48,075 DEBUG   SystemMonitor:15644 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-08-28 17:27:48,081 DEBUG   SenderThread:15644 [sender.py:send():379] send: stats
+2023-08-28 17:27:48,190 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:48,346 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\output.log
+2023-08-28 17:27:49,092 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:49,778 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-28 17:27:49,781 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: stop_status
+2023-08-28 17:27:53,059 DEBUG   SystemMonitor:15644 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-28 17:27:53,061 DEBUG   SenderThread:15644 [sender.py:send():379] send: stats
+2023-08-28 17:27:54,066 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:54,145 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:59,109 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:27:59,201 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:00,480 INFO    Thread-31 :15644 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Git\e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators\python-scripts\wandb\run-20230828_172728-lvdw90m1\files\config.yaml
+2023-08-28 17:28:04,142 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:04,720 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:04,784 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-28 17:28:04,787 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: stop_status
+2023-08-28 17:28:09,193 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:09,782 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:14,220 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:14,845 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:19,282 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:19,800 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-28 17:28:19,801 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: stop_status
+2023-08-28 17:28:19,892 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:23,073 DEBUG   SenderThread:15644 [sender.py:send():379] send: stats
+2023-08-28 17:28:24,948 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:25,089 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:30,001 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:30,129 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:34,808 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-28 17:28:34,809 DEBUG   SenderThread:15644 [sender.py:send_request():406] send_request: stop_status
+2023-08-28 17:28:35,056 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:35,165 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:40,106 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report
+2023-08-28 17:28:40,216 DEBUG   HandlerThread:15644 [handler.py:handle_request():144] handle_request: status_report

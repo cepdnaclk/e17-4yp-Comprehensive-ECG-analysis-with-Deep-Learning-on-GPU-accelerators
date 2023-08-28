@@ -2,3 +2,4 @@ data/
 tutorials/hansa/data
 notebooks/wandb
 .DS_Store
+python-scripts/checkpoints

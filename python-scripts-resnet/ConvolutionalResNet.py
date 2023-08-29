@@ -1,8 +1,9 @@
 import torch
-from utils import SaveBestModel, save_model, train, validate
+from utils import train, validate
 import torch.optim as optim
 from torch import nn
 import matplotlib.pyplot as plt
+from torch.utils.tensorboard import SummaryWriter
 
 class ConvolutionalResNet():
 
@@ -32,25 +33,37 @@ class ConvolutionalResNet():
 
 
     def plot_graph(self, epochs, train_losses, val_losses):
-        # Create a new figure
-        plt.figure()
 
-        # Plot the first line
-        plt.plot(epochs, train_losses, label='training', color='blue')
+        # # Create a new figure
+        # plt.figure()
 
-        # Plot the second line
-        plt.plot(epochs, val_losses, label='validation', color='red')
+        # # Plot the first line
+        # plt.plot(epochs, train_losses, label='training', color='blue')
 
-        # Add labels and title
-        plt.xlabel('epochs')
-        plt.ylabel('losses')
-        plt.title(f"Mean Absolute Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]")
-        plt.legend()  # Add legend based on label names
+        # # Plot the second line
+        # plt.plot(epochs, val_losses, label='validation', color='red')
 
-        # Show the plot
-        plt.show()
-        # save figure
-        plt.savefig(self.fig_path)
+        # # Add labels and title
+        # plt.xlabel('epochs')
+        # plt.ylabel('losses')
+        # plt.title(f"Mean Absolute Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]")
+        # plt.legend()  # Add legend based on label names
+
+        # # Show the plot
+        # plt.show()
+        # # save figure
+        # plt.savefig(self.fig_path)
+
+        # Create a SummaryWriter instance
+        writer = SummaryWriter()
+
+        # Log training and validation losses
+        for epoch, train_loss, val_loss in zip(epochs, train_losses, val_losses):
+            writer.add_scalar(f"Train Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", train_loss, epoch)
+            writer.add_scalar(f"Validation Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", val_loss, epoch)
+
+        # Close the writer
+        writer.close()
 
 
     '''
@@ -69,21 +82,9 @@ class ConvolutionalResNet():
             train_loss = train(train_dataloader, self.model, self.loss_fn, self.optimizer, self.device)
             train_losses.append(train_loss)
 
-            print(f"Training loss: {train_loss:.3f}")            
-
             # validation
             val_loss = validate(validate_dataloader, self.model, self.loss_fn, self.device)
             val_losses.append(val_loss)
-
-            print(f"Validation loss: {val_loss:.3f}")
-
-            # save the best model till now if we have the least loss in the current epoch
-            SaveBestModel(
-                val_loss, epoch, self.model, self.optimizer, self.loss_fn
-            )
-
-        # save the trained model weights for a final time
-        save_model(self.epochs, self.model, self.optimizer, self.loss_fn)
 
         # plot graph
         self.plot_graph(epochs, train_losses, val_losses)

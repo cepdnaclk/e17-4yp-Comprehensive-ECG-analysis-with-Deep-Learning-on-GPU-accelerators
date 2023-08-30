@@ -6,7 +6,7 @@ while true; do
     free_memory=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits | awk '{print $1}')
 
     # Set the threshold percentage
-    threshold=8000
+    threshold=1000
 
     # Compare the free memory percentage with the threshold
     if (( free_memory > threshold )); then

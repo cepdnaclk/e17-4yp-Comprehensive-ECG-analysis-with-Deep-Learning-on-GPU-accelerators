@@ -1,7 +1,7 @@
 import datetime
 from ECGDataSet import ECGDataSet 
 from KanResWide_X2 import KanResWide_X2
-from utils import train, validate
+from utils import checkpoint, resume, train, validate
 from ConvolutionalResNet import ConvolutionalResNet
 import torch
 from torch import nn
@@ -11,7 +11,6 @@ import numpy as np
 import wandb
 import gc
 import os
-
 
 # Get today's date
 today = datetime.date.today()
@@ -32,12 +31,9 @@ output_size = 1
 # number of epochs
 number_of_epochs = 100
 #
-learning_rates = [1e-1, 1e-2, 1e-3, 1e-4]
+learning_rates = [1e-2, 1e-3, 1e-4]
 #
 y_parameters = ['pr', 'qrs', 'qt', 'hr']
-
-# model
-model = KanResWide_X2(input_shape, output_size)
 
 
 for y_parameter in y_parameters:
@@ -47,10 +43,14 @@ for y_parameter in y_parameters:
     validate_dataset = ECGDataSet(split='validate')
 
     # data loaders
-    train_dataloader = DataLoader(dataset=train_dataset, batch_size=128, shuffle=True, num_workers=20)
-    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=128, shuffle=False, num_workers=20)
+    train_dataloader = DataLoader(dataset=train_dataset, batch_size=512, shuffle=True, num_workers=20)
+    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=512, shuffle=False, num_workers=20)
 
     for learning_rate in learning_rates:
+
+        # model
+        model = KanResWide_X2(input_shape, output_size)
+
         # train and validate
         resnet = ConvolutionalResNet(model, learning_rate, number_of_epochs, y_parameter ,directory_path + f"/{y_parameter}_{learning_rate}.png")
         resnet.train_and_validate(train_dataloader, validate_dataloader)

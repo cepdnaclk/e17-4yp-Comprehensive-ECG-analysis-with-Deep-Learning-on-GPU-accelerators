@@ -31,9 +31,9 @@ output_size = 1
 # number of epochs
 number_of_epochs = 100
 #
-learning_rates = [1e-2, 1e-3, 1e-4]
+learning_rate = 0.0005
 #
-y_parameters = ['pr', 'qrs', 'qt', 'hr']
+y_parameters = ['hr']#['pr', 'qrs', 'qt', 'hr']
 
 
 for y_parameter in y_parameters:
@@ -43,17 +43,15 @@ for y_parameter in y_parameters:
     validate_dataset = ECGDataSet(split='validate')
 
     # data loaders
-    train_dataloader = DataLoader(dataset=train_dataset, batch_size=512, shuffle=True, num_workers=20)
-    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=512, shuffle=False, num_workers=20)
+    train_dataloader = DataLoader(dataset=train_dataset, batch_size=16, shuffle=True, num_workers=20)
+    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=16, shuffle=False, num_workers=20)
 
-    for learning_rate in learning_rates:
+    # model
+    model = KanResWide_X2(input_shape, output_size)
 
-        # model
-        model = KanResWide_X2(input_shape, output_size)
-
-        # train and validate
-        resnet = ConvolutionalResNet(model, learning_rate, number_of_epochs, y_parameter ,directory_path + f"/{y_parameter}_{learning_rate}.png")
-        resnet.train_and_validate(train_dataloader, validate_dataloader)
+    # train and validate
+    resnet = ConvolutionalResNet(model, learning_rate, number_of_epochs, y_parameter ,directory_path + f"/{y_parameter}_{learning_rate}.png")
+    resnet.train_and_validate(train_dataloader, validate_dataloader)
         
         
 

@@ -26,7 +26,7 @@ class ConvolutionalResNet():
         self.fig_path = fig_path
         self.predict = predict
 
-        self.optimizer = optim.Adam(model.parameters(), lr=1e-3)
+        self.optimizer = optim.NAdam(model.parameters(), lr=learning_rate)
         
         # Loss function for linear values (e.g., regression)
         self.loss_fn = nn.MSELoss()  # Mean Squared Error loss
@@ -59,8 +59,7 @@ class ConvolutionalResNet():
 
         # Log training and validation losses
         for epoch, train_loss, val_loss in zip(epochs, train_losses, val_losses):
-            writer.add_scalar(f"Train Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", train_loss, epoch)
-            writer.add_scalar(f"Validation Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", val_loss, epoch)
+            writer.add_scalars(f"Mean Absolute Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", {'Training Loss':train_loss, 'Validation Loss':val_loss}, epoch)
 
         # Close the writer
         writer.close()

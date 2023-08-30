@@ -9,15 +9,16 @@ class KanResInit(nn.Module):
         self.bn1 = nn.BatchNorm1d(filterno_1)
         self.conv2 = nn.Conv1d(filterno_1, filterno_2, filtersize_2)
         self.bn2 = nn.BatchNorm1d(filterno_2)
+        # initialize a relu layer
+        self.relu = nn.ReLU()
         
     def forward(self, x):
         x = self.conv1(x)
         x = self.bn1(x)
-        x = F.relu(x)
+        x = self.relu(x)
         x = self.conv2(x)
         x = self.bn2(x)
-        x = F.relu(x)
+        x = self.relu(x)
         return x
-
 
 

@@ -22,18 +22,16 @@ if not os.path.exists(directory_path):
 
 
 
-
-
 # 128 is the batch size, 8 is the number of channels, 5000 is the number of time steps
 input_shape = (8,5000)  # Modify this according to your input shape
 # Number of output units
 output_size = 1 
 # number of epochs
-number_of_epochs = 100
+number_of_epochs = 1000
 #
 learning_rate = 0.0005
 #
-y_parameters = ['hr']#['pr', 'qrs', 'qt', 'hr']
+y_parameters = ['pr', 'qrs', 'qt', 'hr']
 
 
 for y_parameter in y_parameters:

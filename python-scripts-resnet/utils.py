@@ -38,7 +38,7 @@ def train(dataloader, model, loss_fn, optimizer, device):
         
         train_losses_epoch.append(loss.item())
     
-    return np.mean(np.abs(train_losses_epoch))
+    return np.mean(train_losses_epoch)
 
 
 def validate(dataloader, model, loss_fn, device):
@@ -55,4 +55,4 @@ def validate(dataloader, model, loss_fn, device):
 
             val_losses_epoch.append(loss.item())
 
-    return np.mean(np.abs(val_losses_epoch))
+    return np.mean(val_losses_epoch)

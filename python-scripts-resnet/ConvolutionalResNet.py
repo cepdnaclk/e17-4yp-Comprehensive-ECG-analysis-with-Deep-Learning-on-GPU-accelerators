@@ -75,7 +75,7 @@ class ConvolutionalResNet():
     '''
     To start trainning and validation
     '''
-    def train_and_validate(self, train_dataloader, validate_dataloader):
+    def train_and_validate(self, train_dataloader, validate_dataloader, y_parameter):
         
         train_losses = []
         val_losses = []
@@ -97,7 +97,7 @@ class ConvolutionalResNet():
 
             # early_stopping needs the validation loss to check if it has decresed, 
             # and if it has, it will make a checkpoint of the current model
-            early_stopping(val_loss, self.model)
+            early_stopping(val_loss, self.model, y_parameter)
 
             if early_stopping.early_stop:
                 print("Early stopping")

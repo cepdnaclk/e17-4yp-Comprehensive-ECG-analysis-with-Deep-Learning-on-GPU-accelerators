@@ -11,11 +11,11 @@
 import numpy as np
 import torch
  
-def checkpoint(model, filename):
-    torch.save(model.state_dict(), filename)
+# def checkpoint(model, filename):
+#     torch.save(model.state_dict(), filename)
     
-def resume(model, filename):
-    model.load_state_dict(torch.load(filename))
+# def resume(model, filename):
+#     model.load_state_dict(torch.load(filename))
 
 def train(dataloader, model, loss_fn, optimizer, device):
     size = len(dataloader.dataset)

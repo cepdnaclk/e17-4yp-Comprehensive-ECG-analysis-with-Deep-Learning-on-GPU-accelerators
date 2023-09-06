@@ -49,7 +49,7 @@ for y_parameter in y_parameters:
 
     # train and validate
     resnet = ConvolutionalResNet(model, learning_rate, number_of_epochs, y_parameter ,directory_path + f"/{y_parameter}_{learning_rate}.png")
-    resnet.train_and_validate(train_dataloader, validate_dataloader)
+    resnet.train_and_validate(train_dataloader, validate_dataloader, y_parameter)
         
         
 

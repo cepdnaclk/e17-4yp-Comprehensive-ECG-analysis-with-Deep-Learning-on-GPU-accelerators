@@ -4,6 +4,7 @@ import torch.optim as optim
 from torch import nn
 import matplotlib.pyplot as plt
 from torch.utils.tensorboard import SummaryWriter
+from earlystopping import EarlyStopping
 
 class ConvolutionalResNet():
 
@@ -20,13 +21,19 @@ class ConvolutionalResNet():
             else "cpu"
         )
 
+        # early stopping patience; how long to wait after last time validation loss improved.
+        self.patience = 10
+
         self.model = model.to(self.device)
         self.epochs = epochs
         self.learning_rate = learning_rate
         self.fig_path = fig_path
         self.predict = predict
 
-        self.optimizer = optim.Adam(model.parameters(), lr=1e-3)
+        self.optimizer = optim.NAdam(model.parameters(), lr=learning_rate)
+
+        # Create a StepLR scheduler that reduces the learning rate by a factor of 0.5 every 10 epochs
+        self.scheduler = optim.lr_scheduler.StepLR(self.optimizer, step_size=10, gamma=0.5)
         
         # Loss function for linear values (e.g., regression)
         self.loss_fn = nn.MSELoss()  # Mean Squared Error loss
@@ -59,8 +66,7 @@ class ConvolutionalResNet():
 
         # Log training and validation losses
         for epoch, train_loss, val_loss in zip(epochs, train_losses, val_losses):
-            writer.add_scalar(f"Train Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", train_loss, epoch)
-            writer.add_scalar(f"Validation Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", val_loss, epoch)
+            writer.add_scalars(f"Mean Absolute Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]", {'Training Loss':train_loss, 'Validation Loss':val_loss}, epoch)
 
         # Close the writer
         writer.close()
@@ -69,11 +75,14 @@ class ConvolutionalResNet():
     '''
     To start trainning and validation
     '''
-    def train_and_validate(self, train_dataloader, validate_dataloader):
+    def train_and_validate(self, train_dataloader, validate_dataloader, y_parameter):
         
         train_losses = []
         val_losses = []
         epochs = []
+        # initialize the early_stopping object
+        early_stopping = EarlyStopping(patience=self.patience, verbose=True)
+
         for epoch in range(self.epochs):
             print(f"Epoch {epoch+1}\n-------------------------------")
             epochs.append(epoch)
@@ -86,8 +95,21 @@ class ConvolutionalResNet():
             val_loss = validate(validate_dataloader, self.model, self.loss_fn, self.device)
             val_losses.append(val_loss)
 
+            # early_stopping needs the validation loss to check if it has decresed, 
+            # and if it has, it will make a checkpoint of the current model
+            early_stopping(val_loss, self.model, y_parameter)
+
+            if early_stopping.early_stop:
+                print("Early stopping")
+                break
+
+            # after every epoch version most common
+            self.scheduler.step()  # decay LR (if step_size hit)
+
         # plot graph
         self.plot_graph(epochs, train_losses, val_losses)
+
+        
 
         
         

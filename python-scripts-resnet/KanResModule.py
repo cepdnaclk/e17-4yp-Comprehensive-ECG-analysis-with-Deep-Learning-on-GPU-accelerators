@@ -11,6 +11,7 @@ class KanResModule(nn.Module):
         self.bn1 = nn.BatchNorm1d(filterno_1)
         self.conv2 = nn.Conv1d(filterno_1, filterno_2, filtersize_2, padding='same')
         self.bn2 = nn.BatchNorm1d(filterno_2)
+        self.relu = nn.ReLU()
         
     def forward(self, x):
         identity = x
@@ -18,10 +19,10 @@ class KanResModule(nn.Module):
         x = self.conv1(x)
         #print(x.shape)
         x = self.bn1(x)
-        x = F.relu(x)
+        x = self.relu(x)
         x = self.conv2(x)
         #print(x.shape)
         x = self.bn2(x)
-        x = F.relu(x)
+        x = self.relu(x)
         x = x + identity
         return x

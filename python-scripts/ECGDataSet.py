@@ -14,8 +14,8 @@ class ECGDataSet(Dataset):
         # print("current = "+current_directory)
 
         self.parent_directory = os.path.dirname(current_directory)
-        # print(current_directory)
-        # print(self.parent_directory)
+        print(current_directory)
+        print(self.parent_directory)
 
         train_small_path = os.path.join(self.parent_directory, 'data', 'deepfake-ecg-small', str(self.split) + '.csv')
         # train_small_path = os.path.join(current_directory, 'data', 'deepfake-ecg-small', str(self.split) + '.csv')

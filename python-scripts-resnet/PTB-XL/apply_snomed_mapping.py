@@ -1,18 +1,26 @@
+import os
 import pandas as pd
 import numpy as np
 import networkx as nx
 
+current_directory = os.getcwd()                             # /e17-4yp-Comp.../python-scripts-resnet/PTB-XL
+parent_directory = os.path.dirname(current_directory)       # /e17-4yp-Comp.../python-scripts-resnet
+super_parent_directory =os.path.dirname(parent_directory)   # # /e17-4yp-Comp...
+
 # Set paths
 
-path_snomed_concept = "CONCEPT.csv"
-path_snomed_relationship = "CONCEPT_RELATIONSHIP.csv"
+# path_snomed_concept = "CONCEPT.csv"
+# path_snomed_relationship = "CONCEPT_RELATIONSHIP.csv"
 
-path_12sl = "../12sl_statements.csv"
-path_12sl_mapped_to_snomed = "../12slv23ToSNOMED.csv"
+# path_12sl = super_parent_directory+"data/ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1/labels/12sl_statements.csv"
+path_12sl = os.path.join(super_parent_directory, 'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'labels', '12sl_statements.csv')
+# path_12sl_mapped_to_snomed = super_parent_directory+"data/ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1/labels/mapping/12slv23ToSNOMED.csv"
+path_12sl_mapped_to_snomed = os.path.join(super_parent_directory, 'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'labels', 'mapping', '12slv23ToSNOMED.csv')
 
-path_ptbxl = "../ptbxl_statements.csv"
-path_ptbxl_mapped_to_snomed = "../ptbxlToSNOMED.csv"
-
+# path_ptbxl = super_parent_directory+"data/ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1/labels/ptbxl_statements.csv"
+path_ptbxl = os.path.join(super_parent_directory, 'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'labels', 'ptbxl_statements.csv')
+# path_ptbxl_mapped_to_snomed = super_parent_directory+"data/ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1/labels/mapping/ptbxlToSNOMED.csv"
+path_ptbxl_mapped_to_snomed = os.path.join(super_parent_directory, 'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'labels', 'mapping', 'ptbxlToSNOMED.csv')
 
 # Utility functions
 
@@ -56,23 +64,23 @@ def get_name_from_code(concept_code, df_concept,include_id=False):
     idx = get_id_from_code(concept_code,df_concept)
     return get_name_from_id(idx,df_concept,include_id)
 
-def populate_graph(lst,G=None,lst_processed=[],include_id=False,only_id=False):
-    if(G is None):
-        G = nx.DiGraph()
-    if(len(lst)==0):
-        return G
-    else:
-        tag = lst[0] if only_id else get_name_from_id(lst[0], df_concept,include_id=include_id)
+# def populate_graph(lst,G=None,lst_processed=[],include_id=False,only_id=False):
+#     if(G is None):
+#         G = nx.DiGraph()
+#     if(len(lst)==0):
+#         return G
+#     else:
+#         tag = lst[0] if only_id else get_name_from_id(lst[0], df_concept,include_id=include_id)
 
-        for p in get_parents(lst[0], df_relationship):
-            tagp = p if only_id else get_name_from_id(p, df_concept, include_id=include_id)
-            if(not p in lst_processed):
-                lst.append(p)
-            G.add_edge(tagp,tag)
+#         for p in get_parents(lst[0], df_relationship):
+#             tagp = p if only_id else get_name_from_id(p, df_concept, include_id=include_id)
+#             if(not p in lst_processed):
+#                 lst.append(p)
+#             G.add_edge(tagp,tag)
             
-        lst0=lst[0]
-        lst.pop(0)
-        return populate_graph(list(set(lst)),G,lst_processed+[lst0], include_id=include_id, only_id=only_id)
+#         lst0=lst[0]
+#         lst.pop(0)
+#         return populate_graph(list(set(lst)),G,lst_processed+[lst0], include_id=include_id, only_id=only_id)
 
 def get_uppropagated_labels(key_lst,G,exclude_snomed_id_lst=[]):
     result=[]
@@ -186,10 +194,10 @@ def apply_uppropagation_dict(lst):
 
 # Parsing the SNOMED label tree
 
-df_concept=pd.read_csv(path_snomed_concept,sep='\t')
-df_concept.concept_id=df_concept.concept_id.apply(lambda x: convert_to_int(x))
-df_concept.concept_code=df_concept.concept_code.apply(lambda x: convert_to_int(x))
-df_relationship=pd.read_csv(path_snomed_relationship,sep='\t')
+# df_concept=pd.read_csv(path_snomed_concept,sep='\t')
+# df_concept.concept_id=df_concept.concept_id.apply(lambda x: convert_to_int(x))
+# df_concept.concept_code=df_concept.concept_code.apply(lambda x: convert_to_int(x))
+# df_relationship=pd.read_csv(path_snomed_relationship,sep='\t')
 
 # Load 12SL labels and mapping
 
@@ -269,22 +277,22 @@ ge_snomed_ids = flatten_unique([[l[0] for l in x] for x in df_labels.statements_
 ptbxl_snomed_ids = flatten_unique([[l[0] for l in x] for x in df_ptbxl.scp_codes_ext_snomed])
 all_snomed_ids = list(np.unique(ge_snomed_ids+ptbxl_snomed_ids))
 
-G = populate_graph(all_snomed_ids, only_id=True)
+# G = populate_graph(all_snomed_ids, only_id=True)
 
-all_snomed_ids_uppropagated=flatten_unique([get_uppropagated_labels([i],G) for i in all_snomed_ids])
+# all_snomed_ids_uppropagated=flatten_unique([get_uppropagated_labels([i],G) for i in all_snomed_ids])
 
-node_description = []
-for i in all_snomed_ids_uppropagated:
-    node_description.append({"snomed_id":i, "description":get_name_from_id(i, df_concept, include_id=False), "ancestors":[x for x in get_uppropagated_labels([i],G) if x!=i]})
-df_snomed_description=pd.DataFrame(node_description)
+# node_description = []
+# for i in all_snomed_ids_uppropagated:
+#     node_description.append({"snomed_id":i, "description":get_name_from_id(i, df_concept, include_id=False), "ancestors":[x for x in get_uppropagated_labels([i],G) if x!=i]})
+# df_snomed_description=pd.DataFrame(node_description)
 
 #save new snomed description table
-df_snomed_description.to_csv("snomed_description_new.csv",index=False)
+# df_snomed_description.to_csv("snomed_description_new.csv",index=False)
 
 uppropagation_dict={}
 
-for _,row in df_snomed_description.iterrows():
-    uppropagation_dict[row["snomed_id"]]=row["ancestors"]
+# for _,row in df_snomed_description.iterrows():
+#     uppropagation_dict[row["snomed_id"]]=row["ancestors"]
 
 ## replace snomed labels by uppropagated labels
 

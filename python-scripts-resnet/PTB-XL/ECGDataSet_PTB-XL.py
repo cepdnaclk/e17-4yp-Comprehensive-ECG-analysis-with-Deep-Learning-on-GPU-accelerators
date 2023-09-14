@@ -4,57 +4,23 @@ import pandas as pd
 import os
 import wfdb
 
-
-# current_directory = os.getcwd()                             # /e17-4yp-Comp.../python-scripts-resnet/PTB-XL
-# parent_directory = os.path.dirname(current_directory)       # /e17-4yp-Comp.../python-scripts-resnet
-# super_parent_directory =os.path.dirname(parent_directory)   # # /e17-4yp-Comp...
-# # print(current_directory)        
-# # print(parent_directory)
-# # print(super_parent_directory)
-
-# test_path = os.path.join(super_parent_directory, 'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', 'ecgdeli_features.csv')
-# # print(test_path)
-
-# df = pd.read_csv(test_path)  # Skip the header row
-# # print(df)
-
-# atr_path = os.path.join(super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'fiducial_points', 'ecgdeli', '00000', '00001_points_global')
-# # print(atr_path)
-
-# annotation = wfdb.rdann(atr_path, 'atr')  # 'atr' indicates annotation file
-# # print(annotation.sample)
-# # print(annotation.symbol)
-
-# ecg_signals = torch.tensor(annotation.sample) # convert dataframe values to tensor
-# # print(ecg_signals)
-
-# # Transposing the ecg signals
-# ecg_signals = ecg_signals/6000 # normalization
-# print(ecg_signals)
-# ecg_signals = ecg_signals.t()
-# print(ecg_signals) 
-
-class ECGDataSet(Dataset):
+class ECGDataSet_PtbXl(Dataset):
     def __init__(self, parameter='hr'):
 
         # data loading
         current_directory = os.getcwd()                             # /e17-4yp-Comp.../python-scripts-resnet/PTB-XL
         parent_directory = os.path.dirname(current_directory)       # /e17-4yp-Comp.../python-scripts-resnet
         self.super_parent_directory =os.path.dirname(parent_directory)   # # /e17-4yp-Comp...
-        # print(current_directory)        
-        # print(parent_directory)
-        # print(super_parent_directory)
 
-        test_path = os.path.join(self.super_parent_directory, 'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', 'ecgdeli_features.csv')
-        # print(test_path)
+        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', '12sl_features.csv')   
 
-        self.df = pd.read_csv(test_path)  # Skip the header row
-        # print(self.df) 
+        # Skip the header row
+        self.df = pd.read_csv(features_csv_path)  
         
-        if parameter == 'hr':
+        if parameter == 'hr':   # 'hr' should be replaced
             # Avg RR interval
             # in milli seconds
-            RR = torch.tensor(self.df['avgrrinterval'].values, dtype=torch.float32)     # avgrrinterval ?
+            RR = torch.tensor(self.df['avgrrinterval'].values, dtype=torch.float32)     # 'avgrrinterval' should be replaced 
             # calculate HR
             self.y = 60 * 1000/RR
         else:
@@ -66,30 +32,18 @@ class ECGDataSet(Dataset):
     def __getitem__(self, index):
         
         # file path
-        filename = self.df['ecg_id'].values[index]
-        file_folder = int(filename) // 1000
+        file_index = int(self.df['ecg_id'].values[index])
+        folder_name = str(file_index // 1000).zfill(2)+'000' 
+        file_name = str(file_index).zfill(5)+'_medians'
+
+        ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'median_beats', '12sl-changed', '12sl-copy', folder_name, file_name)
         
-        file_folder_str = str(file_folder).zfill(2)
-        file_name_str = str(filename).zfill(5) 
+        # Use wfdb.rdsamp to read both the .dat file and .hea header file
+        ecg_record_data, ecg_record_header = wfdb.rdsamp(ecg_record_path)
 
-        atr_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'fiducial_points', 'ecgdeli', file_folder_str+'000', file_name_str+'_points_global')
-        # print(atr_path)
-
-        annotation = wfdb.rdann(atr_path, 'atr')  # 'atr' indicates annotation file
-        # print(annotation.sample)
-        # print(annotation.symbol)
-
-        ecg_signals = torch.tensor(annotation.sample) # convert dataframe values to tensor
-        # print(ecg_signals)
-
+        ecg_signals = torch.tensor(ecg_record_data) # convert dataframe values to tensor
+        
         ecg_signals = ecg_signals.float()
-
-        # Transposing the ecg signals
-        ecg_signals = ecg_signals/6000 # normalization
-        # print(ecg_signals)
-        ecg_signals = ecg_signals.t()
-        # print(ecg_signals) 
-        
         
         # Transposing the ecg signals
         ecg_signals = ecg_signals/6000 # normalization

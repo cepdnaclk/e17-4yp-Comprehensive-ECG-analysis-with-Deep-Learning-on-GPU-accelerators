@@ -12,7 +12,7 @@ class ECGDataSet_PtbXl(Dataset):
         parent_directory = os.path.dirname(current_directory)       # /e17-4yp-Comp.../python-scripts-resnet
         self.super_parent_directory =os.path.dirname(parent_directory)   # # /e17-4yp-Comp...
 
-        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', '12sl_features.csv')   
+        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'features', '12sl_features.csv')   
 
         # Skip the header row
         self.df = pd.read_csv(features_csv_path)  
@@ -31,13 +31,20 @@ class ECGDataSet_PtbXl(Dataset):
 
     def __getitem__(self, index):
         
+        # # file path
+        # file_index = int(self.df['ecg_id'].values[index])
+        # folder_name = str(file_index // 1000).zfill(2)+'000' 
+        # file_name = str(file_index).zfill(5)+'_medians'
+
+        # ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'median_beats', '12sl-changed', '12sl-copy', folder_name, file_name)
+
         # file path
         file_index = int(self.df['ecg_id'].values[index])
         folder_name = str(file_index // 1000).zfill(2)+'000' 
-        file_name = str(file_index).zfill(5)+'_medians'
+        file_name = str(file_index).zfill(5)+'_hr'
 
-        ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'median_beats', '12sl-changed', '12sl-copy', folder_name, file_name)
-        
+        ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
+
         # Use wfdb.rdsamp to read both the .dat file and .hea header file
         ecg_record_data, ecg_record_header = wfdb.rdsamp(ecg_record_path)
 

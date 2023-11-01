@@ -23,7 +23,7 @@ if not os.path.exists(directory_path):
 
 
 # 128 is the batch size, 8 is the number of channels, 5000 is the number of time steps
-input_shape = (8,5000)  # Modify this according to your input shape
+input_shape = (8,5000)  # Modify this according to your input shape // change to (12,5000) for ptbxl
 # Number of output units
 output_size = 1 
 # number of epochs

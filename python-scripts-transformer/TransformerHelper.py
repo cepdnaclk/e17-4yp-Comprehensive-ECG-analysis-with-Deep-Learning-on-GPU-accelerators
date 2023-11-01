@@ -76,11 +76,11 @@ class TransformerHelper():
 
             # early_stopping needs the validation loss to check if it has decresed, 
             # and if it has, it will make a checkpoint of the current model
-            early_stopping(val_loss, self.model, y_parameter)
+            # early_stopping(val_loss, self.model, y_parameter)
 
-            if early_stopping.early_stop:
-                print("Early stopping")
-                break
+            # if early_stopping.early_stop:
+            #     print("Early stopping")
+            #     break
 
             # after every epoch version most common
             self.scheduler.step()  # decay LR (if step_size hit)

@@ -11,7 +11,7 @@ class ConvolutionalResNet():
     '''
     Constructor
     '''
-    def __init__(self, model, learning_rate, epochs, predict, fig_path):
+    def __init__(self, model, learning_rate, epochs, predict):
 
         self.device = (
             "cuda"
@@ -27,7 +27,6 @@ class ConvolutionalResNet():
         self.model = model.to(self.device)
         self.epochs = epochs
         self.learning_rate = learning_rate
-        self.fig_path = fig_path
         self.predict = predict
 
         self.optimizer = optim.NAdam(model.parameters(), lr=learning_rate)
@@ -40,26 +39,6 @@ class ConvolutionalResNet():
 
 
     def plot_graph(self, epochs, train_losses, val_losses):
-
-        # # Create a new figure
-        # plt.figure()
-
-        # # Plot the first line
-        # plt.plot(epochs, train_losses, label='training', color='blue')
-
-        # # Plot the second line
-        # plt.plot(epochs, val_losses, label='validation', color='red')
-
-        # # Add labels and title
-        # plt.xlabel('epochs')
-        # plt.ylabel('losses')
-        # plt.title(f"Mean Absolute Loss vs Epoch [Y: {self.predict}, Learning Rate: {self.learning_rate}]")
-        # plt.legend()  # Add legend based on label names
-
-        # # Show the plot
-        # plt.show()
-        # # save figure
-        # plt.savefig(self.fig_path)
 
         # Create a SummaryWriter instance
         writer = SummaryWriter()
@@ -97,11 +76,11 @@ class ConvolutionalResNet():
 
             # early_stopping needs the validation loss to check if it has decresed, 
             # and if it has, it will make a checkpoint of the current model
-            early_stopping(val_loss, self.model, y_parameter)
+            # early_stopping(val_loss, self.model, y_parameter)
 
-            if early_stopping.early_stop:
-                print("Early stopping")
-                break
+            # if early_stopping.early_stop:
+            #     print("Early stopping")
+            #     break
 
             # after every epoch version most common
             self.scheduler.step()  # decay LR (if step_size hit)

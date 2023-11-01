@@ -4,4 +4,5 @@ notebooks/wandb
 .DS_Store
 python-scripts/checkpoints
 python-scripts-resnet/runs
+python-scripts-transformer/runs
 notebooks/runs

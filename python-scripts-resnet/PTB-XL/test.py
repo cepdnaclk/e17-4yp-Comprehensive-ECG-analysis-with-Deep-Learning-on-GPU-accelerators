@@ -40,9 +40,11 @@ print(ecg_signals)
 
 print("\nECG signal shape = " + str(ecg_signals.shape) + "\n")
 
-file_index = int('12035')
-folder_name = str(file_index // 1000).zfill(2)+'000' 
-file_name = str(file_index).zfill(5)+'_hr'
+print(ecg_signals.shape[0])
 
-ecg_record_path = os.path.join(super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
-print("\n" + ecg_record_path + "\n")
+# file_index = int('12035')
+# folder_name = str(file_index // 1000).zfill(2)+'000' 
+# file_name = str(file_index).zfill(5)+'_hr'
+
+# ecg_record_path = os.path.join(super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
+# print("\n" + ecg_record_path + "\n")

@@ -104,13 +104,6 @@ class ECGDataSet_PTB_XL(Dataset):
 
     def __getitem__(self, index):
         
-        # # file path
-        # file_index = int(self.df['ecg_id'].values[index])
-        # folder_name = str(file_index // 1000).zfill(2)+'000' 
-        # file_name = str(file_index).zfill(5)+'_medians'
-
-        # ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'median_beats', '12sl-changed', '12sl-copy', folder_name, file_name)
-
         # file path
         file_index = int(self.df['ecg_id'].values[index])
         folder_name = str(file_index // 1000).zfill(2)+'000' 
@@ -122,12 +115,18 @@ class ECGDataSet_PTB_XL(Dataset):
         # Use wfdb.rdsamp to read both the .dat file and .hea header file
         ecg_record_data, ecg_record_header = wfdb.rdsamp(ecg_record_path)
 
+        # ['I', 'II', 'III', 'AVR', 'AVL', 'AVF', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6'] - 12 original channels
+        # ['I', 'II', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6'] - 8 channels as deepfake data set
+
+        columns_to_remove = [2, 3, 4, 5]    # remove channels - 'III', 'AVR', 'AVL', 'AVF'
+        ecg_record_data = np.delete(ecg_record_data, columns_to_remove, axis=1)
+
         ecg_signals = torch.tensor(ecg_record_data) # convert dataframe values to tensor
         
         ecg_signals = ecg_signals.float()
         
         # Transposing the ecg signals
-        ecg_signals = ecg_signals/6000 # normalization
+        ecg_signals = ecg_signals/6   # normalization
         ecg_signals = ecg_signals.t() 
         
         qt = self.y[index]

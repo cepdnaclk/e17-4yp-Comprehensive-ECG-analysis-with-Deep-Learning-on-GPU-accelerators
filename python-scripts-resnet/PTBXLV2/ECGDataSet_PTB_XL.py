@@ -13,8 +13,8 @@ class ECGDataSet_PTB_XL(Dataset):
         parent_directory = os.path.dirname(current_directory)       # /e17-4yp-Comp.../python-scripts-resnet
         self.super_parent_directory = parent_directory   # # /e17-4yp-Comp...
 
-        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', '12sl_features.csv')   
-        #features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'features', '12sl_features.csv')   
+        # features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', '12sl_features.csv')   
+        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'features', '12sl_features.csv')   
 
         # Skip the header row
         self.df = pd.read_csv(features_csv_path) 
@@ -27,7 +27,8 @@ class ECGDataSet_PTB_XL(Dataset):
             file_index = int(self.df['ecg_id'].values[index])
             folder_name = str(file_index // 1000).zfill(2)+'000' 
             file_name = str(file_index).zfill(5)+'_hr.hea'
-            ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.1', 'records500', folder_name, file_name)
+            # ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.1', 'records500', folder_name, file_name)
+            ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
             #print(ecg_record_path)
 
             # Check if the ecg_record_path exists
@@ -115,8 +116,8 @@ class ECGDataSet_PTB_XL(Dataset):
         folder_name = str(file_index // 1000).zfill(2)+'000' 
         file_name = str(file_index).zfill(5)+'_hr'
 
-        # ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
-        ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.1', 'records500', folder_name, file_name)
+        ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
+        # ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.1', 'records500', folder_name, file_name)
 
         # Use wfdb.rdsamp to read both the .dat file and .hea header file
         ecg_record_data, ecg_record_header = wfdb.rdsamp(ecg_record_path)

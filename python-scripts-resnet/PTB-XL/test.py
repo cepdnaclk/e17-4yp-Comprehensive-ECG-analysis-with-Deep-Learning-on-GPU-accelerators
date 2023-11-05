@@ -10,11 +10,16 @@ parent_directory = os.path.dirname(current_directory)       # /e17-4yp-Comp.../p
 super_parent_directory =os.path.dirname(parent_directory)   # # /e17-4yp-Comp...
 # print(super_parent_directory)
 
-record_path = os.path.join(super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'median_beats', '12sl-changed', '12sl-copy', '00000', '00001_medians')
-# print(record_path) 
+file_index = int('12035')
+folder_name = str(file_index // 1000).zfill(2)+'000' 
+file_name = str(file_index).zfill(5)+'_hr'
+
+ecg_record_path = os.path.join(super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
+print("\n" + ecg_record_path + "\n")
+
 
 # Use wfdb.rdsamp to read both the .dat file and .hea header file
-record_data, record_header = wfdb.rdsamp(record_path)
+record_data, record_header = wfdb.rdsamp(ecg_record_path)
 
 print("\nRecord data shape = " + str(record_data.shape))
 
@@ -41,10 +46,3 @@ print(ecg_signals)
 print("\nECG signal shape = " + str(ecg_signals.shape) + "\n")
 
 print(ecg_signals.shape[0])
-
-# file_index = int('12035')
-# folder_name = str(file_index // 1000).zfill(2)+'000' 
-# file_name = str(file_index).zfill(5)+'_hr'
-
-# ecg_record_path = os.path.join(super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
-# print("\n" + ecg_record_path + "\n")

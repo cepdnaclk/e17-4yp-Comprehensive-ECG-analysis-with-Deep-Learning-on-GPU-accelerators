@@ -14,13 +14,20 @@ class ECGDataSet_PTB_XL(Dataset):
         self.super_parent_directory = parent_directory   # # /e17-4yp-Comp...
 
         # features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', '12sl_features.csv')   
-        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'features', '12sl_features.csv')   
+        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'features', '12sl_features.csv') 
+
+        # statements_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'labels', 'ptbxl_statements.csv')
+        statements_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'labels', 'ptbxl_statements.csv')  
 
         # Skip the header row
         self.df = pd.read_csv(features_csv_path) 
+        self.statements_df = pd.read_csv(statements_csv_path)
 
         # Create an empty list to store the indices of rows to be removed
         rows_to_remove = [] 
+
+        # Create an empty list to store the indices of rows to be removed for non NORM ecg
+        rows_to_remove_norm = []
 
         # Iterate through the rows
         for index, row in self.df.iterrows():
@@ -38,6 +45,22 @@ class ECGDataSet_PTB_XL(Dataset):
         # Remove rows where ecg_record_path does not exist
         self.df.drop(rows_to_remove, inplace=True)
         # Reset the DataFrame index if needed
+        self.df.reset_index(drop=True, inplace=True)
+
+        # Iterate through the rows to remove non normal ecg
+        for index, row in self.statements_df.iterrows():
+            ecg_id = self.statements_df['ecg_id'].values[index]
+            scp_codes = self.statements_df['scp_codes'].values[index]
+
+            if 'NORM' not in scp_codes:
+                rows_to_remove_norm.append(ecg_id)
+
+        # Removing the non normal ecg
+        for index, row in self.df.iterrows():
+            if row['ecg_id'] in rows_to_remove_norm:
+                self.df.drop(index, inplace=True)
+
+        # Reset the DataFrame index 
         self.df.reset_index(drop=True, inplace=True)
 
         # Assuming you already have your DataFrame loaded as self.df

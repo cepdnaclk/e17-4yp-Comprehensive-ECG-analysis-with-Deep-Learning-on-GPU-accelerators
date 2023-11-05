@@ -12,7 +12,7 @@ class ECGDataSet_PtbXl(Dataset):
         parent_directory = os.path.dirname(current_directory)       # /e17-4yp-Comp.../python-scripts-resnet
         self.super_parent_directory =os.path.dirname(parent_directory)   # # /e17-4yp-Comp...
 
-        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1', 'features', '12sl_features.csv')   
+        features_csv_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl+', 'features', '12sl_features.csv')   
 
         # Skip the header row
         self.df = pd.read_csv(features_csv_path)  

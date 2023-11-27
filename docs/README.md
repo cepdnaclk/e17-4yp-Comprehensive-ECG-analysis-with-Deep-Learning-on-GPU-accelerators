@@ -52,7 +52,7 @@ Traditionally, the analysis of ECGs focused on classifying heartbeats and identi
 
 In the field of deep learning and ECG analysis, various deep learning architectures have been used to extract valuable insights from complex and dynamic ECG signals. The following paragraphs hope to explain some of the promising deep learning architectures so far used in this field of research.
 
-![alt text](https://github.com/cepdnaclk/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/docs/images/nn_layers.png "Convolutional neural networks and ECG. Visualizes how Convolutional layers identify the most important ECG parameters")
+![alt text](images/nn_layers.png "Convolutional neural networks and ECG. Visualizes how Convolutional layers identify the most important ECG parameters")
 
 The figure visualizes how Convolutional Neural networks identify the crucial intervals in the ECG signal.
 
@@ -90,14 +90,14 @@ A notable CNN architecture was proposed in the paper "Explaining deep neural net
 
 The input ECG signal is initially processed by two convolutional layers, each generating feature maps of 64 and 32, respectively, using kernel sizes of 8 and 3. The output of these convolutional layers is then subjected to average pooling. Subsequently, the processed signal is passed through eight residual blocks, each comprising two convolutional layers. Both convolutional layers within each residual block generate feature maps of 64 and 32, utilizing kernel sizes of 3. Figure demonstrates the architecture of this Residual Network.
 
-![alt text](https://github.com/cepdnaclk/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/docs/images/Resnet.png "The Novel Resnet Architecture for a comprehensive ECG analysis using Deep Learning")
+![alt text](images/Resnet.png "The Novel Resnet Architecture for a comprehensive ECG analysis using Deep Learning")
 
 #### *Vision Transformer*
 This model was built from the inspiration of the paper "An image is worth 16x16 words: Transformers for image recognition at scale". Transformers in particular have promising results in ECG classifying tasks. This work proposes a novel version of the vision transformer specifically built for ECG analysis. 
 
 In the original Vision Transformer, an image is divided into 16*16 (224) patches and encoded with patch embeddings for multi-head attention. This approach was used similarly in the vision transformer for the ECG analysis. An ECG signal of 500Hz 10s and 8 leads has 5000 data points and 8 channels. This tensor is divided into 100 patches and then passed along to the multi-head attention units along with patch embeddings. Figure demonstrates the overall architecture of this Vision Transformer for ECG analysis.
 
-![alt text](https://github.com/cepdnaclk/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/docs/images/ViT.png "The Vision Transformer Architecture")
+![alt text](images/ViT.png "The Vision Transformer Architecture")
 
 Transformers inherently need a huge amount of data to achieve better results. Therefore, training the transformer for better accuracy through deepfake data and fine-tuning from a smaller real-world dataset was a crucial factor to consider.
 

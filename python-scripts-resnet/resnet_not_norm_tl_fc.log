@@ -1,0 +1,911 @@
+GPU memory is free enough. Running Python script...
+Model loaded successfully with weights
+train dataset loaded successfully
+validate dataset loaded successfully
+Datasets loaded successfully
+Dataloaders loaded successfully
+-------------pr---------------
+/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/nn/modules/conv.py:309: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /opt/conda/conda-bld/pytorch_1682343970094/work/aten/src/ATen/native/Convolution.cpp:1003.)
+  return F.conv1d(input, weight, bias, self.stride,
+0 tarainning loss : 14741.47244966947 validation loss : 2359.9573974609375 
+Validation loss decreased (inf --> 2359.957397).  Saving model ...
+1 tarainning loss : 8393.896259014424 validation loss : 6666.5066324869795 
+EarlyStopping counter: 1 out of 100
+2 tarainning loss : 6739.911630483774 validation loss : 7524.5422770182295 
+EarlyStopping counter: 2 out of 100
+3 tarainning loss : 5632.280048076923 validation loss : 8138.1452229817705 
+EarlyStopping counter: 3 out of 100
+4 tarainning loss : 4767.3988694411055 validation loss : 10728.698893229166 
+EarlyStopping counter: 4 out of 100
+5 tarainning loss : 4055.0930786132812 validation loss : 11627.076253255209 
+EarlyStopping counter: 5 out of 100
+6 tarainning loss : 3445.684002216046 validation loss : 11473.624267578125 
+EarlyStopping counter: 6 out of 100
+7 tarainning loss : 2943.112755408654 validation loss : 13275.439046223959 
+EarlyStopping counter: 7 out of 100
+8 tarainning loss : 2504.630380483774 validation loss : 12035.573974609375 
+EarlyStopping counter: 8 out of 100
+9 tarainning loss : 2123.931316669171 validation loss : 15547.62060546875 
+EarlyStopping counter: 9 out of 100
+10 tarainning loss : 1805.2381896972656 validation loss : 15659.344645182291 
+EarlyStopping counter: 10 out of 100
+11 tarainning loss : 1537.1922372671274 validation loss : 16032.716471354166 
+EarlyStopping counter: 11 out of 100
+12 tarainning loss : 1304.2832242525542 validation loss : 18016.92138671875 
+EarlyStopping counter: 12 out of 100
+13 tarainning loss : 1101.1571925236628 validation loss : 17432.694173177082 
+EarlyStopping counter: 13 out of 100
+14 tarainning loss : 931.1889965350812 validation loss : 17842.261393229168 
+EarlyStopping counter: 14 out of 100
+15 tarainning loss : 781.4399226262019 validation loss : 19290.279134114582 
+EarlyStopping counter: 15 out of 100
+16 tarainning loss : 651.9742173414963 validation loss : 20090.511393229168 
+EarlyStopping counter: 16 out of 100
+17 tarainning loss : 543.4089877788837 validation loss : 20841.37060546875 
+EarlyStopping counter: 17 out of 100
+18 tarainning loss : 451.45617382343 validation loss : 21982.632161458332 
+EarlyStopping counter: 18 out of 100
+19 tarainning loss : 373.3943557739258 validation loss : 20912.723958333332 
+EarlyStopping counter: 19 out of 100
+20 tarainning loss : 309.8806322537936 validation loss : 22194.371256510418 
+EarlyStopping counter: 20 out of 100
+21 tarainning loss : 249.35782975416916 validation loss : 22050.466959635418 
+EarlyStopping counter: 21 out of 100
+22 tarainning loss : 203.05531399066632 validation loss : 23017.32373046875 
+EarlyStopping counter: 22 out of 100
+23 tarainning loss : 162.92785967313327 validation loss : 23189.358235677082 
+EarlyStopping counter: 23 out of 100
+24 tarainning loss : 131.3190328157865 validation loss : 22537.8896484375 
+EarlyStopping counter: 24 out of 100
+25 tarainning loss : 103.74334980891301 validation loss : 24327.489908854168 
+EarlyStopping counter: 25 out of 100
+26 tarainning loss : 81.12187165480394 validation loss : 24118.547200520832 
+EarlyStopping counter: 26 out of 100
+27 tarainning loss : 64.6506685110239 validation loss : 23829.216796875 
+EarlyStopping counter: 27 out of 100
+28 tarainning loss : 49.73501733633188 validation loss : 23830.050944010418 
+EarlyStopping counter: 28 out of 100
+29 tarainning loss : 38.28656838490413 validation loss : 24494.656087239582 
+EarlyStopping counter: 29 out of 100
+30 tarainning loss : 29.63064769598154 validation loss : 24802.530598958332 
+EarlyStopping counter: 30 out of 100
+31 tarainning loss : 22.365230046785793 validation loss : 25332.569173177082 
+EarlyStopping counter: 31 out of 100
+32 tarainning loss : 17.17702993979821 validation loss : 24942.342447916668 
+EarlyStopping counter: 32 out of 100
+33 tarainning loss : 13.237740333263691 validation loss : 25171.916015625 
+EarlyStopping counter: 33 out of 100
+34 tarainning loss : 10.722928267258863 validation loss : 25100.311686197918 
+EarlyStopping counter: 34 out of 100
+35 tarainning loss : 8.195649495491615 validation loss : 25707.497233072918 
+EarlyStopping counter: 35 out of 100
+36 tarainning loss : 6.211395832208487 validation loss : 25000.458333333332 
+EarlyStopping counter: 36 out of 100
+37 tarainning loss : 4.65868664246339 validation loss : 25500.050944010418 
+EarlyStopping counter: 37 out of 100
+38 tarainning loss : 3.60887506374946 validation loss : 25767.00439453125 
+EarlyStopping counter: 38 out of 100
+39 tarainning loss : 2.686506693179791 validation loss : 25711.756184895832 
+EarlyStopping counter: 39 out of 100
+40 tarainning loss : 2.1336640280026655 validation loss : 25604.997395833332 
+EarlyStopping counter: 40 out of 100
+41 tarainning loss : 1.7084901137993886 validation loss : 25711.370768229168 
+EarlyStopping counter: 41 out of 100
+42 tarainning loss : 1.4372178958012507 validation loss : 25350.994791666668 
+EarlyStopping counter: 42 out of 100
+43 tarainning loss : 1.1667760816904216 validation loss : 25933.941569010418 
+EarlyStopping counter: 43 out of 100
+44 tarainning loss : 0.9268876978984246 validation loss : 25936.3212890625 
+EarlyStopping counter: 44 out of 100
+45 tarainning loss : 0.7908595617000873 validation loss : 25694.9716796875 
+EarlyStopping counter: 45 out of 100
+46 tarainning loss : 0.6617112709925725 validation loss : 25752.6845703125 
+EarlyStopping counter: 46 out of 100
+47 tarainning loss : 0.5918453777065644 validation loss : 25865.890950520832 
+EarlyStopping counter: 47 out of 100
+48 tarainning loss : 0.464385524392128 validation loss : 25994.937825520832 
+EarlyStopping counter: 48 out of 100
+49 tarainning loss : 0.41400399145025474 validation loss : 26116.695149739582 
+EarlyStopping counter: 49 out of 100
+50 tarainning loss : 0.38269663831362355 validation loss : 26143.842122395832 
+EarlyStopping counter: 50 out of 100
+51 tarainning loss : 0.29905436675135905 validation loss : 25956.855794270832 
+EarlyStopping counter: 51 out of 100
+52 tarainning loss : 0.27421971467825085 validation loss : 25775.245930989582 
+EarlyStopping counter: 52 out of 100
+53 tarainning loss : 0.24790626334456298 validation loss : 26019.513020833332 
+EarlyStopping counter: 53 out of 100
+54 tarainning loss : 0.21511900496597475 validation loss : 25803.555013020832 
+EarlyStopping counter: 54 out of 100
+55 tarainning loss : 0.22832182966745818 validation loss : 25878.692545572918 
+EarlyStopping counter: 55 out of 100
+56 tarainning loss : 0.17195697171756855 validation loss : 25804.637858072918 
+EarlyStopping counter: 56 out of 100
+57 tarainning loss : 0.17255866455917174 validation loss : 26054.581868489582 
+EarlyStopping counter: 57 out of 100
+58 tarainning loss : 0.14261137722776487 validation loss : 25766.048828125 
+EarlyStopping counter: 58 out of 100
+59 tarainning loss : 0.1383489937736438 validation loss : 25823.231608072918 
+EarlyStopping counter: 59 out of 100
+60 tarainning loss : 0.13435382926120207 validation loss : 25885.906575520832 
+EarlyStopping counter: 60 out of 100
+61 tarainning loss : 0.11140968206410225 validation loss : 26004.4541015625 
+EarlyStopping counter: 61 out of 100
+62 tarainning loss : 0.12116267969115423 validation loss : 25719.368977864582 
+EarlyStopping counter: 62 out of 100
+63 tarainning loss : 0.1262334447640639 validation loss : 25875.173828125 
+EarlyStopping counter: 63 out of 100
+64 tarainning loss : 0.09942299679208261 validation loss : 25879.806966145832 
+EarlyStopping counter: 64 out of 100
+65 tarainning loss : 0.09532403415785386 validation loss : 25970.301432291668 
+EarlyStopping counter: 65 out of 100
+66 tarainning loss : 0.08519955509557174 validation loss : 25881.34619140625 
+EarlyStopping counter: 66 out of 100
+67 tarainning loss : 0.08120096030716713 validation loss : 25882.283528645832 
+EarlyStopping counter: 67 out of 100
+68 tarainning loss : 0.0705496366493977 validation loss : 25964.525227864582 
+EarlyStopping counter: 68 out of 100
+69 tarainning loss : 0.08188582068452468 validation loss : 25962.026529947918 
+EarlyStopping counter: 69 out of 100
+70 tarainning loss : 0.0784473313878362 validation loss : 25990.441080729168 
+EarlyStopping counter: 70 out of 100
+71 tarainning loss : 0.06382756565625851 validation loss : 25873.21435546875 
+EarlyStopping counter: 71 out of 100
+72 tarainning loss : 0.057284822974067465 validation loss : 25908.66259765625 
+EarlyStopping counter: 72 out of 100
+73 tarainning loss : 0.0659673993404095 validation loss : 25812.59033203125 
+EarlyStopping counter: 73 out of 100
+74 tarainning loss : 0.05270255794032262 validation loss : 25927.37109375 
+EarlyStopping counter: 74 out of 100
+75 tarainning loss : 0.05386184732644604 validation loss : 25949.900065104168 
+EarlyStopping counter: 75 out of 100
+76 tarainning loss : 0.0502328361527851 validation loss : 25881.569010416668 
+EarlyStopping counter: 76 out of 100
+77 tarainning loss : 0.046127424539568335 validation loss : 25965.356119791668 
+EarlyStopping counter: 77 out of 100
+78 tarainning loss : 0.05214219114098411 validation loss : 25955.925618489582 
+EarlyStopping counter: 78 out of 100
+79 tarainning loss : 0.044335407204926014 validation loss : 25840.374186197918 
+EarlyStopping counter: 79 out of 100
+80 tarainning loss : 0.04944306132025444 validation loss : 25910.68505859375 
+EarlyStopping counter: 80 out of 100
+81 tarainning loss : 0.0410563274859809 validation loss : 25860.255696614582 
+EarlyStopping counter: 81 out of 100
+82 tarainning loss : 0.04234086969294227 validation loss : 25988.863444010418 
+EarlyStopping counter: 82 out of 100
+83 tarainning loss : 0.03512813616544008 validation loss : 25907.546549479168 
+EarlyStopping counter: 83 out of 100
+84 tarainning loss : 0.03810177048524985 validation loss : 25873.984537760418 
+EarlyStopping counter: 84 out of 100
+85 tarainning loss : 0.03571301695102683 validation loss : 25956.337565104168 
+EarlyStopping counter: 85 out of 100
+86 tarainning loss : 0.03267445988379992 validation loss : 25861.553873697918 
+EarlyStopping counter: 86 out of 100
+87 tarainning loss : 0.031483807027913056 validation loss : 26066.611490885418 
+EarlyStopping counter: 87 out of 100
+88 tarainning loss : 0.03168474635682427 validation loss : 25896.65234375 
+EarlyStopping counter: 88 out of 100
+89 tarainning loss : 0.03811290605853383 validation loss : 25960.47705078125 
+EarlyStopping counter: 89 out of 100
+90 tarainning loss : 0.02937510548732602 validation loss : 25957.644856770832 
+EarlyStopping counter: 90 out of 100
+91 tarainning loss : 0.030600514316644806 validation loss : 25805.974609375 
+EarlyStopping counter: 91 out of 100
+92 tarainning loss : 0.02636803837063221 validation loss : 25867.030110677082 
+EarlyStopping counter: 92 out of 100
+93 tarainning loss : 0.03387513651082722 validation loss : 25991.8671875 
+EarlyStopping counter: 93 out of 100
+94 tarainning loss : 0.025577546903290428 validation loss : 25855.43994140625 
+EarlyStopping counter: 94 out of 100
+95 tarainning loss : 0.024137114425404713 validation loss : 25894.13623046875 
+EarlyStopping counter: 95 out of 100
+96 tarainning loss : 0.02577647058149943 validation loss : 25785.102701822918 
+EarlyStopping counter: 96 out of 100
+97 tarainning loss : 0.026289860503031656 validation loss : 25956.123372395832 
+EarlyStopping counter: 97 out of 100
+98 tarainning loss : 0.027378287846938923 validation loss : 25876.50732421875 
+EarlyStopping counter: 98 out of 100
+99 tarainning loss : 0.026495475984679964 validation loss : 25958.6279296875 
+EarlyStopping counter: 99 out of 100
+100 tarainning loss : 0.022980401274533227 validation loss : 25968.48046875 
+EarlyStopping counter: 100 out of 100
+Early stopping
+
+
+Model loaded successfully with weights
+train dataset loaded successfully
+validate dataset loaded successfully
+Datasets loaded successfully
+Dataloaders loaded successfully
+-------------qt---------------
+0 tarainning loss : 110503.37470518867 validation loss : 9374.163330078125 
+Validation loss decreased (inf --> 9374.163330).  Saving model ...
+1 tarainning loss : 76658.87735849057 validation loss : 19873.946370442707 
+EarlyStopping counter: 1 out of 100
+2 tarainning loss : 66798.67371757075 validation loss : 20801.173990885418 
+EarlyStopping counter: 2 out of 100
+3 tarainning loss : 59095.91509433962 validation loss : 25591.345865885418 
+EarlyStopping counter: 3 out of 100
+4 tarainning loss : 53120.48953419811 validation loss : 29598.774739583332 
+EarlyStopping counter: 4 out of 100
+5 tarainning loss : 47801.36814563679 validation loss : 40347.5107421875 
+EarlyStopping counter: 5 out of 100
+6 tarainning loss : 43438.82244988208 validation loss : 35266.494140625 
+EarlyStopping counter: 6 out of 100
+7 tarainning loss : 39084.60723761792 validation loss : 36876.172200520836 
+EarlyStopping counter: 7 out of 100
+8 tarainning loss : 35401.963738207545 validation loss : 45644.661458333336 
+EarlyStopping counter: 8 out of 100
+9 tarainning loss : 32320.275058962263 validation loss : 51977.390299479164 
+EarlyStopping counter: 9 out of 100
+10 tarainning loss : 29449.948813384435 validation loss : 48986.859700520836 
+EarlyStopping counter: 10 out of 100
+11 tarainning loss : 26699.33803803066 validation loss : 55573.104166666664 
+EarlyStopping counter: 11 out of 100
+12 tarainning loss : 24462.740234375 validation loss : 53480.658203125 
+EarlyStopping counter: 12 out of 100
+13 tarainning loss : 22197.7734375 validation loss : 71247.29557291667 
+EarlyStopping counter: 13 out of 100
+14 tarainning loss : 20352.020563089623 validation loss : 51083.963541666664 
+EarlyStopping counter: 14 out of 100
+15 tarainning loss : 18643.16841096698 validation loss : 53121.224283854164 
+EarlyStopping counter: 15 out of 100
+16 tarainning loss : 17191.391877948114 validation loss : 62428.900065104164 
+EarlyStopping counter: 16 out of 100
+17 tarainning loss : 15688.412109375 validation loss : 73593.38997395833 
+EarlyStopping counter: 17 out of 100
+18 tarainning loss : 14392.816443101416 validation loss : 74760.818359375 
+EarlyStopping counter: 18 out of 100
+19 tarainning loss : 13251.640938237028 validation loss : 81484.69010416667 
+EarlyStopping counter: 19 out of 100
+20 tarainning loss : 12199.142817659198 validation loss : 84132.07682291667 
+EarlyStopping counter: 20 out of 100
+21 tarainning loss : 11266.83015182783 validation loss : 77167.55208333333 
+EarlyStopping counter: 21 out of 100
+22 tarainning loss : 10371.06858048349 validation loss : 93434.8125 
+EarlyStopping counter: 22 out of 100
+23 tarainning loss : 9600.653578272406 validation loss : 91521.67317708333 
+EarlyStopping counter: 23 out of 100
+24 tarainning loss : 8849.49519089033 validation loss : 82315.42057291667 
+EarlyStopping counter: 24 out of 100
+25 tarainning loss : 8263.183566111438 validation loss : 78232.48111979167 
+EarlyStopping counter: 25 out of 100
+26 tarainning loss : 7624.31884765625 validation loss : 98408.4296875 
+EarlyStopping counter: 26 out of 100
+27 tarainning loss : 7069.070625737028 validation loss : 101177.900390625 
+EarlyStopping counter: 27 out of 100
+28 tarainning loss : 6561.362092791863 validation loss : 100510.86197916667 
+EarlyStopping counter: 28 out of 100
+29 tarainning loss : 6092.866450471698 validation loss : 100391.48111979167 
+EarlyStopping counter: 29 out of 100
+30 tarainning loss : 5645.86474609375 validation loss : 92217.76497395833 
+EarlyStopping counter: 30 out of 100
+31 tarainning loss : 5245.021926591981 validation loss : 110585.330078125 
+EarlyStopping counter: 31 out of 100
+32 tarainning loss : 4868.841925854953 validation loss : 103176.177734375 
+EarlyStopping counter: 32 out of 100
+33 tarainning loss : 4536.627570386203 validation loss : 112937.42578125 
+EarlyStopping counter: 33 out of 100
+34 tarainning loss : 4234.155388598172 validation loss : 100210.95638020833 
+EarlyStopping counter: 34 out of 100
+35 tarainning loss : 3935.6186339180426 validation loss : 115651.23958333333 
+EarlyStopping counter: 35 out of 100
+36 tarainning loss : 3672.8537827977593 validation loss : 115177.02213541667 
+EarlyStopping counter: 36 out of 100
+37 tarainning loss : 3418.209675339033 validation loss : 116729.32486979167 
+EarlyStopping counter: 37 out of 100
+38 tarainning loss : 3192.399980653007 validation loss : 119179.46875 
+EarlyStopping counter: 38 out of 100
+39 tarainning loss : 2995.318239607901 validation loss : 100400.11002604167 
+EarlyStopping counter: 39 out of 100
+40 tarainning loss : 2795.1520811836676 validation loss : 121975.07552083333 
+EarlyStopping counter: 40 out of 100
+41 tarainning loss : 2660.798666900059 validation loss : 119222.90104166667 
+EarlyStopping counter: 41 out of 100
+42 tarainning loss : 2459.676182009139 validation loss : 117814.12369791667 
+EarlyStopping counter: 42 out of 100
+43 tarainning loss : 2285.424648068986 validation loss : 114883.99088541667 
+EarlyStopping counter: 43 out of 100
+44 tarainning loss : 2144.3219754201064 validation loss : 126624.95182291667 
+EarlyStopping counter: 44 out of 100
+45 tarainning loss : 2004.5887082657723 validation loss : 121153.06901041667 
+EarlyStopping counter: 45 out of 100
+46 tarainning loss : 1865.9583625073703 validation loss : 129698.46028645833 
+EarlyStopping counter: 46 out of 100
+47 tarainning loss : 1744.7248396963444 validation loss : 127756.34635416667 
+EarlyStopping counter: 47 out of 100
+48 tarainning loss : 1632.8484900132664 validation loss : 129185.73372395833 
+EarlyStopping counter: 48 out of 100
+49 tarainning loss : 1548.8299445386203 validation loss : 97401.38346354167 
+EarlyStopping counter: 49 out of 100
+50 tarainning loss : 1455.00160533977 validation loss : 131526.73502604166 
+EarlyStopping counter: 50 out of 100
+51 tarainning loss : 1352.103925596993 validation loss : 136176.07942708334 
+EarlyStopping counter: 51 out of 100
+52 tarainning loss : 1267.0940102631191 validation loss : 126553.59765625 
+EarlyStopping counter: 52 out of 100
+53 tarainning loss : 1188.0817180129718 validation loss : 133335.20703125 
+EarlyStopping counter: 53 out of 100
+54 tarainning loss : 1115.2886847729953 validation loss : 130990.82682291667 
+EarlyStopping counter: 54 out of 100
+55 tarainning loss : 1049.4825566129864 validation loss : 132883.91145833334 
+EarlyStopping counter: 55 out of 100
+56 tarainning loss : 985.3121476083431 validation loss : 137519.40364583334 
+EarlyStopping counter: 56 out of 100
+57 tarainning loss : 928.1501556972288 validation loss : 138434.86067708334 
+EarlyStopping counter: 57 out of 100
+58 tarainning loss : 869.6904204746462 validation loss : 133908.17578125 
+EarlyStopping counter: 58 out of 100
+59 tarainning loss : 817.2552236880896 validation loss : 121963.626953125 
+EarlyStopping counter: 59 out of 100
+60 tarainning loss : 771.5611503169222 validation loss : 135842.00520833334 
+EarlyStopping counter: 60 out of 100
+61 tarainning loss : 719.7673408940153 validation loss : 138224.640625 
+EarlyStopping counter: 61 out of 100
+62 tarainning loss : 677.1145802623821 validation loss : 138564.63671875 
+EarlyStopping counter: 62 out of 100
+63 tarainning loss : 634.3317283774322 validation loss : 139996.09244791666 
+EarlyStopping counter: 63 out of 100
+64 tarainning loss : 595.8143805737766 validation loss : 140958.81901041666 
+EarlyStopping counter: 64 out of 100
+65 tarainning loss : 560.9054358140478 validation loss : 143483.29557291666 
+EarlyStopping counter: 65 out of 100
+66 tarainning loss : 527.5741375617262 validation loss : 136522.00390625 
+EarlyStopping counter: 66 out of 100
+67 tarainning loss : 502.19990913822966 validation loss : 126210.16276041667 
+EarlyStopping counter: 67 out of 100
+68 tarainning loss : 479.32098100770196 validation loss : 137658.28776041666 
+EarlyStopping counter: 68 out of 100
+69 tarainning loss : 447.81643791918486 validation loss : 129202.060546875 
+EarlyStopping counter: 69 out of 100
+70 tarainning loss : 415.0885366763709 validation loss : 145614.05208333334 
+EarlyStopping counter: 70 out of 100
+71 tarainning loss : 387.3917956082326 validation loss : 146525.5390625 
+EarlyStopping counter: 71 out of 100
+72 tarainning loss : 363.8072907069944 validation loss : 140441.12630208334 
+EarlyStopping counter: 72 out of 100
+73 tarainning loss : 341.0271474010539 validation loss : 139232.94140625 
+EarlyStopping counter: 73 out of 100
+74 tarainning loss : 320.69670479252653 validation loss : 145474.6640625 
+EarlyStopping counter: 74 out of 100
+75 tarainning loss : 300.26764146336967 validation loss : 139611.52604166666 
+EarlyStopping counter: 75 out of 100
+76 tarainning loss : 284.62268411888266 validation loss : 144722.75520833334 
+EarlyStopping counter: 76 out of 100
+77 tarainning loss : 268.53292155715656 validation loss : 145840.20572916666 
+EarlyStopping counter: 77 out of 100
+78 tarainning loss : 251.67181108582696 validation loss : 146055.68229166666 
+EarlyStopping counter: 78 out of 100
+79 tarainning loss : 235.1711160911704 validation loss : 145442.66276041666 
+EarlyStopping counter: 79 out of 100
+80 tarainning loss : 222.72979016573925 validation loss : 149948.13932291666 
+EarlyStopping counter: 80 out of 100
+81 tarainning loss : 205.2750580985591 validation loss : 147091.28125 
+EarlyStopping counter: 81 out of 100
+82 tarainning loss : 192.83208969404112 validation loss : 147679.31510416666 
+EarlyStopping counter: 82 out of 100
+83 tarainning loss : 182.70104087973542 validation loss : 147864.70572916666 
+EarlyStopping counter: 83 out of 100
+84 tarainning loss : 170.62246617731057 validation loss : 148353.11979166666 
+EarlyStopping counter: 84 out of 100
+85 tarainning loss : 158.43022357292895 validation loss : 149058.52083333334 
+EarlyStopping counter: 85 out of 100
+86 tarainning loss : 148.968526588296 validation loss : 145765.0234375 
+EarlyStopping counter: 86 out of 100
+87 tarainning loss : 139.21535506338444 validation loss : 147785.85286458334 
+EarlyStopping counter: 87 out of 100
+88 tarainning loss : 129.89413653679614 validation loss : 148892.40625 
+EarlyStopping counter: 88 out of 100
+89 tarainning loss : 122.09772793751843 validation loss : 146791.49088541666 
+EarlyStopping counter: 89 out of 100
+90 tarainning loss : 114.71716812421691 validation loss : 150487.66796875 
+EarlyStopping counter: 90 out of 100
+91 tarainning loss : 106.79868503786483 validation loss : 151303.98046875 
+EarlyStopping counter: 91 out of 100
+92 tarainning loss : 99.70586582399764 validation loss : 151011.46875 
+EarlyStopping counter: 92 out of 100
+93 tarainning loss : 92.68683350760982 validation loss : 150931.875 
+EarlyStopping counter: 93 out of 100
+94 tarainning loss : 88.61265362433667 validation loss : 137152.92317708334 
+EarlyStopping counter: 94 out of 100
+95 tarainning loss : 89.53727088784272 validation loss : 151211.44661458334 
+EarlyStopping counter: 95 out of 100
+96 tarainning loss : 78.4149044684644 validation loss : 146713.05729166666 
+EarlyStopping counter: 96 out of 100
+97 tarainning loss : 73.25063928568139 validation loss : 136366.71875 
+EarlyStopping counter: 97 out of 100
+98 tarainning loss : 67.61763122846496 validation loss : 152521.26822916666 
+EarlyStopping counter: 98 out of 100
+99 tarainning loss : 62.57229722220943 validation loss : 151714.82291666666 
+EarlyStopping counter: 99 out of 100
+100 tarainning loss : 58.70731029870375 validation loss : 152129.84244791666 
+EarlyStopping counter: 100 out of 100
+Early stopping
+
+
+Model loaded successfully with weights
+train dataset loaded successfully
+validate dataset loaded successfully
+Datasets loaded successfully
+Dataloaders loaded successfully
+-------------qrs---------------
+0 tarainning loss : 4229.10924141362 validation loss : 3124.8577168782554 
+Validation loss decreased (inf --> 3124.857717).  Saving model ...
+1 tarainning loss : 2382.2874502505897 validation loss : 4999.248860677083 
+EarlyStopping counter: 1 out of 100
+2 tarainning loss : 1902.4281213148586 validation loss : 2908.9005737304688 
+Validation loss decreased (3124.857717 --> 2908.900574).  Saving model ...
+3 tarainning loss : 1557.9620591649468 validation loss : 4556.986673990886 
+EarlyStopping counter: 1 out of 100
+4 tarainning loss : 1235.019229529039 validation loss : 3375.13525390625 
+EarlyStopping counter: 2 out of 100
+5 tarainning loss : 998.6912772700472 validation loss : 4937.6631266276045 
+EarlyStopping counter: 3 out of 100
+6 tarainning loss : 835.4802303674086 validation loss : 4281.948669433594 
+EarlyStopping counter: 4 out of 100
+7 tarainning loss : 666.5396360001474 validation loss : 4744.3069254557295 
+EarlyStopping counter: 5 out of 100
+8 tarainning loss : 549.7033265311763 validation loss : 5253.090006510417 
+EarlyStopping counter: 6 out of 100
+9 tarainning loss : 449.3107674076872 validation loss : 5342.949788411458 
+EarlyStopping counter: 7 out of 100
+10 tarainning loss : 340.49132782558223 validation loss : 6505.2751057942705 
+EarlyStopping counter: 8 out of 100
+11 tarainning loss : 285.41918830151826 validation loss : 5675.7697347005205 
+EarlyStopping counter: 9 out of 100
+12 tarainning loss : 213.43045850070018 validation loss : 5957.9840087890625 
+EarlyStopping counter: 10 out of 100
+13 tarainning loss : 155.34161132236696 validation loss : 6515.2055257161455 
+EarlyStopping counter: 11 out of 100
+14 tarainning loss : 117.5831520512419 validation loss : 6730.112955729167 
+EarlyStopping counter: 12 out of 100
+15 tarainning loss : 86.98386282291052 validation loss : 6782.950439453125 
+EarlyStopping counter: 13 out of 100
+16 tarainning loss : 56.102883176983525 validation loss : 7078.3421630859375 
+EarlyStopping counter: 14 out of 100
+17 tarainning loss : 41.08706503094367 validation loss : 7407.213704427083 
+EarlyStopping counter: 15 out of 100
+18 tarainning loss : 28.976600826911206 validation loss : 7443.489664713542 
+EarlyStopping counter: 16 out of 100
+19 tarainning loss : 17.855602282398152 validation loss : 7564.9013264973955 
+EarlyStopping counter: 17 out of 100
+20 tarainning loss : 11.458347554476756 validation loss : 7696.951009114583 
+EarlyStopping counter: 18 out of 100
+21 tarainning loss : 8.622884417479893 validation loss : 7718.734375 
+EarlyStopping counter: 19 out of 100
+22 tarainning loss : 4.829917363400729 validation loss : 7858.242919921875 
+EarlyStopping counter: 20 out of 100
+23 tarainning loss : 4.927330174536075 validation loss : 7810.2840576171875 
+EarlyStopping counter: 21 out of 100
+24 tarainning loss : 2.055978299311872 validation loss : 7947.040201822917 
+EarlyStopping counter: 22 out of 100
+25 tarainning loss : 2.0475512332511396 validation loss : 7922.598876953125 
+EarlyStopping counter: 23 out of 100
+26 tarainning loss : 0.8995886231368443 validation loss : 8063.6417236328125 
+EarlyStopping counter: 24 out of 100
+27 tarainning loss : 0.7299381621041388 validation loss : 8038.6063232421875 
+EarlyStopping counter: 25 out of 100
+28 tarainning loss : 0.533930149561954 validation loss : 8066.2294514973955 
+EarlyStopping counter: 26 out of 100
+29 tarainning loss : 1.2461246808041941 validation loss : 8037.7843831380205 
+EarlyStopping counter: 27 out of 100
+30 tarainning loss : 0.5004927253807491 validation loss : 8070.718017578125 
+EarlyStopping counter: 28 out of 100
+31 tarainning loss : 0.9446307825592329 validation loss : 8126.289957682292 
+EarlyStopping counter: 29 out of 100
+32 tarainning loss : 0.36354768002089466 validation loss : 8070.589192708333 
+EarlyStopping counter: 30 out of 100
+33 tarainning loss : 0.9841667689945338 validation loss : 8018.4482828776045 
+EarlyStopping counter: 31 out of 100
+34 tarainning loss : 0.49177687207482895 validation loss : 8137.9375406901045 
+EarlyStopping counter: 32 out of 100
+35 tarainning loss : 0.7839043905501658 validation loss : 8050.75439453125 
+EarlyStopping counter: 33 out of 100
+36 tarainning loss : 0.2542379300268191 validation loss : 8088.2073974609375 
+EarlyStopping counter: 34 out of 100
+37 tarainning loss : 1.4474486748705495 validation loss : 8273.928873697916 
+EarlyStopping counter: 35 out of 100
+38 tarainning loss : 0.19164075319356513 validation loss : 8126.000162760417 
+EarlyStopping counter: 36 out of 100
+39 tarainning loss : 0.6962658096245438 validation loss : 8018.1225992838545 
+EarlyStopping counter: 37 out of 100
+40 tarainning loss : 0.7732555483169151 validation loss : 8094.781819661458 
+EarlyStopping counter: 38 out of 100
+41 tarainning loss : 0.22465667761159394 validation loss : 8132.2473551432295 
+EarlyStopping counter: 39 out of 100
+42 tarainning loss : 1.256643845330713 validation loss : 8025.9276936848955 
+EarlyStopping counter: 40 out of 100
+43 tarainning loss : 0.575878716460517 validation loss : 8110.3692626953125 
+EarlyStopping counter: 41 out of 100
+44 tarainning loss : 0.9436454835154537 validation loss : 8145.375569661458 
+EarlyStopping counter: 42 out of 100
+45 tarainning loss : 0.27154827061689124 validation loss : 8090.328369140625 
+EarlyStopping counter: 43 out of 100
+46 tarainning loss : 0.3939416484450394 validation loss : 8105.103434244792 
+EarlyStopping counter: 44 out of 100
+47 tarainning loss : 0.15214995751684568 validation loss : 8133.33984375 
+EarlyStopping counter: 45 out of 100
+48 tarainning loss : 0.266617380469194 validation loss : 8101.4131266276045 
+EarlyStopping counter: 46 out of 100
+49 tarainning loss : 0.8998843019933633 validation loss : 8076.396565755208 
+EarlyStopping counter: 47 out of 100
+50 tarainning loss : 0.133266899805024 validation loss : 8168.087646484375 
+EarlyStopping counter: 48 out of 100
+51 tarainning loss : 0.4258753997713046 validation loss : 8153.34326171875 
+EarlyStopping counter: 49 out of 100
+52 tarainning loss : 0.20996683588216328 validation loss : 8131.947265625 
+EarlyStopping counter: 50 out of 100
+53 tarainning loss : 0.18617205861252997 validation loss : 8150.710774739583 
+EarlyStopping counter: 51 out of 100
+54 tarainning loss : 0.429122989891835 validation loss : 8175.3198649088545 
+EarlyStopping counter: 52 out of 100
+55 tarainning loss : 0.2343508920649875 validation loss : 8121.7626953125 
+EarlyStopping counter: 53 out of 100
+56 tarainning loss : 0.21656087014543 validation loss : 8110.3350016276045 
+EarlyStopping counter: 54 out of 100
+57 tarainning loss : 0.12098676547900124 validation loss : 8179.45361328125 
+EarlyStopping counter: 55 out of 100
+58 tarainning loss : 0.11369368472611005 validation loss : 8165.6943766276045 
+EarlyStopping counter: 56 out of 100
+59 tarainning loss : 0.3658186406037717 validation loss : 8065.709309895833 
+EarlyStopping counter: 57 out of 100
+60 tarainning loss : 0.9173911424388863 validation loss : 8034.763346354167 
+EarlyStopping counter: 58 out of 100
+61 tarainning loss : 0.3251518701677615 validation loss : 8115.62744140625 
+EarlyStopping counter: 59 out of 100
+62 tarainning loss : 0.28820190471509155 validation loss : 8138.7927652994795 
+EarlyStopping counter: 60 out of 100
+63 tarainning loss : 0.45131225927891033 validation loss : 8128.898111979167 
+EarlyStopping counter: 61 out of 100
+64 tarainning loss : 0.10120406797823478 validation loss : 8157.0134684244795 
+EarlyStopping counter: 62 out of 100
+65 tarainning loss : 0.43302770516009265 validation loss : 8115.756673177083 
+EarlyStopping counter: 63 out of 100
+66 tarainning loss : 0.09360714262035096 validation loss : 8159.970133463542 
+EarlyStopping counter: 64 out of 100
+67 tarainning loss : 0.18722707309039696 validation loss : 8115.027913411458 
+EarlyStopping counter: 65 out of 100
+68 tarainning loss : 0.1783823471973246 validation loss : 8106.342366536458 
+EarlyStopping counter: 66 out of 100
+69 tarainning loss : 0.12549391590972553 validation loss : 8140.92041015625 
+EarlyStopping counter: 67 out of 100
+70 tarainning loss : 0.2063789507022725 validation loss : 8209.217610677084 
+EarlyStopping counter: 68 out of 100
+71 tarainning loss : 0.08529533781462682 validation loss : 8178.976481119792 
+EarlyStopping counter: 69 out of 100
+72 tarainning loss : 0.4575869895623259 validation loss : 8194.377156575521 
+EarlyStopping counter: 70 out of 100
+73 tarainning loss : 0.24859615153510053 validation loss : 8078.4595947265625 
+EarlyStopping counter: 71 out of 100
+74 tarainning loss : 0.10893311147701065 validation loss : 8152.5621337890625 
+EarlyStopping counter: 72 out of 100
+75 tarainning loss : 0.17702240832501426 validation loss : 8110.0078125 
+EarlyStopping counter: 73 out of 100
+76 tarainning loss : 0.1569308676001317 validation loss : 8127.4781494140625 
+EarlyStopping counter: 74 out of 100
+77 tarainning loss : 0.3173927953993937 validation loss : 8132.489827473958 
+EarlyStopping counter: 75 out of 100
+78 tarainning loss : 0.20460824239647613 validation loss : 8216.826293945312 
+EarlyStopping counter: 76 out of 100
+79 tarainning loss : 0.1419041147279852 validation loss : 8149.934814453125 
+EarlyStopping counter: 77 out of 100
+80 tarainning loss : 0.1308557280813748 validation loss : 8159.720133463542 
+EarlyStopping counter: 78 out of 100
+81 tarainning loss : 0.04817898664623499 validation loss : 8190.7183837890625 
+EarlyStopping counter: 79 out of 100
+82 tarainning loss : 0.04951516127670711 validation loss : 8177.488362630208 
+EarlyStopping counter: 80 out of 100
+83 tarainning loss : 0.1645272267314623 validation loss : 8123.59375 
+EarlyStopping counter: 81 out of 100
+84 tarainning loss : 0.06995276500523653 validation loss : 8115.0389404296875 
+EarlyStopping counter: 82 out of 100
+85 tarainning loss : 0.039320949236598776 validation loss : 8186.1825764973955 
+EarlyStopping counter: 83 out of 100
+86 tarainning loss : 0.03082834811494598 validation loss : 8186.015869140625 
+EarlyStopping counter: 84 out of 100
+87 tarainning loss : 0.10377386894147352 validation loss : 8176.886311848958 
+EarlyStopping counter: 85 out of 100
+88 tarainning loss : 0.07252474014981175 validation loss : 8144.478190104167 
+EarlyStopping counter: 86 out of 100
+89 tarainning loss : 0.08035251025532214 validation loss : 8110.123942057292 
+EarlyStopping counter: 87 out of 100
+90 tarainning loss : 0.05637937566300608 validation loss : 8203.404703776041 
+EarlyStopping counter: 88 out of 100
+91 tarainning loss : 0.9431452492322281 validation loss : 7980.886637369792 
+EarlyStopping counter: 89 out of 100
+92 tarainning loss : 0.08818797551025197 validation loss : 8185.8677164713545 
+EarlyStopping counter: 90 out of 100
+93 tarainning loss : 0.21739465906724054 validation loss : 8419.036458333334 
+EarlyStopping counter: 91 out of 100
+94 tarainning loss : 0.16355446922891545 validation loss : 8104.289388020833 
+EarlyStopping counter: 92 out of 100
+95 tarainning loss : 0.13808051270063756 validation loss : 8178.909912109375 
+EarlyStopping counter: 93 out of 100
+96 tarainning loss : 0.2596899073324957 validation loss : 8111.158284505208 
+EarlyStopping counter: 94 out of 100
+97 tarainning loss : 0.11987109491074423 validation loss : 8169.240397135417 
+EarlyStopping counter: 95 out of 100
+98 tarainning loss : 0.0837276775987362 validation loss : 8283.737426757812 
+EarlyStopping counter: 96 out of 100
+99 tarainning loss : 0.0626999324995954 validation loss : 8162.834228515625 
+EarlyStopping counter: 97 out of 100
+100 tarainning loss : 0.19399305090378477 validation loss : 8129.816569010417 
+EarlyStopping counter: 98 out of 100
+101 tarainning loss : 0.03757633330335595 validation loss : 8191.5970458984375 
+EarlyStopping counter: 99 out of 100
+102 tarainning loss : 0.03539556198981854 validation loss : 8172.8058675130205 
+EarlyStopping counter: 100 out of 100
+Early stopping
+
+
+Model loaded successfully with weights
+train dataset loaded successfully
+validate dataset loaded successfully
+Datasets loaded successfully
+Dataloaders loaded successfully
+-------------hr---------------
+0 tarainning loss : 4.9443504180548326 validation loss : 7.884200345724821 
+Validation loss decreased (inf --> 7.884200).  Saving model ...
+1 tarainning loss : 2.555411111633733 validation loss : 4.64353362719218 
+Validation loss decreased (7.884200 --> 4.643534).  Saving model ...
+2 tarainning loss : 2.779700625336395 validation loss : 2.960500734547774 
+Validation loss decreased (4.643534 --> 2.960501).  Saving model ...
+3 tarainning loss : 1.741406888894315 validation loss : 3.8884348471959433 
+EarlyStopping counter: 1 out of 100
+4 tarainning loss : 0.6321461741935532 validation loss : 1.098087653517723 
+Validation loss decreased (2.960501 --> 1.098088).  Saving model ...
+5 tarainning loss : 0.43284504368620097 validation loss : 1.7191740026076634 
+EarlyStopping counter: 1 out of 100
+6 tarainning loss : 0.9825327029486872 validation loss : 0.6807178948074579 
+Validation loss decreased (1.098088 --> 0.680718).  Saving model ...
+7 tarainning loss : 0.8424386652010791 validation loss : 18.527621428171795 
+EarlyStopping counter: 1 out of 100
+8 tarainning loss : 0.534418485918135 validation loss : 0.776811512808005 
+EarlyStopping counter: 2 out of 100
+9 tarainning loss : 0.28666855619763426 validation loss : 0.6446321345865726 
+Validation loss decreased (0.680718 --> 0.644632).  Saving model ...
+10 tarainning loss : 0.24635164748947574 validation loss : 0.2917756177484989 
+Validation loss decreased (0.644632 --> 0.291776).  Saving model ...
+11 tarainning loss : 0.4495446770539824 validation loss : 0.712112565835317 
+EarlyStopping counter: 1 out of 100
+12 tarainning loss : 0.19977455554565168 validation loss : 0.3621238513539235 
+EarlyStopping counter: 2 out of 100
+13 tarainning loss : 0.17406311398372054 validation loss : 0.301983122403423 
+EarlyStopping counter: 3 out of 100
+14 tarainning loss : 0.21139133278772515 validation loss : 0.6484357118606567 
+EarlyStopping counter: 4 out of 100
+15 tarainning loss : 0.15069294446763 validation loss : 0.24208329617977142 
+Validation loss decreased (0.291776 --> 0.242083).  Saving model ...
+16 tarainning loss : 0.1298120139201857 validation loss : 0.324368877025942 
+EarlyStopping counter: 1 out of 100
+17 tarainning loss : 0.19901995079697304 validation loss : 0.46843286355336505 
+EarlyStopping counter: 2 out of 100
+18 tarainning loss : 0.22783229331362922 validation loss : 0.2922591604292393 
+EarlyStopping counter: 3 out of 100
+19 tarainning loss : 0.12918991279208436 validation loss : 0.24501735406617323 
+EarlyStopping counter: 4 out of 100
+20 tarainning loss : 0.12525476086533294 validation loss : 0.2573854960501194 
+EarlyStopping counter: 5 out of 100
+21 tarainning loss : 0.5472783983316062 validation loss : 1.6805500984191895 
+EarlyStopping counter: 6 out of 100
+22 tarainning loss : 0.46522645005639995 validation loss : 0.5825308362642924 
+EarlyStopping counter: 7 out of 100
+23 tarainning loss : 0.4655840381417634 validation loss : 0.3386453961332639 
+EarlyStopping counter: 8 out of 100
+24 tarainning loss : 0.18647700147527568 validation loss : 0.2582210923234622 
+EarlyStopping counter: 9 out of 100
+25 tarainning loss : 0.13519800159166445 validation loss : 0.17650189840545258 
+Validation loss decreased (0.242083 --> 0.176502).  Saving model ...
+26 tarainning loss : 0.4713954142523262 validation loss : 1.145887220899264 
+EarlyStopping counter: 1 out of 100
+27 tarainning loss : 0.1437152643811028 validation loss : 0.13359652583797774 
+Validation loss decreased (0.176502 --> 0.133597).  Saving model ...
+28 tarainning loss : 0.1194926640897427 validation loss : 0.17788498972853026 
+EarlyStopping counter: 1 out of 100
+29 tarainning loss : 0.10011394111052999 validation loss : 0.5829660271604856 
+EarlyStopping counter: 2 out of 100
+30 tarainning loss : 0.0957745224378019 validation loss : 0.08824210117260615 
+Validation loss decreased (0.133597 --> 0.088242).  Saving model ...
+31 tarainning loss : 0.2635243722009209 validation loss : 0.42410049587488174 
+EarlyStopping counter: 1 out of 100
+32 tarainning loss : 0.1318887801102872 validation loss : 0.29765787596503895 
+EarlyStopping counter: 2 out of 100
+33 tarainning loss : 0.1349349721282158 validation loss : 0.5261749352018038 
+EarlyStopping counter: 3 out of 100
+34 tarainning loss : 0.09216029703054789 validation loss : 0.18806394189596176 
+EarlyStopping counter: 4 out of 100
+35 tarainning loss : 0.2426531256861844 validation loss : 0.2605106669167678 
+EarlyStopping counter: 5 out of 100
+36 tarainning loss : 0.11739581218867931 validation loss : 0.20519637751082578 
+EarlyStopping counter: 6 out of 100
+37 tarainning loss : 0.1032733808289159 validation loss : 0.11420198157429695 
+EarlyStopping counter: 7 out of 100
+38 tarainning loss : 0.1986683930428523 validation loss : 0.2394073512405157 
+EarlyStopping counter: 8 out of 100
+39 tarainning loss : 0.12066555613616728 validation loss : 0.7235578348239263 
+EarlyStopping counter: 9 out of 100
+40 tarainning loss : 1.0048463743109748 validation loss : 1.082555964589119 
+EarlyStopping counter: 10 out of 100
+41 tarainning loss : 0.9976705929861879 validation loss : 16.818276564280193 
+EarlyStopping counter: 11 out of 100
+42 tarainning loss : 1.0175806591814418 validation loss : 33.83761898676554 
+EarlyStopping counter: 12 out of 100
+43 tarainning loss : 0.7148692096179387 validation loss : 4.678096294403076 
+EarlyStopping counter: 13 out of 100
+44 tarainning loss : 0.25629793402721296 validation loss : 0.5336426546176275 
+EarlyStopping counter: 14 out of 100
+45 tarainning loss : 0.8672781972530877 validation loss : 0.1355376704595983 
+EarlyStopping counter: 15 out of 100
+46 tarainning loss : 1.0211453599468716 validation loss : 16.367348194122314 
+EarlyStopping counter: 16 out of 100
+47 tarainning loss : 0.6648370925829096 validation loss : 9.107103029886881 
+EarlyStopping counter: 17 out of 100
+48 tarainning loss : 0.26680149510502815 validation loss : 0.300292182713747 
+EarlyStopping counter: 18 out of 100
+49 tarainning loss : 0.7693061128539859 validation loss : 1.6465943257013957 
+EarlyStopping counter: 19 out of 100
+50 tarainning loss : 0.9248506267959217 validation loss : 0.8696271330118179 
+EarlyStopping counter: 20 out of 100
+51 tarainning loss : 0.22579165182585986 validation loss : 0.876626213391622 
+EarlyStopping counter: 21 out of 100
+52 tarainning loss : 0.19127640957539938 validation loss : 0.27922483161091805 
+EarlyStopping counter: 22 out of 100
+53 tarainning loss : 0.1769680876355126 validation loss : 0.7353702187538147 
+EarlyStopping counter: 23 out of 100
+54 tarainning loss : 0.11220222816995855 validation loss : 0.1659764392922322 
+EarlyStopping counter: 24 out of 100
+55 tarainning loss : 0.08530604607372913 validation loss : 0.26194349117577076 
+EarlyStopping counter: 25 out of 100
+56 tarainning loss : 0.07257122613208473 validation loss : 0.14841593150049448 
+EarlyStopping counter: 26 out of 100
+57 tarainning loss : 0.11610322403457929 validation loss : 1.3090215126673381 
+EarlyStopping counter: 27 out of 100
+58 tarainning loss : 0.5745321270429863 validation loss : 5.920793890953064 
+EarlyStopping counter: 28 out of 100
+59 tarainning loss : 1.0956327431606796 validation loss : 0.42391375700632733 
+EarlyStopping counter: 29 out of 100
+60 tarainning loss : 0.12774041843301845 validation loss : 0.16477813882132372 
+EarlyStopping counter: 30 out of 100
+61 tarainning loss : 0.15827321057330887 validation loss : 0.17607257422059774 
+EarlyStopping counter: 31 out of 100
+62 tarainning loss : 0.12574952798631955 validation loss : 0.6234503611922264 
+EarlyStopping counter: 32 out of 100
+63 tarainning loss : 0.4676834882570888 validation loss : 0.1354547537242373 
+EarlyStopping counter: 33 out of 100
+64 tarainning loss : 0.19598372477405476 validation loss : 4.491904258728027 
+EarlyStopping counter: 34 out of 100
+65 tarainning loss : 0.10526128759923971 validation loss : 0.15870482753962278 
+EarlyStopping counter: 35 out of 100
+66 tarainning loss : 0.09626484310851907 validation loss : 1.1687880158424377 
+EarlyStopping counter: 36 out of 100
+67 tarainning loss : 0.08232493853231646 validation loss : 0.20658821115891138 
+EarlyStopping counter: 37 out of 100
+68 tarainning loss : 0.07722094735868697 validation loss : 0.1757205156609416 
+EarlyStopping counter: 38 out of 100
+69 tarainning loss : 0.05923655871653332 validation loss : 0.2182073543469111 
+EarlyStopping counter: 39 out of 100
+70 tarainning loss : 0.3431951347387062 validation loss : 48.9098227818807 
+EarlyStopping counter: 40 out of 100
+71 tarainning loss : 0.1654551272403519 validation loss : 0.5538559469083945 
+EarlyStopping counter: 41 out of 100
+72 tarainning loss : 0.10222321811993167 validation loss : 0.7276087005933126 
+EarlyStopping counter: 42 out of 100
+73 tarainning loss : 0.07952431912692089 validation loss : 0.2005112785845995 
+EarlyStopping counter: 43 out of 100
+74 tarainning loss : 0.07396555038274459 validation loss : 0.14776804484426975 
+EarlyStopping counter: 44 out of 100
+75 tarainning loss : 0.08560675080373602 validation loss : 0.9476765791575114 
+EarlyStopping counter: 45 out of 100
+76 tarainning loss : 0.07441974592939862 validation loss : 0.7829318642616272 
+EarlyStopping counter: 46 out of 100
+77 tarainning loss : 0.06829696960466088 validation loss : 0.1552510652691126 
+EarlyStopping counter: 47 out of 100
+78 tarainning loss : 0.06611291276958753 validation loss : 1.479471762975057 
+EarlyStopping counter: 48 out of 100
+79 tarainning loss : 0.08218640686487252 validation loss : 0.4219237094124158 
+EarlyStopping counter: 49 out of 100
+80 tarainning loss : 0.06607333078699291 validation loss : 0.18790210348864397 
+EarlyStopping counter: 50 out of 100
+81 tarainning loss : 0.06575948010497498 validation loss : 0.9560081213712692 
+EarlyStopping counter: 51 out of 100
+82 tarainning loss : 0.14530094414246533 validation loss : 0.5516997451583544 
+EarlyStopping counter: 52 out of 100
+83 tarainning loss : 0.13749907861621874 validation loss : 0.8266955117384592 
+EarlyStopping counter: 53 out of 100
+84 tarainning loss : 0.09493339585386357 validation loss : 0.37293292830387753 
+EarlyStopping counter: 54 out of 100
+85 tarainning loss : 0.11409791344601028 validation loss : 0.3055102402965228 
+EarlyStopping counter: 55 out of 100
+86 tarainning loss : 0.06388464661420516 validation loss : 0.156358170012633 
+EarlyStopping counter: 56 out of 100
+87 tarainning loss : 0.05253029214042538 validation loss : 0.12066502201681335 
+EarlyStopping counter: 57 out of 100
+88 tarainning loss : 0.12122122082367258 validation loss : 2.476865847905477 
+EarlyStopping counter: 58 out of 100
+89 tarainning loss : 0.5976691667060807 validation loss : 0.7747471133867899 
+EarlyStopping counter: 59 out of 100
+90 tarainning loss : 0.2709618115200187 validation loss : 1.3537900745868683 
+EarlyStopping counter: 60 out of 100
+91 tarainning loss : 0.10740651914252425 validation loss : 0.17652197430531183 
+EarlyStopping counter: 61 out of 100
+92 tarainning loss : 0.10543018600569581 validation loss : 0.17108953185379505 
+EarlyStopping counter: 62 out of 100
+93 tarainning loss : 0.10669105535127082 validation loss : 0.15247677732259035 
+EarlyStopping counter: 63 out of 100
+94 tarainning loss : 0.11582480283137762 validation loss : 0.6136089563369751 
+EarlyStopping counter: 64 out of 100
+95 tarainning loss : 0.18579567687691384 validation loss : 5.442035714785258 
+EarlyStopping counter: 65 out of 100
+96 tarainning loss : 0.20158230105660996 validation loss : 0.6885938594738642 
+EarlyStopping counter: 66 out of 100
+97 tarainning loss : 0.10215889395407911 validation loss : 0.3712787131468455 
+EarlyStopping counter: 67 out of 100
+98 tarainning loss : 0.08428692466245508 validation loss : 0.1863037496805191 
+EarlyStopping counter: 68 out of 100
+99 tarainning loss : 0.0665407897025909 validation loss : 0.7523143117626508 
+EarlyStopping counter: 69 out of 100
+100 tarainning loss : 0.08347690175726728 validation loss : 2.603133042653402 
+EarlyStopping counter: 70 out of 100
+101 tarainning loss : 0.09105206660504611 validation loss : 0.9317725598812103 
+EarlyStopping counter: 71 out of 100
+102 tarainning loss : 0.28095407168960795 validation loss : 2.4597375790278115 
+EarlyStopping counter: 72 out of 100
+103 tarainning loss : 0.14545473906229128 validation loss : 0.4128183200955391 
+EarlyStopping counter: 73 out of 100
+104 tarainning loss : 0.08213174227133112 validation loss : 0.3427567705512047 
+EarlyStopping counter: 74 out of 100
+105 tarainning loss : 0.06365564026219665 validation loss : 0.17859977359573045 
+EarlyStopping counter: 75 out of 100
+106 tarainning loss : 0.2401796958567399 validation loss : 4.193353712558746 
+EarlyStopping counter: 76 out of 100
+107 tarainning loss : 0.14243809903427115 validation loss : 0.1223845803954949 
+EarlyStopping counter: 77 out of 100
+108 tarainning loss : 0.07383774108481857 validation loss : 0.1811871180931727 
+EarlyStopping counter: 78 out of 100
+109 tarainning loss : 0.05932787651160978 validation loss : 0.23033304450412592 
+EarlyStopping counter: 79 out of 100
+110 tarainning loss : 0.08196174613428565 validation loss : 1.4463298817475636 
+EarlyStopping counter: 80 out of 100
+111 tarainning loss : 0.08872194932597988 validation loss : 0.1999086830765009 
+EarlyStopping counter: 81 out of 100
+112 tarainning loss : 0.05196649974809503 validation loss : 0.11729765497148037 
+EarlyStopping counter: 82 out of 100
+113 tarainning loss : 0.05061685494235102 validation loss : 0.13497062027454376 
+EarlyStopping counter: 83 out of 100
+114 tarainning loss : 0.04752336230726456 validation loss : 0.1727051017805934 
+EarlyStopping counter: 84 out of 100
+115 tarainning loss : 0.10799518716082258 validation loss : 0.5858799492319425 
+EarlyStopping counter: 85 out of 100
+116 tarainning loss : 0.09618152692070547 validation loss : 0.1921826812128226 
+EarlyStopping counter: 86 out of 100
+117 tarainning loss : 0.05897796846363904 validation loss : 0.2118523040165504 
+EarlyStopping counter: 87 out of 100
+118 tarainning loss : 0.04852274292201366 validation loss : 0.5699732974171638 
+EarlyStopping counter: 88 out of 100
+119 tarainning loss : 0.05254041719830261 validation loss : 0.2485093263288339 
+EarlyStopping counter: 89 out of 100
+120 tarainning loss : 0.04635745547008964 validation loss : 0.2808333598077297 
+EarlyStopping counter: 90 out of 100
+121 tarainning loss : 0.044929171367636266 validation loss : 0.5089887157082558 
+EarlyStopping counter: 91 out of 100
+122 tarainning loss : 0.04937138348677248 validation loss : 0.14350791989515224 
+EarlyStopping counter: 92 out of 100
+123 tarainning loss : 0.049267901810553835 validation loss : 0.15019279470046362 
+EarlyStopping counter: 93 out of 100
+124 tarainning loss : 0.049517191805929506 validation loss : 0.8590715775887171 
+EarlyStopping counter: 94 out of 100
+125 tarainning loss : 0.054744217825948065 validation loss : 0.19970504567027092 
+EarlyStopping counter: 95 out of 100
+126 tarainning loss : 0.05828750295177946 validation loss : 1.2264431814352672 
+EarlyStopping counter: 96 out of 100
+127 tarainning loss : 0.05871722548497173 validation loss : 0.25177741423249245 
+EarlyStopping counter: 97 out of 100
+128 tarainning loss : 0.04561968003663252 validation loss : 0.30665307740370434 
+EarlyStopping counter: 98 out of 100
+129 tarainning loss : 0.0423619307155879 validation loss : 0.22879308834671974 
+EarlyStopping counter: 99 out of 100
+130 tarainning loss : 0.03707850123492052 validation loss : 0.13765092302734652 
+EarlyStopping counter: 100 out of 100
+Early stopping
+
+

@@ -1,0 +1,25 @@
+GPU memory is free enough. Running Python script...
+-------------pr---------------
+/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/nn/modules/conv.py:309: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /opt/conda/conda-bld/pytorch_1682343970094/work/aten/src/ATen/native/Convolution.cpp:1003.)
+  return F.conv1d(input, weight, bias, self.stride,
+0 tarainning loss : 0.014217657526405376 validation loss : 0.0181888208251583 Real validation loss : 167.6281713915121
+Validation loss decreased (inf --> 0.018189).  Saving model ...
+1 tarainning loss : 0.006513502054626397 validation loss : 0.007260313197234109 Real validation loss : 66.91104660233903
+Validation loss decreased (0.018189 --> 0.007260).  Saving model ...
+2 tarainning loss : 0.006001700927678984 validation loss : 0.014942363913887771 Real validation loss : 137.7088254758825
+EarlyStopping counter: 1 out of 50
+3 tarainning loss : 0.0057097387790573054 validation loss : 0.005269582385467902 Real validation loss : 48.56447125979119
+Validation loss decreased (0.007260 --> 0.005270).  Saving model ...
+4 tarainning loss : 0.005478588570916995 validation loss : 0.018539677805593967 Real validation loss : 170.8616732851997
+EarlyStopping counter: 1 out of 50
+5 tarainning loss : 0.005291479940862074 validation loss : 0.013628414711373717 Real validation loss : 125.59946807142327
+EarlyStopping counter: 2 out of 50
+6 tarainning loss : 0.0051519922977389734 validation loss : 0.0056282080431390765 Real validation loss : 51.86956548441143
+EarlyStopping counter: 3 out of 50
+7 tarainning loss : 0.005060680185971385 validation loss : 0.005167630800358093 Real validation loss : 47.62488568890157
+Validation loss decreased (0.005270 --> 0.005168).  Saving model ...
+8 tarainning loss : 0.004961527410482408 validation loss : 0.005168659721332948 Real validation loss : 47.634367628247325
+EarlyStopping counter: 1 out of 50
+9 tarainning loss : 0.004872501635672067 validation loss : 0.0059853005634391615 Real validation loss : 55.160527953302676
+EarlyStopping counter: 2 out of 50
+./script.sh: line 24: 581619 Killed                  python Main.py

@@ -5,9 +5,10 @@ from torch import nn
 import torch
 
 class KanResWide_X2(nn.Module):
+    
     def __init__(self, input_shape, output_size):
         super(KanResWide_X2, self).__init__()
-
+        #print("KanResWide_X2 1")
         #print(input_shape[0])
         #print(input_shape[1])
 
@@ -30,6 +31,11 @@ class KanResWide_X2(nn.Module):
         
         self.global_avg_pool = nn.AdaptiveAvgPool1d(1)
         self.fc = nn.Linear(32, output_size)
+        #self.fc = nn.Linear(32, 16)
+        #self.fc2 = nn.Linear(16, 8)
+        #self.fc3 = nn.Linear(8, 1)
+
+        #print("KanResWide_X2 2")
         
     def forward(self, x):
         x = self.init_block(x)
@@ -46,9 +52,12 @@ class KanResWide_X2(nn.Module):
         #q: explain the above line
         #a: it flattens the input
         x = self.fc(x)
+        #x = self.fc2(x)
+        #x = self.fc3(x)
         #print(x.shape)
         # squeeze the output
         x = torch.squeeze(x)
         #print(x.shape)
+        #print("model X output up")
         return x
 

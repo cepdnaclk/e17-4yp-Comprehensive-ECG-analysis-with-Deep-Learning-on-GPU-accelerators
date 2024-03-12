@@ -3,7 +3,7 @@ import torch
 
 class EarlyStopping:
     """Early stops the training if validation loss doesn't improve after a given patience."""
-    def __init__(self, patience=7, verbose=False, delta=0, path='checkpoints/', trace_func=print):
+    def __init__(self, patience=7, verbose=False, delta=0, path='cp_test/PTBXL/', trace_func=print):
         """
         Args:
             patience (int): How long to wait after last time validation loss improved.
@@ -47,5 +47,6 @@ class EarlyStopping:
         '''Saves model when validation loss decrease.'''
         if self.verbose:
             self.trace_func(f'Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ...')
+        #print(self.path+filename+'.pt')
         torch.save(model.state_dict(), self.path+filename+'.pt')
         self.val_loss_min = val_loss

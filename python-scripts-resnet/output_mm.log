@@ -1,0 +1,979 @@
+GPU memory is free enough. Running Python script...
+-------------pr---------------
+/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/nn/modules/conv.py:309: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /opt/conda/conda-bld/pytorch_1682343970094/work/aten/src/ATen/native/Convolution.cpp:1003.)
+  return F.conv1d(input, weight, bias, self.stride,
+0 tarainning loss : 0.011793572845273331 validation loss : 0.00827332064680053 Real validation loss : 76.24692233819611
+Validation loss decreased (inf --> 0.008273).  Saving model ...
+1 tarainning loss : 0.0063525804767736276 validation loss : 0.00595555848719952 Real validation loss : 54.88642679583964
+Validation loss decreased (0.008273 --> 0.005956).  Saving model ...
+2 tarainning loss : 0.005952274175742489 validation loss : 0.005868217934664163 Real validation loss : 54.08149669058036
+Validation loss decreased (0.005956 --> 0.005868).  Saving model ...
+3 tarainning loss : 0.005663906114069042 validation loss : 0.01784272814725394 Real validation loss : 164.43858379344042
+EarlyStopping counter: 1 out of 50
+4 tarainning loss : 0.00544999566494075 validation loss : 0.005472331424853253 Real validation loss : 50.43300620173908
+Validation loss decreased (0.005868 --> 0.005472).  Saving model ...
+5 tarainning loss : 0.0052681916283031345 validation loss : 0.0053692596851170294 Real validation loss : 49.483097875305496
+Validation loss decreased (0.005472 --> 0.005369).  Saving model ...
+6 tarainning loss : 0.005148998837055425 validation loss : 0.005427026854832876 Real validation loss : 50.015479667024465
+EarlyStopping counter: 1 out of 50
+7 tarainning loss : 0.005001692370565028 validation loss : 0.0049360622408073295 Real validation loss : 45.49074963125259
+Validation loss decreased (0.005369 --> 0.004936).  Saving model ...
+8 tarainning loss : 0.004941793733016878 validation loss : 0.005544070389087639 Real validation loss : 51.09415372878469
+EarlyStopping counter: 1 out of 50
+9 tarainning loss : 0.004843693301921375 validation loss : 0.0054165515366025 Real validation loss : 49.91893872415832
+EarlyStopping counter: 2 out of 50
+10 tarainning loss : 0.004806378470756663 validation loss : 0.007262557414019022 Real validation loss : 66.93172912198212
+EarlyStopping counter: 3 out of 50
+11 tarainning loss : 0.0047327250565142665 validation loss : 0.005186714569023806 Real validation loss : 47.800761547388205
+EarlyStopping counter: 4 out of 50
+12 tarainning loss : 0.004688631535515372 validation loss : 0.004793203175579885 Real validation loss : 44.174161087155966
+Validation loss decreased (0.004936 --> 0.004793).  Saving model ...
+13 tarainning loss : 0.004639689363081192 validation loss : 0.004909645969899011 Real validation loss : 45.24729797353295
+EarlyStopping counter: 1 out of 50
+14 tarainning loss : 0.00459513673055001 validation loss : 0.004924807139533372 Real validation loss : 45.387023236739076
+EarlyStopping counter: 2 out of 50
+15 tarainning loss : 0.0045591160786704575 validation loss : 0.004866907370327947 Real validation loss : 44.853417990719464
+EarlyStopping counter: 3 out of 50
+16 tarainning loss : 0.004504827679016582 validation loss : 0.00855025855083194 Real validation loss : 78.79918088463589
+EarlyStopping counter: 4 out of 50
+17 tarainning loss : 0.004462656924104105 validation loss : 0.005602798484392582 Real validation loss : 51.635391465032285
+EarlyStopping counter: 5 out of 50
+18 tarainning loss : 0.004426047507726938 validation loss : 0.004980253707861323 Real validation loss : 45.89801868718332
+EarlyStopping counter: 6 out of 50
+19 tarainning loss : 0.004377286237794295 validation loss : 0.00482497677049741 Real validation loss : 44.466986533859014
+EarlyStopping counter: 7 out of 50
+20 tarainning loss : 0.004328344311168204 validation loss : 0.004930273104637023 Real validation loss : 45.43739784700084
+EarlyStopping counter: 8 out of 50
+21 tarainning loss : 0.004283708231676309 validation loss : 0.00529402032212954 Real validation loss : 48.78969052199918
+EarlyStopping counter: 9 out of 50
+22 tarainning loss : 0.004220605059870382 validation loss : 0.0052304803046363734 Real validation loss : 48.20410849286624
+EarlyStopping counter: 10 out of 50
+23 tarainning loss : 0.004179166762700274 validation loss : 0.005014504843296396 Real validation loss : 46.213676794661275
+EarlyStopping counter: 11 out of 50
+24 tarainning loss : 0.004147077468796404 validation loss : 0.005250037020299077 Real validation loss : 48.38434141967933
+EarlyStopping counter: 12 out of 50
+25 tarainning loss : 0.004076517447390304 validation loss : 0.004896613302352931 Real validation loss : 45.12718753664905
+EarlyStopping counter: 13 out of 50
+26 tarainning loss : 0.0040166773625695314 validation loss : 0.005302518489465839 Real validation loss : 48.8680099766916
+EarlyStopping counter: 14 out of 50
+27 tarainning loss : 0.003965527353709045 validation loss : 0.004858297824003875 Real validation loss : 44.77407319133818
+EarlyStopping counter: 15 out of 50
+28 tarainning loss : 0.00391093866701131 validation loss : 0.005668853468710254 Real validation loss : 52.24415361694017
+EarlyStopping counter: 16 out of 50
+29 tarainning loss : 0.003850159739892258 validation loss : 0.005061655415036759 Real validation loss : 46.648215985422986
+EarlyStopping counter: 17 out of 50
+30 tarainning loss : 0.0037892745076449678 validation loss : 0.0064249406995359045 Real validation loss : 59.21225417471681
+EarlyStopping counter: 18 out of 50
+31 tarainning loss : 0.003734051520501065 validation loss : 0.005634623361478379 Real validation loss : 51.92868993169974
+EarlyStopping counter: 19 out of 50
+32 tarainning loss : 0.003656289120487197 validation loss : 0.005250709068276359 Real validation loss : 48.390535254753075
+EarlyStopping counter: 20 out of 50
+33 tarainning loss : 0.003585030258762971 validation loss : 0.005086187808408709 Real validation loss : 46.87430615450075
+EarlyStopping counter: 21 out of 50
+34 tarainning loss : 0.0035226734012334805 validation loss : 0.005056792188738107 Real validation loss : 46.60339605621019
+EarlyStopping counter: 22 out of 50
+35 tarainning loss : 0.003460360523962156 validation loss : 0.005320974128291557 Real validation loss : 49.038097930828314
+EarlyStopping counter: 23 out of 50
+36 tarainning loss : 0.003371544812489148 validation loss : 0.005810032034882818 Real validation loss : 53.545255176683995
+EarlyStopping counter: 24 out of 50
+37 tarainning loss : 0.0033055447664142386 validation loss : 0.005336516201544884 Real validation loss : 49.181332188751064
+EarlyStopping counter: 25 out of 50
+38 tarainning loss : 0.0032273426376374773 validation loss : 0.0063481901014096915 Real validation loss : 58.504919965853865
+EarlyStopping counter: 26 out of 50
+39 tarainning loss : 0.0031390551679584457 validation loss : 0.005387530642310499 Real validation loss : 49.65148235490809
+EarlyStopping counter: 27 out of 50
+40 tarainning loss : 0.0030712090229585032 validation loss : 0.007132207677962931 Real validation loss : 65.73042684325372
+EarlyStopping counter: 28 out of 50
+41 tarainning loss : 0.002988980299045072 validation loss : 0.005449251120627239 Real validation loss : 50.22029886195797
+EarlyStopping counter: 29 out of 50
+42 tarainning loss : 0.002911496466392132 validation loss : 0.006015008912758209 Real validation loss : 55.43432273665024
+EarlyStopping counter: 30 out of 50
+43 tarainning loss : 0.0028381490913128144 validation loss : 0.006191410221822599 Real validation loss : 57.060036124983384
+EarlyStopping counter: 31 out of 50
+44 tarainning loss : 0.0027513565201518417 validation loss : 0.006145732029931162 Real validation loss : 56.639067415167524
+EarlyStopping counter: 32 out of 50
+45 tarainning loss : 0.00268102412558634 validation loss : 0.00567218530630566 Real validation loss : 52.274860606767746
+EarlyStopping counter: 33 out of 50
+46 tarainning loss : 0.002597120384662794 validation loss : 0.00564838838897626 Real validation loss : 52.05554824849074
+EarlyStopping counter: 34 out of 50
+47 tarainning loss : 0.0025313997472308147 validation loss : 0.00665989678891873 Real validation loss : 61.37760918801992
+EarlyStopping counter: 35 out of 50
+48 tarainning loss : 0.0024360979165019255 validation loss : 0.005894417347903339 Real validation loss : 54.32295030823553
+EarlyStopping counter: 36 out of 50
+49 tarainning loss : 0.002365482003231472 validation loss : 0.005912420478849355 Real validation loss : 54.48886774472541
+EarlyStopping counter: 37 out of 50
+50 tarainning loss : 0.0022930921215876996 validation loss : 0.005800812092551191 Real validation loss : 53.46028441284339
+EarlyStopping counter: 38 out of 50
+51 tarainning loss : 0.002216906886543987 validation loss : 0.006805558840705189 Real validation loss : 62.72002913689738
+EarlyStopping counter: 39 out of 50
+52 tarainning loss : 0.002155315825127859 validation loss : 0.006082757762560124 Real validation loss : 56.058696282471665
+EarlyStopping counter: 40 out of 50
+53 tarainning loss : 0.0020751156905650728 validation loss : 0.0061337551332434825 Real validation loss : 56.52868696781977
+EarlyStopping counter: 41 out of 50
+54 tarainning loss : 0.00201015143180037 validation loss : 0.005966204885364125 Real validation loss : 54.984543445846796
+EarlyStopping counter: 42 out of 50
+55 tarainning loss : 0.001942181394924028 validation loss : 0.007386669710995288 Real validation loss : 68.07554653427364
+EarlyStopping counter: 43 out of 50
+56 tarainning loss : 0.0018755673538114815 validation loss : 0.006166394731073752 Real validation loss : 56.829493772297006
+EarlyStopping counter: 44 out of 50
+57 tarainning loss : 0.0018078117805044548 validation loss : 0.006223124094461018 Real validation loss : 57.352311583713714
+EarlyStopping counter: 45 out of 50
+58 tarainning loss : 0.0017550881861586917 validation loss : 0.006141808560527666 Real validation loss : 56.60290893334993
+EarlyStopping counter: 46 out of 50
+59 tarainning loss : 0.001695913039548628 validation loss : 0.006266541482822199 Real validation loss : 57.75244802704656
+EarlyStopping counter: 47 out of 50
+60 tarainning loss : 0.0016385224324719767 validation loss : 0.007489664464852534 Real validation loss : 69.02474723436445
+EarlyStopping counter: 48 out of 50
+61 tarainning loss : 0.0015792066603517313 validation loss : 0.007350030581891069 Real validation loss : 67.73788295366377
+EarlyStopping counter: 49 out of 50
+62 tarainning loss : 0.001527887433824572 validation loss : 0.00706222491748436 Real validation loss : 65.08546423787222
+EarlyStopping counter: 50 out of 50
+Early stopping
+0
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.011793572845273331, 'Validation Loss': 0.00827332064680053, 'Real Validation Loss': 76.24692233819611} 0
+1
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0063525804767736276, 'Validation Loss': 0.00595555848719952, 'Real Validation Loss': 54.88642679583964} 1
+2
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.005952274175742489, 'Validation Loss': 0.005868217934664163, 'Real Validation Loss': 54.08149669058036} 2
+3
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.005663906114069042, 'Validation Loss': 0.01784272814725394, 'Real Validation Loss': 164.43858379344042} 3
+4
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.00544999566494075, 'Validation Loss': 0.005472331424853253, 'Real Validation Loss': 50.43300620173908} 4
+5
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0052681916283031345, 'Validation Loss': 0.0053692596851170294, 'Real Validation Loss': 49.483097875305496} 5
+6
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.005148998837055425, 'Validation Loss': 0.005427026854832876, 'Real Validation Loss': 50.015479667024465} 6
+7
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.005001692370565028, 'Validation Loss': 0.0049360622408073295, 'Real Validation Loss': 45.49074963125259} 7
+8
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004941793733016878, 'Validation Loss': 0.005544070389087639, 'Real Validation Loss': 51.09415372878469} 8
+9
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004843693301921375, 'Validation Loss': 0.0054165515366025, 'Real Validation Loss': 49.91893872415832} 9
+10
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004806378470756663, 'Validation Loss': 0.007262557414019022, 'Real Validation Loss': 66.93172912198212} 10
+11
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0047327250565142665, 'Validation Loss': 0.005186714569023806, 'Real Validation Loss': 47.800761547388205} 11
+12
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004688631535515372, 'Validation Loss': 0.004793203175579885, 'Real Validation Loss': 44.174161087155966} 12
+13
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004639689363081192, 'Validation Loss': 0.004909645969899011, 'Real Validation Loss': 45.24729797353295} 13
+14
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.00459513673055001, 'Validation Loss': 0.004924807139533372, 'Real Validation Loss': 45.387023236739076} 14
+15
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0045591160786704575, 'Validation Loss': 0.004866907370327947, 'Real Validation Loss': 44.853417990719464} 15
+16
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004504827679016582, 'Validation Loss': 0.00855025855083194, 'Real Validation Loss': 78.79918088463589} 16
+17
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004462656924104105, 'Validation Loss': 0.005602798484392582, 'Real Validation Loss': 51.635391465032285} 17
+18
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004426047507726938, 'Validation Loss': 0.004980253707861323, 'Real Validation Loss': 45.89801868718332} 18
+19
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004377286237794295, 'Validation Loss': 0.00482497677049741, 'Real Validation Loss': 44.466986533859014} 19
+20
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004328344311168204, 'Validation Loss': 0.004930273104637023, 'Real Validation Loss': 45.43739784700084} 20
+21
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004283708231676309, 'Validation Loss': 0.00529402032212954, 'Real Validation Loss': 48.78969052199918} 21
+22
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004220605059870382, 'Validation Loss': 0.0052304803046363734, 'Real Validation Loss': 48.20410849286624} 22
+23
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004179166762700274, 'Validation Loss': 0.005014504843296396, 'Real Validation Loss': 46.213676794661275} 23
+24
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004147077468796404, 'Validation Loss': 0.005250037020299077, 'Real Validation Loss': 48.38434141967933} 24
+25
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.004076517447390304, 'Validation Loss': 0.004896613302352931, 'Real Validation Loss': 45.12718753664905} 25
+26
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0040166773625695314, 'Validation Loss': 0.005302518489465839, 'Real Validation Loss': 48.8680099766916} 26
+27
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.003965527353709045, 'Validation Loss': 0.004858297824003875, 'Real Validation Loss': 44.77407319133818} 27
+28
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.00391093866701131, 'Validation Loss': 0.005668853468710254, 'Real Validation Loss': 52.24415361694017} 28
+29
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.003850159739892258, 'Validation Loss': 0.005061655415036759, 'Real Validation Loss': 46.648215985422986} 29
+30
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0037892745076449678, 'Validation Loss': 0.0064249406995359045, 'Real Validation Loss': 59.21225417471681} 30
+31
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.003734051520501065, 'Validation Loss': 0.005634623361478379, 'Real Validation Loss': 51.92868993169974} 31
+32
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.003656289120487197, 'Validation Loss': 0.005250709068276359, 'Real Validation Loss': 48.390535254753075} 32
+33
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.003585030258762971, 'Validation Loss': 0.005086187808408709, 'Real Validation Loss': 46.87430615450075} 33
+34
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0035226734012334805, 'Validation Loss': 0.005056792188738107, 'Real Validation Loss': 46.60339605621019} 34
+35
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.003460360523962156, 'Validation Loss': 0.005320974128291557, 'Real Validation Loss': 49.038097930828314} 35
+36
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.003371544812489148, 'Validation Loss': 0.005810032034882818, 'Real Validation Loss': 53.545255176683995} 36
+37
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0033055447664142386, 'Validation Loss': 0.005336516201544884, 'Real Validation Loss': 49.181332188751064} 37
+38
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0032273426376374773, 'Validation Loss': 0.0063481901014096915, 'Real Validation Loss': 58.504919965853865} 38
+39
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0031390551679584457, 'Validation Loss': 0.005387530642310499, 'Real Validation Loss': 49.65148235490809} 39
+40
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0030712090229585032, 'Validation Loss': 0.007132207677962931, 'Real Validation Loss': 65.73042684325372} 40
+41
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.002988980299045072, 'Validation Loss': 0.005449251120627239, 'Real Validation Loss': 50.22029886195797} 41
+42
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.002911496466392132, 'Validation Loss': 0.006015008912758209, 'Real Validation Loss': 55.43432273665024} 42
+43
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0028381490913128144, 'Validation Loss': 0.006191410221822599, 'Real Validation Loss': 57.060036124983384} 43
+44
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0027513565201518417, 'Validation Loss': 0.006145732029931162, 'Real Validation Loss': 56.639067415167524} 44
+45
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.00268102412558634, 'Validation Loss': 0.00567218530630566, 'Real Validation Loss': 52.274860606767746} 45
+46
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.002597120384662794, 'Validation Loss': 0.00564838838897626, 'Real Validation Loss': 52.05554824849074} 46
+47
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0025313997472308147, 'Validation Loss': 0.00665989678891873, 'Real Validation Loss': 61.37760918801992} 47
+48
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0024360979165019255, 'Validation Loss': 0.005894417347903339, 'Real Validation Loss': 54.32295030823553} 48
+49
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.002365482003231472, 'Validation Loss': 0.005912420478849355, 'Real Validation Loss': 54.48886774472541} 49
+50
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0022930921215876996, 'Validation Loss': 0.005800812092551191, 'Real Validation Loss': 53.46028441284339} 50
+51
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.002216906886543987, 'Validation Loss': 0.006805558840705189, 'Real Validation Loss': 62.72002913689738} 51
+52
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.002155315825127859, 'Validation Loss': 0.006082757762560124, 'Real Validation Loss': 56.058696282471665} 52
+53
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0020751156905650728, 'Validation Loss': 0.0061337551332434825, 'Real Validation Loss': 56.52868696781977} 53
+54
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.00201015143180037, 'Validation Loss': 0.005966204885364125, 'Real Validation Loss': 54.984543445846796} 54
+55
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.001942181394924028, 'Validation Loss': 0.007386669710995288, 'Real Validation Loss': 68.07554653427364} 55
+56
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0018755673538114815, 'Validation Loss': 0.006166394731073752, 'Real Validation Loss': 56.829493772297006} 56
+57
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0018078117805044548, 'Validation Loss': 0.006223124094461018, 'Real Validation Loss': 57.352311583713714} 57
+58
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0017550881861586917, 'Validation Loss': 0.006141808560527666, 'Real Validation Loss': 56.60290893334993} 58
+59
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.001695913039548628, 'Validation Loss': 0.006266541482822199, 'Real Validation Loss': 57.75244802704656} 59
+60
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0016385224324719767, 'Validation Loss': 0.007489664464852534, 'Real Validation Loss': 69.02474723436445} 60
+61
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.0015792066603517313, 'Validation Loss': 0.007350030581891069, 'Real Validation Loss': 67.73788295366377} 61
+62
+TL Mean Absolute Loss vs Epoch [Y: pr, Learning Rate: 0.0005] {'Training Loss': 0.001527887433824572, 'Validation Loss': 0.00706222491748436, 'Real Validation Loss': 65.08546423787222} 62
+
+
+-------------qt---------------
+0 tarainning loss : 0.009187278771729087 validation loss : 0.0016108324549511971 Real validation loss : 40.21282094436166
+Validation loss decreased (inf --> 0.001611).  Saving model ...
+1 tarainning loss : 0.001930458524310198 validation loss : 0.003093948985172036 Real validation loss : 77.23734227525001
+EarlyStopping counter: 1 out of 50
+2 tarainning loss : 0.0016647618075786921 validation loss : 0.01736571389635664 Real validation loss : 433.5176821404103
+EarlyStopping counter: 2 out of 50
+3 tarainning loss : 0.0015028085801216057 validation loss : 0.005097553523437788 Real validation loss : 127.25532553707743
+EarlyStopping counter: 3 out of 50
+4 tarainning loss : 0.0013944562803476774 validation loss : 0.014691625590099714 Real validation loss : 366.761744873686
+EarlyStopping counter: 4 out of 50
+5 tarainning loss : 0.0013103805872474294 validation loss : 0.00568570731712398 Real validation loss : 141.93799023852924
+EarlyStopping counter: 5 out of 50
+6 tarainning loss : 0.0012549457008870256 validation loss : 0.0016353775826965444 Real validation loss : 40.825564943683084
+EarlyStopping counter: 6 out of 50
+7 tarainning loss : 0.001205251215457092 validation loss : 0.0022664393721323907 Real validation loss : 56.5793926179097
+EarlyStopping counter: 7 out of 50
+8 tarainning loss : 0.0011697934184521132 validation loss : 0.010249738427883511 Real validation loss : 255.8744765676129
+EarlyStopping counter: 8 out of 50
+9 tarainning loss : 0.001144509913550583 validation loss : 0.0011172101931056467 Real validation loss : 27.890036001255375
+Validation loss decreased (0.001611 --> 0.001117).  Saving model ...
+10 tarainning loss : 0.0011278629266431737 validation loss : 0.0014682908244406639 Real validation loss : 36.6544129786067
+EarlyStopping counter: 1 out of 50
+11 tarainning loss : 0.0011098868445374957 validation loss : 0.0018779968243111803 Real validation loss : 46.88231183097
+EarlyStopping counter: 2 out of 50
+12 tarainning loss : 0.0010898626116905973 validation loss : 0.0011008421820192231 Real validation loss : 27.48142294858763
+Validation loss decreased (0.001117 --> 0.001101).  Saving model ...
+13 tarainning loss : 0.0010736627572742825 validation loss : 0.0014646428495344427 Real validation loss : 36.56334339760985
+EarlyStopping counter: 1 out of 50
+14 tarainning loss : 0.0010558557180882448 validation loss : 0.0011285711668769425 Real validation loss : 28.173650434504005
+EarlyStopping counter: 2 out of 50
+15 tarainning loss : 0.0010517445182214018 validation loss : 0.005428890459341879 Real validation loss : 135.5268216158083
+EarlyStopping counter: 3 out of 50
+16 tarainning loss : 0.0010417175847277443 validation loss : 0.0011505869882948044 Real validation loss : 28.723255196166914
+EarlyStopping counter: 4 out of 50
+17 tarainning loss : 0.0010291502797273827 validation loss : 0.001176970239536086 Real validation loss : 29.38188315186825
+EarlyStopping counter: 5 out of 50
+18 tarainning loss : 0.0010200071879414474 validation loss : 0.0010422019959769957 Real validation loss : 26.017531055430467
+Validation loss decreased (0.001101 --> 0.001042).  Saving model ...
+19 tarainning loss : 0.001011097015446571 validation loss : 0.0010118025501474437 Real validation loss : 25.2586387689201
+Validation loss decreased (0.001042 --> 0.001012).  Saving model ...
+20 tarainning loss : 0.0010022933333520547 validation loss : 0.0015481338938039908 Real validation loss : 38.647614598898365
+EarlyStopping counter: 1 out of 50
+21 tarainning loss : 0.0009925403302920922 validation loss : 0.0017667734215014092 Real validation loss : 44.10573029642954
+EarlyStopping counter: 2 out of 50
+22 tarainning loss : 0.0009821347499430393 validation loss : 0.001188955863715876 Real validation loss : 29.681090689454404
+EarlyStopping counter: 3 out of 50
+23 tarainning loss : 0.0009764561201655688 validation loss : 0.0010200435212198938 Real validation loss : 25.464365374979547
+EarlyStopping counter: 4 out of 50
+24 tarainning loss : 0.0009671992310475497 validation loss : 0.0010197766896453686 Real validation loss : 25.45770586348329
+EarlyStopping counter: 5 out of 50
+25 tarainning loss : 0.0009528858185226678 validation loss : 0.0021073153876048556 Real validation loss : 52.60702184107915
+EarlyStopping counter: 6 out of 50
+26 tarainning loss : 0.0009536624397342017 validation loss : 0.0016543513606729094 Real validation loss : 41.29922611925615
+EarlyStopping counter: 7 out of 50
+27 tarainning loss : 0.0009398947109861422 validation loss : 0.0010020163457100744 Real validation loss : 25.014335702227047
+Validation loss decreased (0.001012 --> 0.001002).  Saving model ...
+28 tarainning loss : 0.0009271814660827599 validation loss : 0.0011284408788562446 Real validation loss : 28.170398105501505
+EarlyStopping counter: 1 out of 50
+29 tarainning loss : 0.0009197812190004548 validation loss : 0.0016692117771136218 Real validation loss : 41.67020349852078
+EarlyStopping counter: 2 out of 50
+30 tarainning loss : 0.0009091854832549274 validation loss : 0.0010773862054734857 Real validation loss : 26.895867030658025
+EarlyStopping counter: 3 out of 50
+31 tarainning loss : 0.0009010084680201425 validation loss : 0.0011318985827471963 Real validation loss : 28.256716335007035
+EarlyStopping counter: 4 out of 50
+32 tarainning loss : 0.0008959714362834825 validation loss : 0.0010346448815705654 Real validation loss : 25.828875666513493
+EarlyStopping counter: 5 out of 50
+33 tarainning loss : 0.0008797376592964178 validation loss : 0.0013891318045752806 Real validation loss : 34.678286297783174
+EarlyStopping counter: 6 out of 50
+34 tarainning loss : 0.0008700597870972801 validation loss : 0.0012287627651139177 Real validation loss : 30.674834191487097
+EarlyStopping counter: 7 out of 50
+35 tarainning loss : 0.0008610369720912279 validation loss : 0.0012285290483271957 Real validation loss : 30.668998546001173
+EarlyStopping counter: 8 out of 50
+36 tarainning loss : 0.0008541437963569598 validation loss : 0.0011599467215810887 Real validation loss : 28.956911988283327
+EarlyStopping counter: 9 out of 50
+37 tarainning loss : 0.000838725598033739 validation loss : 0.0017765999620192787 Real validation loss : 44.351042907275456
+EarlyStopping counter: 10 out of 50
+38 tarainning loss : 0.0008276297238208811 validation loss : 0.0013248169359187864 Real validation loss : 33.07272831182829
+EarlyStopping counter: 11 out of 50
+39 tarainning loss : 0.0008206718622470183 validation loss : 0.0010478450152998624 Real validation loss : 26.15840335666197
+EarlyStopping counter: 12 out of 50
+40 tarainning loss : 0.000806282762634629 validation loss : 0.0010939291914551963 Real validation loss : 27.308848555799553
+EarlyStopping counter: 13 out of 50
+41 tarainning loss : 0.0007989915930637402 validation loss : 0.001120535445768942 Real validation loss : 27.97304716409813
+EarlyStopping counter: 14 out of 50
+42 tarainning loss : 0.0007890739750124697 validation loss : 0.0010492155825596117 Real validation loss : 26.19261823898835
+EarlyStopping counter: 15 out of 50
+43 tarainning loss : 0.0007793714431187016 validation loss : 0.002030055351916174 Real validation loss : 50.67830281981623
+EarlyStopping counter: 16 out of 50
+44 tarainning loss : 0.0007692217933620921 validation loss : 0.0010256248974870325 Real validation loss : 25.60369998372662
+EarlyStopping counter: 17 out of 50
+45 tarainning loss : 0.0007588332725954089 validation loss : 0.0010084573259328477 Real validation loss : 25.175128056740885
+EarlyStopping counter: 18 out of 50
+46 tarainning loss : 0.0007454789293162738 validation loss : 0.00118151451086172 Real validation loss : 29.495327832187034
+EarlyStopping counter: 19 out of 50
+47 tarainning loss : 0.0007408030894031504 validation loss : 0.0010468877082616236 Real validation loss : 26.134504550414558
+EarlyStopping counter: 20 out of 50
+48 tarainning loss : 0.0007220357711203625 validation loss : 0.0014471500093045434 Real validation loss : 36.12665324935114
+EarlyStopping counter: 21 out of 50
+49 tarainning loss : 0.0007155712156797011 validation loss : 0.0011017215589039437 Real validation loss : 27.503377083084345
+EarlyStopping counter: 22 out of 50
+50 tarainning loss : 0.0007024981264696747 validation loss : 0.0010397832583013131 Real validation loss : 25.957149500622176
+EarlyStopping counter: 23 out of 50
+51 tarainning loss : 0.0006913906087446194 validation loss : 0.001284553771104093 Real validation loss : 32.067600989216906
+EarlyStopping counter: 24 out of 50
+52 tarainning loss : 0.0006791976854619265 validation loss : 0.0010925668327708324 Real validation loss : 27.274839166571333
+EarlyStopping counter: 25 out of 50
+53 tarainning loss : 0.0006679790722183334 validation loss : 0.0010575031045993732 Real validation loss : 26.39950558527602
+EarlyStopping counter: 26 out of 50
+54 tarainning loss : 0.0006612698717346247 validation loss : 0.0010720944389852047 Real validation loss : 26.763765889312584
+EarlyStopping counter: 27 out of 50
+55 tarainning loss : 0.0006489283133290525 validation loss : 0.0013901124745229483 Real validation loss : 34.70276879016017
+EarlyStopping counter: 28 out of 50
+56 tarainning loss : 0.0006343209621645357 validation loss : 0.0012411142966688089 Real validation loss : 30.983178570632536
+EarlyStopping counter: 29 out of 50
+57 tarainning loss : 0.0006298347697955876 validation loss : 0.0010472855985369435 Real validation loss : 26.144436703926605
+EarlyStopping counter: 30 out of 50
+58 tarainning loss : 0.0006164494024343468 validation loss : 0.0014402304814259293 Real validation loss : 35.953913711128436
+EarlyStopping counter: 31 out of 50
+59 tarainning loss : 0.00060663560888688 validation loss : 0.0011390680004568303 Real validation loss : 28.435693665948836
+EarlyStopping counter: 32 out of 50
+60 tarainning loss : 0.0005897808607837537 validation loss : 0.0014185119148755827 Real validation loss : 35.411730586546255
+EarlyStopping counter: 33 out of 50
+61 tarainning loss : 0.0005864670602165803 validation loss : 0.0012086971039872822 Real validation loss : 30.17391339147278
+EarlyStopping counter: 34 out of 50
+62 tarainning loss : 0.0005723351911454629 validation loss : 0.0011479793161706005 Real validation loss : 28.658156649604518
+EarlyStopping counter: 35 out of 50
+63 tarainning loss : 0.0005653224659789751 validation loss : 0.0011534200489389374 Real validation loss : 28.79397845642729
+EarlyStopping counter: 36 out of 50
+64 tarainning loss : 0.0005488155724205932 validation loss : 0.0011049574995303712 Real validation loss : 27.58415901848159
+EarlyStopping counter: 37 out of 50
+65 tarainning loss : 0.0005415216495557765 validation loss : 0.0012316846760192213 Real validation loss : 30.747775135240005
+EarlyStopping counter: 38 out of 50
+66 tarainning loss : 0.0005311481036306894 validation loss : 0.0011953755852666377 Real validation loss : 29.841355665816064
+EarlyStopping counter: 39 out of 50
+67 tarainning loss : 0.0005182514344313426 validation loss : 0.0011845504659647366 Real validation loss : 29.57111718392497
+EarlyStopping counter: 40 out of 50
+68 tarainning loss : 0.0005102505321331994 validation loss : 0.0012065670752430977 Real validation loss : 30.120740715745857
+EarlyStopping counter: 41 out of 50
+69 tarainning loss : 0.0004954342153133275 validation loss : 0.0014276001136140479 Real validation loss : 35.638610410440656
+EarlyStopping counter: 42 out of 50
+70 tarainning loss : 0.000487501506143074 validation loss : 0.001474253565873902 Real validation loss : 36.803266055920986
+EarlyStopping counter: 43 out of 50
+71 tarainning loss : 0.0004774776839061457 validation loss : 0.0012048330143976625 Real validation loss : 30.077451860717453
+EarlyStopping counter: 44 out of 50
+72 tarainning loss : 0.0004675529365280842 validation loss : 0.0011705012158679663 Real validation loss : 29.220392861291376
+EarlyStopping counter: 45 out of 50
+73 tarainning loss : 0.0004544111240853662 validation loss : 0.0016685811914284154 Real validation loss : 41.65445995830117
+EarlyStopping counter: 46 out of 50
+74 tarainning loss : 0.00044633787843402565 validation loss : 0.0011839253626945454 Real validation loss : 29.5555130274508
+EarlyStopping counter: 47 out of 50
+75 tarainning loss : 0.0004389249905657603 validation loss : 0.0011866524321403774 Real validation loss : 29.62359072899943
+EarlyStopping counter: 48 out of 50
+76 tarainning loss : 0.00042369580657801545 validation loss : 0.001132871844017688 Real validation loss : 28.281012984470546
+EarlyStopping counter: 49 out of 50
+77 tarainning loss : 0.00041962486116375896 validation loss : 0.0011725083529261666 Real validation loss : 29.270499484077174
+EarlyStopping counter: 50 out of 50
+Early stopping
+0
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.009187278771729087, 'Validation Loss': 0.0016108324549511971, 'Real Validation Loss': 40.21282094436166} 0
+1
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.001930458524310198, 'Validation Loss': 0.003093948985172036, 'Real Validation Loss': 77.23734227525001} 1
+2
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0016647618075786921, 'Validation Loss': 0.01736571389635664, 'Real Validation Loss': 433.5176821404103} 2
+3
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0015028085801216057, 'Validation Loss': 0.005097553523437788, 'Real Validation Loss': 127.25532553707743} 3
+4
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0013944562803476774, 'Validation Loss': 0.014691625590099714, 'Real Validation Loss': 366.761744873686} 4
+5
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0013103805872474294, 'Validation Loss': 0.00568570731712398, 'Real Validation Loss': 141.93799023852924} 5
+6
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0012549457008870256, 'Validation Loss': 0.0016353775826965444, 'Real Validation Loss': 40.825564943683084} 6
+7
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.001205251215457092, 'Validation Loss': 0.0022664393721323907, 'Real Validation Loss': 56.5793926179097} 7
+8
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0011697934184521132, 'Validation Loss': 0.010249738427883511, 'Real Validation Loss': 255.8744765676129} 8
+9
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.001144509913550583, 'Validation Loss': 0.0011172101931056467, 'Real Validation Loss': 27.890036001255375} 9
+10
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0011278629266431737, 'Validation Loss': 0.0014682908244406639, 'Real Validation Loss': 36.6544129786067} 10
+11
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0011098868445374957, 'Validation Loss': 0.0018779968243111803, 'Real Validation Loss': 46.88231183097} 11
+12
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010898626116905973, 'Validation Loss': 0.0011008421820192231, 'Real Validation Loss': 27.48142294858763} 12
+13
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010736627572742825, 'Validation Loss': 0.0014646428495344427, 'Real Validation Loss': 36.56334339760985} 13
+14
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010558557180882448, 'Validation Loss': 0.0011285711668769425, 'Real Validation Loss': 28.173650434504005} 14
+15
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010517445182214018, 'Validation Loss': 0.005428890459341879, 'Real Validation Loss': 135.5268216158083} 15
+16
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010417175847277443, 'Validation Loss': 0.0011505869882948044, 'Real Validation Loss': 28.723255196166914} 16
+17
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010291502797273827, 'Validation Loss': 0.001176970239536086, 'Real Validation Loss': 29.38188315186825} 17
+18
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010200071879414474, 'Validation Loss': 0.0010422019959769957, 'Real Validation Loss': 26.017531055430467} 18
+19
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.001011097015446571, 'Validation Loss': 0.0010118025501474437, 'Real Validation Loss': 25.2586387689201} 19
+20
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0010022933333520547, 'Validation Loss': 0.0015481338938039908, 'Real Validation Loss': 38.647614598898365} 20
+21
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009925403302920922, 'Validation Loss': 0.0017667734215014092, 'Real Validation Loss': 44.10573029642954} 21
+22
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009821347499430393, 'Validation Loss': 0.001188955863715876, 'Real Validation Loss': 29.681090689454404} 22
+23
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009764561201655688, 'Validation Loss': 0.0010200435212198938, 'Real Validation Loss': 25.464365374979547} 23
+24
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009671992310475497, 'Validation Loss': 0.0010197766896453686, 'Real Validation Loss': 25.45770586348329} 24
+25
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009528858185226678, 'Validation Loss': 0.0021073153876048556, 'Real Validation Loss': 52.60702184107915} 25
+26
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009536624397342017, 'Validation Loss': 0.0016543513606729094, 'Real Validation Loss': 41.29922611925615} 26
+27
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009398947109861422, 'Validation Loss': 0.0010020163457100744, 'Real Validation Loss': 25.014335702227047} 27
+28
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009271814660827599, 'Validation Loss': 0.0011284408788562446, 'Real Validation Loss': 28.170398105501505} 28
+29
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009197812190004548, 'Validation Loss': 0.0016692117771136218, 'Real Validation Loss': 41.67020349852078} 29
+30
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009091854832549274, 'Validation Loss': 0.0010773862054734857, 'Real Validation Loss': 26.895867030658025} 30
+31
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0009010084680201425, 'Validation Loss': 0.0011318985827471963, 'Real Validation Loss': 28.256716335007035} 31
+32
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0008959714362834825, 'Validation Loss': 0.0010346448815705654, 'Real Validation Loss': 25.828875666513493} 32
+33
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0008797376592964178, 'Validation Loss': 0.0013891318045752806, 'Real Validation Loss': 34.678286297783174} 33
+34
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0008700597870972801, 'Validation Loss': 0.0012287627651139177, 'Real Validation Loss': 30.674834191487097} 34
+35
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0008610369720912279, 'Validation Loss': 0.0012285290483271957, 'Real Validation Loss': 30.668998546001173} 35
+36
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0008541437963569598, 'Validation Loss': 0.0011599467215810887, 'Real Validation Loss': 28.956911988283327} 36
+37
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.000838725598033739, 'Validation Loss': 0.0017765999620192787, 'Real Validation Loss': 44.351042907275456} 37
+38
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0008276297238208811, 'Validation Loss': 0.0013248169359187864, 'Real Validation Loss': 33.07272831182829} 38
+39
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0008206718622470183, 'Validation Loss': 0.0010478450152998624, 'Real Validation Loss': 26.15840335666197} 39
+40
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.000806282762634629, 'Validation Loss': 0.0010939291914551963, 'Real Validation Loss': 27.308848555799553} 40
+41
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007989915930637402, 'Validation Loss': 0.001120535445768942, 'Real Validation Loss': 27.97304716409813} 41
+42
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007890739750124697, 'Validation Loss': 0.0010492155825596117, 'Real Validation Loss': 26.19261823898835} 42
+43
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007793714431187016, 'Validation Loss': 0.002030055351916174, 'Real Validation Loss': 50.67830281981623} 43
+44
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007692217933620921, 'Validation Loss': 0.0010256248974870325, 'Real Validation Loss': 25.60369998372662} 44
+45
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007588332725954089, 'Validation Loss': 0.0010084573259328477, 'Real Validation Loss': 25.175128056740885} 45
+46
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007454789293162738, 'Validation Loss': 0.00118151451086172, 'Real Validation Loss': 29.495327832187034} 46
+47
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007408030894031504, 'Validation Loss': 0.0010468877082616236, 'Real Validation Loss': 26.134504550414558} 47
+48
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007220357711203625, 'Validation Loss': 0.0014471500093045434, 'Real Validation Loss': 36.12665324935114} 48
+49
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007155712156797011, 'Validation Loss': 0.0011017215589039437, 'Real Validation Loss': 27.503377083084345} 49
+50
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0007024981264696747, 'Validation Loss': 0.0010397832583013131, 'Real Validation Loss': 25.957149500622176} 50
+51
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006913906087446194, 'Validation Loss': 0.001284553771104093, 'Real Validation Loss': 32.067600989216906} 51
+52
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006791976854619265, 'Validation Loss': 0.0010925668327708324, 'Real Validation Loss': 27.274839166571333} 52
+53
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006679790722183334, 'Validation Loss': 0.0010575031045993732, 'Real Validation Loss': 26.39950558527602} 53
+54
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006612698717346247, 'Validation Loss': 0.0010720944389852047, 'Real Validation Loss': 26.763765889312584} 54
+55
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006489283133290525, 'Validation Loss': 0.0013901124745229483, 'Real Validation Loss': 34.70276879016017} 55
+56
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006343209621645357, 'Validation Loss': 0.0012411142966688089, 'Real Validation Loss': 30.983178570632536} 56
+57
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006298347697955876, 'Validation Loss': 0.0010472855985369435, 'Real Validation Loss': 26.144436703926605} 57
+58
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0006164494024343468, 'Validation Loss': 0.0014402304814259293, 'Real Validation Loss': 35.953913711128436} 58
+59
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.00060663560888688, 'Validation Loss': 0.0011390680004568303, 'Real Validation Loss': 28.435693665948836} 59
+60
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005897808607837537, 'Validation Loss': 0.0014185119148755827, 'Real Validation Loss': 35.411730586546255} 60
+61
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005864670602165803, 'Validation Loss': 0.0012086971039872822, 'Real Validation Loss': 30.17391339147278} 61
+62
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005723351911454629, 'Validation Loss': 0.0011479793161706005, 'Real Validation Loss': 28.658156649604518} 62
+63
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005653224659789751, 'Validation Loss': 0.0011534200489389374, 'Real Validation Loss': 28.79397845642729} 63
+64
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005488155724205932, 'Validation Loss': 0.0011049574995303712, 'Real Validation Loss': 27.58415901848159} 64
+65
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005415216495557765, 'Validation Loss': 0.0012316846760192213, 'Real Validation Loss': 30.747775135240005} 65
+66
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005311481036306894, 'Validation Loss': 0.0011953755852666377, 'Real Validation Loss': 29.841355665816064} 66
+67
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005182514344313426, 'Validation Loss': 0.0011845504659647366, 'Real Validation Loss': 29.57111718392497} 67
+68
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0005102505321331994, 'Validation Loss': 0.0012065670752430977, 'Real Validation Loss': 30.120740715745857} 68
+69
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0004954342153133275, 'Validation Loss': 0.0014276001136140479, 'Real Validation Loss': 35.638610410440656} 69
+70
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.000487501506143074, 'Validation Loss': 0.001474253565873902, 'Real Validation Loss': 36.803266055920986} 70
+71
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0004774776839061457, 'Validation Loss': 0.0012048330143976625, 'Real Validation Loss': 30.077451860717453} 71
+72
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0004675529365280842, 'Validation Loss': 0.0011705012158679663, 'Real Validation Loss': 29.220392861291376} 72
+73
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0004544111240853662, 'Validation Loss': 0.0016685811914284154, 'Real Validation Loss': 41.65445995830117} 73
+74
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.00044633787843402565, 'Validation Loss': 0.0011839253626945454, 'Real Validation Loss': 29.5555130274508} 74
+75
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.0004389249905657603, 'Validation Loss': 0.0011866524321403774, 'Real Validation Loss': 29.62359072899943} 75
+76
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.00042369580657801545, 'Validation Loss': 0.001132871844017688, 'Real Validation Loss': 28.281012984470546} 76
+77
+TL Mean Absolute Loss vs Epoch [Y: qt, Learning Rate: 0.0005] {'Training Loss': 0.00041962486116375896, 'Validation Loss': 0.0011725083529261666, 'Real Validation Loss': 29.270499484077174} 77
+
+
+-------------qrs---------------
+0 tarainning loss : 0.02747573529675481 validation loss : 0.008212986197420127 Real validation loss : 25.755924624298256
+Validation loss decreased (inf --> 0.008213).  Saving model ...
+1 tarainning loss : 0.008731161921407233 validation loss : 0.015868348986183473 Real validation loss : 49.763142895324066
+EarlyStopping counter: 1 out of 50
+2 tarainning loss : 0.00766589109266757 validation loss : 0.015348331036085155 Real validation loss : 48.13236553631528
+EarlyStopping counter: 2 out of 50
+3 tarainning loss : 0.007064068913879637 validation loss : 0.00920297215139269 Real validation loss : 28.86052013566981
+EarlyStopping counter: 3 out of 50
+4 tarainning loss : 0.006646306695508176 validation loss : 0.007115538112565641 Real validation loss : 22.31432729366562
+Validation loss decreased (0.008213 --> 0.007116).  Saving model ...
+5 tarainning loss : 0.006405058176500998 validation loss : 0.006968704233292236 Real validation loss : 21.853856787007516
+Validation loss decreased (0.007116 --> 0.006969).  Saving model ...
+6 tarainning loss : 0.006228130555780391 validation loss : 0.005786889967757292 Real validation loss : 18.147686843472627
+Validation loss decreased (0.006969 --> 0.005787).  Saving model ...
+7 tarainning loss : 0.006032606648265949 validation loss : 0.008194815413173073 Real validation loss : 25.6989415403436
+EarlyStopping counter: 1 out of 50
+8 tarainning loss : 0.005961536058896512 validation loss : 0.005896869946895314 Real validation loss : 18.49258432837681
+EarlyStopping counter: 2 out of 50
+9 tarainning loss : 0.005839296548711289 validation loss : 0.006118479516071936 Real validation loss : 19.18755206762184
+EarlyStopping counter: 3 out of 50
+10 tarainning loss : 0.005764104606980671 validation loss : 0.005735257279654448 Real validation loss : 17.985766675459775
+Validation loss decreased (0.005787 --> 0.005735).  Saving model ...
+11 tarainning loss : 0.005670682215131819 validation loss : 0.005653173723672541 Real validation loss : 17.728352324500758
+Validation loss decreased (0.005735 --> 0.005653).  Saving model ...
+12 tarainning loss : 0.005583558098764205 validation loss : 0.005757270614294755 Real validation loss : 18.054800580309323
+EarlyStopping counter: 1 out of 50
+13 tarainning loss : 0.005494200422993449 validation loss : 0.005772576079806264 Real validation loss : 18.10279849686548
+EarlyStopping counter: 2 out of 50
+14 tarainning loss : 0.005443694798168955 validation loss : 0.005663674044988425 Real validation loss : 17.76128192472208
+EarlyStopping counter: 3 out of 50
+15 tarainning loss : 0.005354230143091656 validation loss : 0.00550462253859842 Real validation loss : 17.26249653881133
+Validation loss decreased (0.005653 --> 0.005505).  Saving model ...
+16 tarainning loss : 0.005292417558871942 validation loss : 0.005970959608925809 Real validation loss : 18.724929390153335
+EarlyStopping counter: 1 out of 50
+17 tarainning loss : 0.005226412778453077 validation loss : 0.005829678284594331 Real validation loss : 18.28187141992659
+EarlyStopping counter: 2 out of 50
+18 tarainning loss : 0.005138371814401118 validation loss : 0.00621697238124712 Real validation loss : 19.49642569357188
+EarlyStopping counter: 3 out of 50
+19 tarainning loss : 0.005089298866070868 validation loss : 0.005608153439563314 Real validation loss : 17.58716910546987
+EarlyStopping counter: 4 out of 50
+20 tarainning loss : 0.005001631226871529 validation loss : 0.006486747793594853 Real validation loss : 20.34244113317959
+EarlyStopping counter: 5 out of 50
+21 tarainning loss : 0.004915965905290891 validation loss : 0.005586743755851195 Real validation loss : 17.520028085608757
+EarlyStopping counter: 6 out of 50
+22 tarainning loss : 0.004847542605950634 validation loss : 0.006428176620658195 Real validation loss : 20.158761689800244
+EarlyStopping counter: 7 out of 50
+23 tarainning loss : 0.0047717859016609245 validation loss : 0.006112129895591923 Real validation loss : 19.167638891030357
+EarlyStopping counter: 8 out of 50
+24 tarainning loss : 0.004677582871565809 validation loss : 0.006804202256616966 Real validation loss : 21.33797803599173
+EarlyStopping counter: 9 out of 50
+25 tarainning loss : 0.004600204530240754 validation loss : 0.005714326358219872 Real validation loss : 17.920127536613904
+EarlyStopping counter: 10 out of 50
+26 tarainning loss : 0.004517622690678375 validation loss : 0.0057236865871093424 Real validation loss : 17.949481127773904
+EarlyStopping counter: 11 out of 50
+27 tarainning loss : 0.004434385652287451 validation loss : 0.005772385270217755 Real validation loss : 18.102200327119277
+EarlyStopping counter: 12 out of 50
+28 tarainning loss : 0.004332152469595131 validation loss : 0.00584291621063792 Real validation loss : 18.323385018952855
+EarlyStopping counter: 13 out of 50
+29 tarainning loss : 0.00422308879793759 validation loss : 0.00565493274699526 Real validation loss : 17.733869143181447
+EarlyStopping counter: 14 out of 50
+30 tarainning loss : 0.004128423755469381 validation loss : 0.00597721685506696 Real validation loss : 18.74455207679908
+EarlyStopping counter: 15 out of 50
+31 tarainning loss : 0.004028497021626223 validation loss : 0.006605393903607902 Real validation loss : 20.714515452609636
+EarlyStopping counter: 16 out of 50
+32 tarainning loss : 0.003915612901614398 validation loss : 0.006143272945813406 Real validation loss : 19.26530449552686
+EarlyStopping counter: 17 out of 50
+33 tarainning loss : 0.003794171584113577 validation loss : 0.006125497229455809 Real validation loss : 19.20955932577243
+EarlyStopping counter: 18 out of 50
+34 tarainning loss : 0.0037199097636659616 validation loss : 0.005965961694366332 Real validation loss : 18.709255448186585
+EarlyStopping counter: 19 out of 50
+35 tarainning loss : 0.0036093902169940534 validation loss : 0.006227147462533992 Real validation loss : 19.528334204439094
+EarlyStopping counter: 20 out of 50
+36 tarainning loss : 0.003505806635882034 validation loss : 0.006649192448837088 Real validation loss : 20.851867383687285
+EarlyStopping counter: 21 out of 50
+37 tarainning loss : 0.003413268714440895 validation loss : 0.006175054624281745 Real validation loss : 19.36497154160944
+EarlyStopping counter: 22 out of 50
+38 tarainning loss : 0.00331787226553701 validation loss : 0.006988371169579786 Real validation loss : 21.915531877447798
+EarlyStopping counter: 23 out of 50
+39 tarainning loss : 0.0031991255806652127 validation loss : 0.006328550560816791 Real validation loss : 19.846334708298688
+EarlyStopping counter: 24 out of 50
+40 tarainning loss : 0.0031013086610321016 validation loss : 0.006284143536166332 Real validation loss : 19.70707401305593
+EarlyStopping counter: 25 out of 50
+41 tarainning loss : 0.002995730269810979 validation loss : 0.006451367210421262 Real validation loss : 20.23148769421103
+EarlyStopping counter: 26 out of 50
+42 tarainning loss : 0.002909532064633047 validation loss : 0.006743345792705183 Real validation loss : 21.14713268255064
+EarlyStopping counter: 27 out of 50
+43 tarainning loss : 0.0028133185368725937 validation loss : 0.007113767297163177 Real validation loss : 22.30877432336358
+EarlyStopping counter: 28 out of 50
+44 tarainning loss : 0.0027221438700913408 validation loss : 0.00628927588238532 Real validation loss : 19.723169295575605
+EarlyStopping counter: 29 out of 50
+45 tarainning loss : 0.002618911281976177 validation loss : 0.006362680738294468 Real validation loss : 19.95336644312474
+EarlyStopping counter: 30 out of 50
+46 tarainning loss : 0.002556444963871608 validation loss : 0.006448779877455642 Real validation loss : 20.223373615304837
+EarlyStopping counter: 31 out of 50
+47 tarainning loss : 0.0024575128764311067 validation loss : 0.0066272188453442606 Real validation loss : 20.782957873419317
+EarlyStopping counter: 32 out of 50
+48 tarainning loss : 0.0023767191304664937 validation loss : 0.006455969853821596 Real validation loss : 20.245921377112104
+EarlyStopping counter: 33 out of 50
+49 tarainning loss : 0.0022982889080618617 validation loss : 0.006714283261345749 Real validation loss : 21.05599225004306
+EarlyStopping counter: 34 out of 50
+50 tarainning loss : 0.0022228722548738246 validation loss : 0.006609615434634046 Real validation loss : 20.727754099830907
+EarlyStopping counter: 35 out of 50
+51 tarainning loss : 0.0021563301403953344 validation loss : 0.006842115023587855 Real validation loss : 21.456872711631014
+EarlyStopping counter: 36 out of 50
+52 tarainning loss : 0.002062687392892377 validation loss : 0.006660007744301013 Real validation loss : 20.885784109225447
+EarlyStopping counter: 37 out of 50
+53 tarainning loss : 0.0020082406664732842 validation loss : 0.006677217670613949 Real validation loss : 20.93975478566754
+EarlyStopping counter: 38 out of 50
+54 tarainning loss : 0.0019474852776353354 validation loss : 0.006436661243589878 Real validation loss : 20.185369364254136
+EarlyStopping counter: 39 out of 50
+55 tarainning loss : 0.0018706523048592212 validation loss : 0.00678116215224724 Real validation loss : 21.265724465485018
+EarlyStopping counter: 40 out of 50
+56 tarainning loss : 0.0018111909406458135 validation loss : 0.006991403816750575 Real validation loss : 21.925042116205105
+EarlyStopping counter: 41 out of 50
+57 tarainning loss : 0.0017710558380206406 validation loss : 0.006629325510417136 Real validation loss : 20.789564824229135
+EarlyStopping counter: 42 out of 50
+58 tarainning loss : 0.0017070456434491656 validation loss : 0.006486378733253994 Real validation loss : 20.34128410029786
+EarlyStopping counter: 43 out of 50
+59 tarainning loss : 0.0016495398635266074 validation loss : 0.006908075947982518 Real validation loss : 21.663725856711103
+EarlyStopping counter: 44 out of 50
+60 tarainning loss : 0.0015869732755312666 validation loss : 0.006760088372451414 Real validation loss : 21.19963673771364
+EarlyStopping counter: 45 out of 50
+61 tarainning loss : 0.001540993112311164 validation loss : 0.0068058440771382985 Real validation loss : 21.34312708590043
+EarlyStopping counter: 46 out of 50
+62 tarainning loss : 0.0015001928617082323 validation loss : 0.006906119929212121 Real validation loss : 21.65759208065053
+EarlyStopping counter: 47 out of 50
+63 tarainning loss : 0.001460723518327138 validation loss : 0.0070470060902667175 Real validation loss : 22.099411335291038
+EarlyStopping counter: 48 out of 50
+64 tarainning loss : 0.0014027788930526767 validation loss : 0.006940623871489618 Real validation loss : 21.765796200767237
+EarlyStopping counter: 49 out of 50
+65 tarainning loss : 0.0013738051524527035 validation loss : 0.006791924067933834 Real validation loss : 21.299474174439595
+EarlyStopping counter: 50 out of 50
+Early stopping
+0
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.02747573529675481, 'Validation Loss': 0.008212986197420127, 'Real Validation Loss': 25.755924624298256} 0
+1
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.008731161921407233, 'Validation Loss': 0.015868348986183473, 'Real Validation Loss': 49.763142895324066} 1
+2
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.00766589109266757, 'Validation Loss': 0.015348331036085155, 'Real Validation Loss': 48.13236553631528} 2
+3
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.007064068913879637, 'Validation Loss': 0.00920297215139269, 'Real Validation Loss': 28.86052013566981} 3
+4
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.006646306695508176, 'Validation Loss': 0.007115538112565641, 'Real Validation Loss': 22.31432729366562} 4
+5
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.006405058176500998, 'Validation Loss': 0.006968704233292236, 'Real Validation Loss': 21.853856787007516} 5
+6
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.006228130555780391, 'Validation Loss': 0.005786889967757292, 'Real Validation Loss': 18.147686843472627} 6
+7
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.006032606648265949, 'Validation Loss': 0.008194815413173073, 'Real Validation Loss': 25.6989415403436} 7
+8
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005961536058896512, 'Validation Loss': 0.005896869946895314, 'Real Validation Loss': 18.49258432837681} 8
+9
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005839296548711289, 'Validation Loss': 0.006118479516071936, 'Real Validation Loss': 19.18755206762184} 9
+10
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005764104606980671, 'Validation Loss': 0.005735257279654448, 'Real Validation Loss': 17.985766675459775} 10
+11
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005670682215131819, 'Validation Loss': 0.005653173723672541, 'Real Validation Loss': 17.728352324500758} 11
+12
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005583558098764205, 'Validation Loss': 0.005757270614294755, 'Real Validation Loss': 18.054800580309323} 12
+13
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005494200422993449, 'Validation Loss': 0.005772576079806264, 'Real Validation Loss': 18.10279849686548} 13
+14
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005443694798168955, 'Validation Loss': 0.005663674044988425, 'Real Validation Loss': 17.76128192472208} 14
+15
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005354230143091656, 'Validation Loss': 0.00550462253859842, 'Real Validation Loss': 17.26249653881133} 15
+16
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005292417558871942, 'Validation Loss': 0.005970959608925809, 'Real Validation Loss': 18.724929390153335} 16
+17
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005226412778453077, 'Validation Loss': 0.005829678284594331, 'Real Validation Loss': 18.28187141992659} 17
+18
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005138371814401118, 'Validation Loss': 0.00621697238124712, 'Real Validation Loss': 19.49642569357188} 18
+19
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005089298866070868, 'Validation Loss': 0.005608153439563314, 'Real Validation Loss': 17.58716910546987} 19
+20
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.005001631226871529, 'Validation Loss': 0.006486747793594853, 'Real Validation Loss': 20.34244113317959} 20
+21
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004915965905290891, 'Validation Loss': 0.005586743755851195, 'Real Validation Loss': 17.520028085608757} 21
+22
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004847542605950634, 'Validation Loss': 0.006428176620658195, 'Real Validation Loss': 20.158761689800244} 22
+23
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0047717859016609245, 'Validation Loss': 0.006112129895591923, 'Real Validation Loss': 19.167638891030357} 23
+24
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004677582871565809, 'Validation Loss': 0.006804202256616966, 'Real Validation Loss': 21.33797803599173} 24
+25
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004600204530240754, 'Validation Loss': 0.005714326358219872, 'Real Validation Loss': 17.920127536613904} 25
+26
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004517622690678375, 'Validation Loss': 0.0057236865871093424, 'Real Validation Loss': 17.949481127773904} 26
+27
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004434385652287451, 'Validation Loss': 0.005772385270217755, 'Real Validation Loss': 18.102200327119277} 27
+28
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004332152469595131, 'Validation Loss': 0.00584291621063792, 'Real Validation Loss': 18.323385018952855} 28
+29
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.00422308879793759, 'Validation Loss': 0.00565493274699526, 'Real Validation Loss': 17.733869143181447} 29
+30
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004128423755469381, 'Validation Loss': 0.00597721685506696, 'Real Validation Loss': 18.74455207679908} 30
+31
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.004028497021626223, 'Validation Loss': 0.006605393903607902, 'Real Validation Loss': 20.714515452609636} 31
+32
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.003915612901614398, 'Validation Loss': 0.006143272945813406, 'Real Validation Loss': 19.26530449552686} 32
+33
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.003794171584113577, 'Validation Loss': 0.006125497229455809, 'Real Validation Loss': 19.20955932577243} 33
+34
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0037199097636659616, 'Validation Loss': 0.005965961694366332, 'Real Validation Loss': 18.709255448186585} 34
+35
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0036093902169940534, 'Validation Loss': 0.006227147462533992, 'Real Validation Loss': 19.528334204439094} 35
+36
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.003505806635882034, 'Validation Loss': 0.006649192448837088, 'Real Validation Loss': 20.851867383687285} 36
+37
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.003413268714440895, 'Validation Loss': 0.006175054624281745, 'Real Validation Loss': 19.36497154160944} 37
+38
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.00331787226553701, 'Validation Loss': 0.006988371169579786, 'Real Validation Loss': 21.915531877447798} 38
+39
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0031991255806652127, 'Validation Loss': 0.006328550560816791, 'Real Validation Loss': 19.846334708298688} 39
+40
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0031013086610321016, 'Validation Loss': 0.006284143536166332, 'Real Validation Loss': 19.70707401305593} 40
+41
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.002995730269810979, 'Validation Loss': 0.006451367210421262, 'Real Validation Loss': 20.23148769421103} 41
+42
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.002909532064633047, 'Validation Loss': 0.006743345792705183, 'Real Validation Loss': 21.14713268255064} 42
+43
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0028133185368725937, 'Validation Loss': 0.007113767297163177, 'Real Validation Loss': 22.30877432336358} 43
+44
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0027221438700913408, 'Validation Loss': 0.00628927588238532, 'Real Validation Loss': 19.723169295575605} 44
+45
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.002618911281976177, 'Validation Loss': 0.006362680738294468, 'Real Validation Loss': 19.95336644312474} 45
+46
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.002556444963871608, 'Validation Loss': 0.006448779877455642, 'Real Validation Loss': 20.223373615304837} 46
+47
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0024575128764311067, 'Validation Loss': 0.0066272188453442606, 'Real Validation Loss': 20.782957873419317} 47
+48
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0023767191304664937, 'Validation Loss': 0.006455969853821596, 'Real Validation Loss': 20.245921377112104} 48
+49
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0022982889080618617, 'Validation Loss': 0.006714283261345749, 'Real Validation Loss': 21.05599225004306} 49
+50
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0022228722548738246, 'Validation Loss': 0.006609615434634046, 'Real Validation Loss': 20.727754099830907} 50
+51
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0021563301403953344, 'Validation Loss': 0.006842115023587855, 'Real Validation Loss': 21.456872711631014} 51
+52
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.002062687392892377, 'Validation Loss': 0.006660007744301013, 'Real Validation Loss': 20.885784109225447} 52
+53
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0020082406664732842, 'Validation Loss': 0.006677217670613949, 'Real Validation Loss': 20.93975478566754} 53
+54
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0019474852776353354, 'Validation Loss': 0.006436661243589878, 'Real Validation Loss': 20.185369364254136} 54
+55
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0018706523048592212, 'Validation Loss': 0.00678116215224724, 'Real Validation Loss': 21.265724465485018} 55
+56
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0018111909406458135, 'Validation Loss': 0.006991403816750575, 'Real Validation Loss': 21.925042116205105} 56
+57
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0017710558380206406, 'Validation Loss': 0.006629325510417136, 'Real Validation Loss': 20.789564824229135} 57
+58
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0017070456434491656, 'Validation Loss': 0.006486378733253994, 'Real Validation Loss': 20.34128410029786} 58
+59
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0016495398635266074, 'Validation Loss': 0.006908075947982518, 'Real Validation Loss': 21.663725856711103} 59
+60
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0015869732755312666, 'Validation Loss': 0.006760088372451414, 'Real Validation Loss': 21.19963673771364} 60
+61
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.001540993112311164, 'Validation Loss': 0.0068058440771382985, 'Real Validation Loss': 21.34312708590043} 61
+62
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0015001928617082323, 'Validation Loss': 0.006906119929212121, 'Real Validation Loss': 21.65759208065053} 62
+63
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.001460723518327138, 'Validation Loss': 0.0070470060902667175, 'Real Validation Loss': 22.099411335291038} 63
+64
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0014027788930526767, 'Validation Loss': 0.006940623871489618, 'Real Validation Loss': 21.765796200767237} 64
+65
+TL Mean Absolute Loss vs Epoch [Y: qrs, Learning Rate: 0.0005] {'Training Loss': 0.0013738051524527035, 'Validation Loss': 0.006791924067933834, 'Real Validation Loss': 21.299474174439595} 65
+
+
+-------------hr---------------
+0 tarainning loss : 450.3328512688506 validation loss : 0.18617359373269904 Real validation loss : 0.18617359373269904
+Validation loss decreased (inf --> 0.186174).  Saving model ...
+1 tarainning loss : 0.4989140870428232 validation loss : 0.1106836429811741 Real validation loss : 0.1106836429811741
+Validation loss decreased (0.186174 --> 0.110684).  Saving model ...
+2 tarainning loss : 0.1253574110648488 validation loss : 0.1630510509755287 Real validation loss : 0.1630510509755287
+EarlyStopping counter: 1 out of 50
+3 tarainning loss : 0.10032855793131423 validation loss : 0.03758032494395269 Real validation loss : 0.03758032494395269
+Validation loss decreased (0.110684 --> 0.037580).  Saving model ...
+4 tarainning loss : 0.0648319857022496 validation loss : 0.06611336509243668 Real validation loss : 0.06611336509243668
+EarlyStopping counter: 1 out of 50
+5 tarainning loss : 0.04475253118507442 validation loss : 0.022683512463346513 Real validation loss : 0.022683512463346513
+Validation loss decreased (0.037580 --> 0.022684).  Saving model ...
+6 tarainning loss : 0.03462248764810015 validation loss : 0.037826973723042855 Real validation loss : 0.037826973723042855
+EarlyStopping counter: 1 out of 50
+7 tarainning loss : 0.03775950783085017 validation loss : 0.08375381946524713 Real validation loss : 0.08375381946524713
+EarlyStopping counter: 2 out of 50
+8 tarainning loss : 0.02799378051911099 validation loss : 0.026897075631124263 Real validation loss : 0.026897075631124263
+EarlyStopping counter: 3 out of 50
+9 tarainning loss : 0.024572708980775758 validation loss : 0.08474861426737296 Real validation loss : 0.08474861426737296
+EarlyStopping counter: 4 out of 50
+10 tarainning loss : 0.025509376630003824 validation loss : 0.05268776607919114 Real validation loss : 0.05268776607919114
+EarlyStopping counter: 5 out of 50
+11 tarainning loss : 0.021325340901241926 validation loss : 0.01900097619040006 Real validation loss : 0.01900097619040006
+Validation loss decreased (0.022684 --> 0.019001).  Saving model ...
+12 tarainning loss : 0.02219857924434616 validation loss : 0.020952686478495988 Real validation loss : 0.020952686478495988
+EarlyStopping counter: 1 out of 50
+13 tarainning loss : 0.021258778162300585 validation loss : 0.01939528293697973 Real validation loss : 0.01939528293697973
+EarlyStopping counter: 2 out of 50
+14 tarainning loss : 0.018523582361913364 validation loss : 0.09258447019919674 Real validation loss : 0.09258447019919674
+EarlyStopping counter: 3 out of 50
+15 tarainning loss : 0.017713094144433613 validation loss : 0.18354036555630374 Real validation loss : 0.18354036555630374
+EarlyStopping counter: 4 out of 50
+16 tarainning loss : 0.019159815196619658 validation loss : 0.019180352287610787 Real validation loss : 0.019180352287610787
+EarlyStopping counter: 5 out of 50
+17 tarainning loss : 0.01612015672272346 validation loss : 0.022678736483931775 Real validation loss : 0.022678736483931775
+EarlyStopping counter: 6 out of 50
+18 tarainning loss : 0.015804911304998105 validation loss : 0.0189999928880795 Real validation loss : 0.0189999928880795
+Validation loss decreased (0.019001 --> 0.019000).  Saving model ...
+19 tarainning loss : 0.01481202984343237 validation loss : 0.09813383500535451 Real validation loss : 0.09813383500535451
+EarlyStopping counter: 1 out of 50
+20 tarainning loss : 0.015382220129650391 validation loss : 0.020052524481007722 Real validation loss : 0.020052524481007722
+EarlyStopping counter: 2 out of 50
+21 tarainning loss : 0.01443428685453522 validation loss : 0.019946918259642978 Real validation loss : 0.019946918259642978
+EarlyStopping counter: 3 out of 50
+22 tarainning loss : 0.014664732762917755 validation loss : 0.02166513565693694 Real validation loss : 0.02166513565693694
+EarlyStopping counter: 4 out of 50
+23 tarainning loss : 0.014253947449099944 validation loss : 0.019142850968957494 Real validation loss : 0.019142850968957494
+EarlyStopping counter: 5 out of 50
+24 tarainning loss : 0.013631300746127352 validation loss : 0.019498221340945174 Real validation loss : 0.019498221340945174
+EarlyStopping counter: 6 out of 50
+25 tarainning loss : 0.013107249475404864 validation loss : 0.07937289692500499 Real validation loss : 0.07937289692500499
+EarlyStopping counter: 7 out of 50
+26 tarainning loss : 0.013177193470268708 validation loss : 0.033034938470465354 Real validation loss : 0.033034938470465354
+EarlyStopping counter: 8 out of 50
+27 tarainning loss : 0.013709135467843076 validation loss : 0.06651948454804446 Real validation loss : 0.06651948454804446
+EarlyStopping counter: 9 out of 50
+28 tarainning loss : 0.01288156931593892 validation loss : 0.020112909196207972 Real validation loss : 0.020112909196207972
+EarlyStopping counter: 10 out of 50
+29 tarainning loss : 0.012104038367826553 validation loss : 0.01669156368875496 Real validation loss : 0.01669156368875496
+Validation loss decreased (0.019000 --> 0.016692).  Saving model ...
+30 tarainning loss : 0.011777628936087255 validation loss : 0.018789694056948598 Real validation loss : 0.018789694056948598
+EarlyStopping counter: 1 out of 50
+31 tarainning loss : 0.012098305130713298 validation loss : 0.018239542192179728 Real validation loss : 0.018239542192179728
+EarlyStopping counter: 2 out of 50
+32 tarainning loss : 0.01107901718543812 validation loss : 0.015324616360999839 Real validation loss : 0.015324616360999839
+Validation loss decreased (0.016692 --> 0.015325).  Saving model ...
+33 tarainning loss : 0.011197292934721489 validation loss : 0.015687962714826482 Real validation loss : 0.015687962714826482
+EarlyStopping counter: 1 out of 50
+34 tarainning loss : 0.010881478101259372 validation loss : 0.08334174982384238 Real validation loss : 0.08334174982384238
+EarlyStopping counter: 2 out of 50
+35 tarainning loss : 0.010744358752243464 validation loss : 0.013631025730286047 Real validation loss : 0.013631025730286047
+Validation loss decreased (0.015325 --> 0.013631).  Saving model ...
+36 tarainning loss : 0.01093389942035934 validation loss : 0.019777728665220255 Real validation loss : 0.019777728665220255
+EarlyStopping counter: 1 out of 50
+37 tarainning loss : 0.010384549915439403 validation loss : 0.03669029299696391 Real validation loss : 0.03669029299696391
+EarlyStopping counter: 2 out of 50
+38 tarainning loss : 0.010296176078530853 validation loss : 0.02327613691989508 Real validation loss : 0.02327613691989508
+EarlyStopping counter: 3 out of 50
+39 tarainning loss : 0.010143471077908991 validation loss : 0.01719018850226872 Real validation loss : 0.01719018850226872
+EarlyStopping counter: 4 out of 50
+40 tarainning loss : 0.010230748794446165 validation loss : 0.019737852680014142 Real validation loss : 0.019737852680014142
+EarlyStopping counter: 5 out of 50
+41 tarainning loss : 0.009818853781879192 validation loss : 0.024676139837043136 Real validation loss : 0.024676139837043136
+EarlyStopping counter: 6 out of 50
+42 tarainning loss : 0.009644271109222632 validation loss : 0.01972682317670103 Real validation loss : 0.01972682317670103
+EarlyStopping counter: 7 out of 50
+43 tarainning loss : 0.009439969939088112 validation loss : 0.018562695789224034 Real validation loss : 0.018562695789224034
+EarlyStopping counter: 8 out of 50
+44 tarainning loss : 0.00947866704429454 validation loss : 0.0163779194510654 Real validation loss : 0.0163779194510654
+EarlyStopping counter: 9 out of 50
+45 tarainning loss : 0.00920015973092408 validation loss : 0.013833409817084787 Real validation loss : 0.013833409817084787
+EarlyStopping counter: 10 out of 50
+46 tarainning loss : 0.009253636443697404 validation loss : 0.013879982975838189 Real validation loss : 0.013879982975838189
+EarlyStopping counter: 11 out of 50
+47 tarainning loss : 0.009034581645926246 validation loss : 0.01580269135905342 Real validation loss : 0.01580269135905342
+EarlyStopping counter: 12 out of 50
+48 tarainning loss : 0.009103704773378176 validation loss : 0.014707717856182596 Real validation loss : 0.014707717856182596
+EarlyStopping counter: 13 out of 50
+49 tarainning loss : 0.008955425122813856 validation loss : 0.017378753279116376 Real validation loss : 0.017378753279116376
+EarlyStopping counter: 14 out of 50
+50 tarainning loss : 0.008738704071777155 validation loss : 0.014615244388760735 Real validation loss : 0.014615244388760735
+EarlyStopping counter: 15 out of 50
+51 tarainning loss : 0.008802953139023824 validation loss : 0.01391507159121315 Real validation loss : 0.01391507159121315
+EarlyStopping counter: 16 out of 50
+52 tarainning loss : 0.0085070082943001 validation loss : 0.015299102012311836 Real validation loss : 0.015299102012311836
+EarlyStopping counter: 17 out of 50
+53 tarainning loss : 0.008453339098754233 validation loss : 0.016561702071172208 Real validation loss : 0.016561702071172208
+EarlyStopping counter: 18 out of 50
+54 tarainning loss : 0.008388365623617514 validation loss : 0.014243053807511301 Real validation loss : 0.014243053807511301
+EarlyStopping counter: 19 out of 50
+55 tarainning loss : 0.008242502263747155 validation loss : 0.013349459896044542 Real validation loss : 0.013349459896044542
+Validation loss decreased (0.013631 --> 0.013349).  Saving model ...
+56 tarainning loss : 0.008119750337934762 validation loss : 0.015618282451942874 Real validation loss : 0.015618282451942874
+EarlyStopping counter: 1 out of 50
+57 tarainning loss : 0.008155342114585467 validation loss : 0.013790363657985525 Real validation loss : 0.013790363657985525
+EarlyStopping counter: 2 out of 50
+58 tarainning loss : 0.008112305647647772 validation loss : 0.013337143484737081 Real validation loss : 0.013337143484737081
+Validation loss decreased (0.013349 --> 0.013337).  Saving model ...
+59 tarainning loss : 0.007943475192420368 validation loss : 0.012660385011963508 Real validation loss : 0.012660385011963508
+Validation loss decreased (0.013337 --> 0.012660).  Saving model ...
+60 tarainning loss : 0.007891857209004706 validation loss : 0.01312103470377819 Real validation loss : 0.01312103470377819
+EarlyStopping counter: 1 out of 50
+61 tarainning loss : 0.007712217228884091 validation loss : 0.013469963450916111 Real validation loss : 0.013469963450916111
+EarlyStopping counter: 2 out of 50
+62 tarainning loss : 0.007723429841485607 validation loss : 0.015109257829248789 Real validation loss : 0.015109257829248789
+EarlyStopping counter: 3 out of 50
+63 tarainning loss : 0.007800384193704632 validation loss : 0.01330883942205576 Real validation loss : 0.01330883942205576
+EarlyStopping counter: 4 out of 50
+64 tarainning loss : 0.007533317063324398 validation loss : 0.031018639127211887 Real validation loss : 0.031018639127211887
+EarlyStopping counter: 5 out of 50
+65 tarainning loss : 0.00749606020282954 validation loss : 0.020285140883899173 Real validation loss : 0.020285140883899173
+EarlyStopping counter: 6 out of 50
+66 tarainning loss : 0.007441697546021372 validation loss : 0.01222136403502243 Real validation loss : 0.01222136403502243
+Validation loss decreased (0.012660 --> 0.012221).  Saving model ...
+./script.sh: line 24: 614215 Segmentation fault      (core dumped) python -u Main.py

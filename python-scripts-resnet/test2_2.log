@@ -1,0 +1,79 @@
+GPU memory is free enough. Running Python script...
+Model loaded successfully with weights
+-------------hr---------------
+/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/nn/modules/conv.py:309: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /opt/conda/conda-bld/pytorch_1682343970094/work/aten/src/ATen/native/Convolution.cpp:1003.)
+  return F.conv1d(input, weight, bias, self.stride,
+/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/nn/modules/loss.py:536: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+0 tarainning loss : 0.05553708511649347 validation loss : 0.02624956275496277
+Validation loss decreased (inf --> 0.026250).  Saving model ...
+1 tarainning loss : 0.04116044519245808 validation loss : 0.03778895124155631
+EarlyStopping counter: 1 out of 100
+2 tarainning loss : 0.03856562029135296 validation loss : 0.03246964628725183
+EarlyStopping counter: 2 out of 100
+3 tarainning loss : 0.036796824921436565 validation loss : 0.04728574210212978
+EarlyStopping counter: 3 out of 100
+4 tarainning loss : 0.035626182202487894 validation loss : 0.019326952522473607
+Validation loss decreased (0.026250 --> 0.019327).  Saving model ...
+5 tarainning loss : 0.03362876149194952 validation loss : 0.03583137211737177
+EarlyStopping counter: 1 out of 100
+6 tarainning loss : 0.032691696038973414 validation loss : 0.04394975990973046
+EarlyStopping counter: 2 out of 100
+7 tarainning loss : 0.03321395251305381 validation loss : 0.03094079409456873
+EarlyStopping counter: 3 out of 100
+8 tarainning loss : 0.03165305410479729 validation loss : 0.03099919179799875
+EarlyStopping counter: 4 out of 100
+9 tarainning loss : 0.03127514422899414 validation loss : 0.023167234742622746
+EarlyStopping counter: 5 out of 100
+10 tarainning loss : 0.030325575871692535 validation loss : 0.04729652075165669
+EarlyStopping counter: 6 out of 100
+11 tarainning loss : 0.030369301208154485 validation loss : 0.028724313420868577
+EarlyStopping counter: 7 out of 100
+Traceback (most recent call last):
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/resource_sharer.py", line 138, in _serve
+    with self._listener.accept() as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/connection.py", line 464, in accept
+    deliver_challenge(c, self._authkey)
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/connection.py", line 744, in deliver_challenge
+    raise AuthenticationError('digest received was wrong')
+multiprocessing.context.AuthenticationError: digest received was wrong
+Traceback (most recent call last):
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/Main_Load.py", line 82, in <module>
+    resnet.train_and_validate(train_dataloader, validate_dataloader, validate_notscaled_dataloader, y_parameter)
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/ConvolutionalResNet.py", line 74, in train_and_validate
+    train_loss = train(train_dataloader, self.model, self.loss_fn, self.optimizer, self.device, epoch)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/utils.py", line 35, in train
+    for batch, (X, y) in enumerate(dataloader):
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1294, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/multiprocessing/reductions.py", line 307, in rebuild_storage_fd
+    fd = df.detach()
+         ^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/connection.py", line 507, in Client
+    answer_challenge(c, authkey)
+  File "/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/multiprocessing/connection.py", line 758, in answer_challenge
+    raise AuthenticationError('digest sent was rejected')
+multiprocessing.context.AuthenticationError: digest sent was rejected
+./script.sh: line 26: syntax error near unexpected token `done'
+./script.sh: line 26: `done'

@@ -1,0 +1,20 @@
+GPU memory is free enough. Running Python script...
+Model loaded successfully with weights
+train dataset loaded successfully
+validate dataset loaded successfully
+Datasets loaded successfully
+Dataloaders loaded successfully
+-------------pr---------------
+/storage/projects2/e17-4yp-compreh-ecg-analysis/minicondaInst/envs/test/lib/python3.11/site-packages/torch/nn/modules/conv.py:309: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /opt/conda/conda-bld/pytorch_1682343970094/work/aten/src/ATen/native/Convolution.cpp:1003.)
+  return F.conv1d(input, weight, bias, self.stride,
+0 tarainning loss : 1004.3461133241653 validation loss : 25830.8544921875
+Validation loss decreased (inf --> 25830.854492).  Saving model ...
+1 tarainning loss : 0.2590218485834507 validation loss : 25924.250162760418
+EarlyStopping counter: 1 out of 100
+2 tarainning loss : 0.108524242702585 validation loss : 25886.989095052082
+EarlyStopping counter: 2 out of 100
+3 tarainning loss : 0.08132837505008166 validation loss : 25897.842122395832
+EarlyStopping counter: 3 out of 100
+4 tarainning loss : 0.0610477992046911 validation loss : 25902.3740234375
+EarlyStopping counter: 4 out of 100
+./script.sh: line 24: 1791075 Quit                    (core dumped) python -u Main_TL_notNorm.py

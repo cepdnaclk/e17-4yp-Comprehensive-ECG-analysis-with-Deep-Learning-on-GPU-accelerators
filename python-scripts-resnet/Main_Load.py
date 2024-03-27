@@ -27,7 +27,7 @@ number_of_epochs = 1000
 learning_rate = 0.001
 #
 #y_parameters = ['hr', 'pr', 'qt', 'qrs']
-y_parameters = [ 'pr', 'qt', 'qrs', 'hr']  # adjust accordingly after a system shutdown
+y_parameters = ['hr']  # adjust accordingly after a system shutdown
 #y_parameters = ['pr']
 
 for y_parameter in y_parameters:
@@ -37,12 +37,16 @@ for y_parameter in y_parameters:
     model = KanResWide_X2(input_shape, output_size)
 
     # check point path
-    checkpoint_dir_path = "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/checkpoints2"
+    checkpoint_dir_path = "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/cp_test"
     checkpoint_path = checkpoint_dir_path + '/' + y_parameter + '_best_.pt'
 
+    if os.path.isfile(checkpoint_path):
+        checkpoint = torch.load(checkpoint_path)
+        model.load_state_dict(checkpoint)
+        print("Model loaded successfully with weights")
+
     # Load the checkpoint
-    checkpoint = torch.load(checkpoint_path)
-    model.load_state_dict(checkpoint)
+    
     #print(model)
     #print("Model loaded successfully with weights")
     #num_features = model.fc.in_features     #32
@@ -56,7 +60,7 @@ for y_parameter in y_parameters:
     # model.fc.bias.requires_grad = True
     #model.fc = nn.Linear(num_features, 1)
     #print(model)
-    print("Model loaded successfully with weights")
+    
 
     # ECG dataset
     train_dataset = ECGDataSet(parameter=y_parameter, split='train',scale=False)

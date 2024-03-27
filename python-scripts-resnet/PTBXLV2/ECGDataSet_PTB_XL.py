@@ -220,11 +220,13 @@ class ECGDataSet_PTB_XL(Dataset):
         ecg_record_data = np.delete(ecg_record_data, columns_to_remove, axis=1)
 
         ecg_signals = torch.tensor(ecg_record_data) # convert dataframe values to tensor
-        #print(ecg_signals)
+        #print(ecg_signals.max())
         #print("*********************")
         ecg_signals = ecg_signals.float()
         
         # Transposing the ecg signals
+        #print(ecg_signals.shape)
+        #exit()
         ecg_signals = ecg_signals/6   # normalization
         #print(ecg_signals)
         #exit()

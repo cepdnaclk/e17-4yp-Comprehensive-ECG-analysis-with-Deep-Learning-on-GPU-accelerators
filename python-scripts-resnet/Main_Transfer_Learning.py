@@ -105,7 +105,7 @@ for y_parameter in y_parameters:
     model = KanResWide_X2(input_shape, output_size)
 
     # check point path
-    checkpoint_dir_path = "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/checkpoints2"
+    checkpoint_dir_path = "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/cp_test"
     checkpoint_path = checkpoint_dir_path + '/' + y_parameter + '_best_.pt'
 
     # Load the checkpoint

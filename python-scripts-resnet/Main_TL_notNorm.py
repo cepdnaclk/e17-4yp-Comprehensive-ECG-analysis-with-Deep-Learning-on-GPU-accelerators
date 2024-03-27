@@ -22,7 +22,7 @@ output_size = 1
 number_of_epochs = 1000
 #
 # lr = 0.0005
-learning_rate = 0.0005
+learning_rate = 0.1
 #
 #y_parameters = ['hr', 'pr', 'qt', 'qrs']
 y_parameters = [ 'pr', 'qt', 'qrs', 'hr']
@@ -105,15 +105,17 @@ for y_parameter in y_parameters:
     model = KanResWide_X2(input_shape, output_size)
 
     # check point path
-    checkpoint_dir_path = "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/cp_not_norm"
+    checkpoint_dir_path = "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/cp_test"
     checkpoint_path = checkpoint_dir_path + '/' + y_parameter + '_best_.pt'
 
     # Load the checkpoint
     checkpoint = torch.load(checkpoint_path)
+        
+
     model.load_state_dict(checkpoint)
     #print(model)
     #print("Model loaded successfully with weights")
-    num_features = model.fc.in_features     #32
+    #num_features = model.fc.in_features     #32
     #print(num_features)
     #exit()
     #for param in model.parameters():
@@ -139,10 +141,10 @@ for y_parameter in y_parameters:
     print("Datasets loaded successfully")
 
     #get min values
-    pr_min, qt_min, qrs_min = train_dataset.getMinVals()
+    #pr_min, qt_min, qrs_min = train_dataset.getMinVals()
     #print(pr_min, qt_min, qrs_min)
     #getmax values
-    pr_max, qt_max, qrs_max = train_dataset.getMaxVals()
+    #pr_max, qt_max, qrs_max = train_dataset.getMaxVals()
     #print(pr_max, qt_max, qrs_max)
 
     #exit()
@@ -164,7 +166,8 @@ for y_parameter in y_parameters:
     # train and validate
     resnet = ConvolutionalResNet(model, learning_rate, number_of_epochs, y_parameter)
     print(f"-------------{y_parameter}---------------")
-    resnet.train_and_validate_tl(train_dataloader, validate_dataloader, validate_notscaled_dataloader, y_parameter, pr_max, pr_min, qt_max, qt_min, qrs_max, qrs_min)
+    #resnet.train_and_validate_tl(train_dataloader, validate_dataloader, validate_notscaled_dataloader, y_parameter, pr_max, pr_min, qt_max, qt_min, qrs_max, qrs_min)
+    resnet.train_and_validate(train_dataloader, validate_dataloader, validate_notscaled_dataloader, y_parameter)
     print("\n")
         
 

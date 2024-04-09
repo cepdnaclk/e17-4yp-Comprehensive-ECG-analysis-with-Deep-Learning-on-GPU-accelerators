@@ -27,7 +27,7 @@ def train(dataloader, model, loss_fn, optimizer, device, epoch):
     size = len(dataloader.dataset)
 
     # cosineannealing warm restrats
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=10, T_mult=1, eta_min = 0.001)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=50, T_mult=1, eta_min = 0.0001)
     model.train()
     
 

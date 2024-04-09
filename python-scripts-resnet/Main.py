@@ -46,9 +46,9 @@ for y_parameter in y_parameters:
 
     # batch size = 16 
     # data loaders
-    train_dataloader = DataLoader(dataset=train_dataset, batch_size=64, shuffle=True, num_workers=32)
-    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=64, shuffle=False, num_workers=32)
-    validate_notscaled_dataloader = DataLoader(dataset=validate_notscaled_dataset, batch_size=64, shuffle=False, num_workers=32)
+    train_dataloader = DataLoader(dataset=train_dataset, batch_size=256, shuffle=True, num_workers=32)
+    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=256, shuffle=False, num_workers=32)
+    validate_notscaled_dataloader = DataLoader(dataset=validate_notscaled_dataset, batch_size=256, shuffle=False, num_workers=32)
 
     #print("Dataloaders Done")
     # train and validate

@@ -113,7 +113,7 @@ class ConvolutionalResNet():
             epochs.append(epoch)
 
             # train
-            train_loss = train(train_dataloader, self.model, self.loss_fn, self.optimizer, self.device)
+            train_loss = train(train_dataloader, self.model, self.loss_fn, self.optimizer, self.device,epoch)
             train_losses.append(train_loss)
 
             # validation

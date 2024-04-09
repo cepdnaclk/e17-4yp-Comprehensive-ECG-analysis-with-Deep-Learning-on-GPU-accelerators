@@ -20,15 +20,16 @@ class ECGDataSet(Dataset):
         # data loading
         current_directory = os.getcwd()
         self.parent_directory = os.path.dirname(current_directory)
-        train_small_path = os.path.join(self.parent_directory, 'data', 'deepfake_ecg_full_train_validation_test/clean', str(self.split) + '.csv')
+        train_small_path = os.path.join(self.parent_directory, 'data/data', 'deepfake_ecg_full_train_validation_test/clean', str(self.split) + '.csv')
         #train_small_path = os.path.join(self.parent_directory, 'data', 'deepfake-ecg-small', str(self.split) + '.csv')
         # Skip the header row
         self.df = pd.read_csv(train_small_path)  
 
         # get the min max values from train dataset
-        train = os.path.join(self.parent_directory, 'data', 'deepfake_ecg_full_train_validation_test/clean', 'train' + '.csv')
+        train = os.path.join(self.parent_directory, 'data/data', 'deepfake_ecg_full_train_validation_test/clean', 'train' + '.csv')
         self.train_df = pd.read_csv(train)
 
+        '''
         if (parameter == 'pr'):
             column = self.train_df[parameter]
             self.pr_min_val = column.min()
@@ -103,6 +104,18 @@ class ECGDataSet(Dataset):
                 
             #print(self.y)
             #exit()
+        '''
+
+
+        if parameter == 'hr':
+            # Avg RR interval
+            # in milli seconds
+            RR = torch.tensor(self.df['avgrrinterval'].values, dtype=torch.float32)
+            # calculate HR
+            self.y = 60 * 1000/RR
+        else:
+            self.y = torch.tensor(self.df[parameter].values, dtype=torch.float32)
+        
         
         
         # Size of the dataset
@@ -113,7 +126,7 @@ class ECGDataSet(Dataset):
         
         # file path
         filename= self.df['patid'].values[index]
-        asc_path = os.path.join(self.parent_directory,  'data', 'deepfake_ecg_full_train_validation_test', str(self.split), str(filename) + '.asc')
+        asc_path = os.path.join(self.parent_directory,  'data/data', 'deepfake_ecg_full_train_validation_test', str(self.split), str(filename) + '.asc')
         #asc_path = os.path.join(os.getcwd(),  'data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
         #asc_path = os.path.join(self.parent_directory,  'data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
         

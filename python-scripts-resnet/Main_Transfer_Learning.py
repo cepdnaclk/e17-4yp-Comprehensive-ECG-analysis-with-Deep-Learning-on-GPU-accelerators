@@ -22,7 +22,7 @@ output_size = 1
 number_of_epochs = 1000
 #
 # lr = 0.0005
-learning_rate = 0.0005
+learning_rate = 0.1
 #
 #y_parameters = ['hr', 'pr', 'qt', 'qrs']
 y_parameters = [ 'pr', 'qt', 'qrs', 'hr']
@@ -105,7 +105,7 @@ for y_parameter in y_parameters:
     model = KanResWide_X2(input_shape, output_size)
 
     # check point path
-    checkpoint_dir_path = "/storage/projects2/e17-4yp-compreh-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/cp_test"
+    checkpoint_dir_path = "/storage/localSSD/e17-4yp-comprehensive-ecg-analysis/e17-4yp-Comprehensive-ECG-analysis-with-Deep-Learning-on-GPU-accelerators/python-scripts-resnet/checkpoints/DFtest"
     checkpoint_path = checkpoint_dir_path + '/' + y_parameter + '_best_.pt'
 
     # Load the checkpoint

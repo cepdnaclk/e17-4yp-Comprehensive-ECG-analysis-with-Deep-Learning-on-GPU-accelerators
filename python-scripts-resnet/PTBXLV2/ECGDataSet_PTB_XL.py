@@ -25,9 +25,9 @@ class ECGDataSet_PTB_XL(Dataset):
 
         # Assuming you already have your DataFrame loaded as self.df
         # Define the percentages for train, validation, and test sets
-        train_percentage = 0.7
-        validation_percentage = 0.15
-        test_percentage = 0.15
+        train_percentage = 0.8
+        validation_percentage = 0.1
+        test_percentage = 0.1
 
         # Calculate the number of samples for each set
         total_samples = len(self.df)
@@ -60,6 +60,7 @@ class ECGDataSet_PTB_XL(Dataset):
         test.reset_index(drop=True, inplace=True)
 
         #print("Before train")
+
 
         if (parameter == 'pr'):
             train = train.dropna(subset=['PR_Int_Global']) 
@@ -98,6 +99,8 @@ class ECGDataSet_PTB_XL(Dataset):
 
         #print("After train")
 
+
+        '''
         if (split == 'train'):
             if parameter == 'hr':
                 self.df = self.df.dropna(subset=['RR_Mean_Global'])
@@ -142,7 +145,10 @@ class ECGDataSet_PTB_XL(Dataset):
                 #exit()
 
         else:
-            if(scale):
+        
+        '''
+        
+        if(scale):
                 if parameter == 'hr':
                     self.df = self.df.dropna(subset=['RR_Mean_Global'])
                     #column = self.df
@@ -168,7 +174,7 @@ class ECGDataSet_PTB_XL(Dataset):
                     column = self.df['PR_Int_Global']
                     scaled_column = (column - self.pr_min_val) / (self.pr_max_val - self.pr_min_val)
                     self.y = torch.tensor(scaled_column.values, dtype=torch.float32)
-            else:
+        else:
                 if parameter == 'hr':   
                     self.df = self.df.dropna(subset=['RR_Mean_Global'])
                     # Avg RR interval
@@ -208,7 +214,7 @@ class ECGDataSet_PTB_XL(Dataset):
         #print(file_name)
 
         #ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl', 'records500', folder_name, file_name)
-        ecg_record_path = os.path.join(self.super_parent_directory,  'data', 'ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.1', 'records500', folder_name, file_name)
+        ecg_record_path = os.path.join(self.super_parent_directory,  'data/data', 'ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.1', 'records500', folder_name, file_name)
 
         # Use wfdb.rdsamp to read both the .dat file and .hea header file
         ecg_record_data, ecg_record_header = wfdb.rdsamp(ecg_record_path)

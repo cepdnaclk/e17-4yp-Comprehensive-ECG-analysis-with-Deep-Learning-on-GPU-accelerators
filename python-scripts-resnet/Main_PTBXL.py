@@ -66,11 +66,11 @@ for y_parameter in y_parameters:
 
     
     # data loaders
-    train_dataloader = DataLoader(dataset=train_dataset, batch_size=128, shuffle=True, num_workers=32)
+    train_dataloader = DataLoader(dataset=train_dataset, batch_size=256, shuffle=True, num_workers=32)
     #get the shape of the train dataloader
     #print(train_dataloader.dataset[0][0].shape)
-    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=128, shuffle=False, num_workers=32)
-    validate_notscaled_dataloader = DataLoader(dataset=validate_notscaled_dataset, batch_size=128, shuffle=False, num_workers=32)
+    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=256, shuffle=False, num_workers=32)
+    validate_notscaled_dataloader = DataLoader(dataset=validate_notscaled_dataset, batch_size=256, shuffle=False, num_workers=32)
     print("Dataloaders loaded successfully")
 
     #exit()

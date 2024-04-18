@@ -12,6 +12,7 @@ import numpy as np
 import torch
 import pandas as pd
 import os
+from torcheval.metrics.functional import r2_score
 
 #from ECGDataSet import pr_max_val, pr_min_val, qt_max_val, qt_min_val, qrs_max_val, qrs_min_val
 
@@ -32,6 +33,7 @@ def train(dataloader, model, loss_fn, optimizer, device, epoch):
     
 
     train_losses_epoch = [] 
+    train_r2_epoch = []
     for batch, (X, y) in enumerate(dataloader):
         #print(X.shape)
         #print(y.shape)
@@ -47,6 +49,7 @@ def train(dataloader, model, loss_fn, optimizer, device, epoch):
         #print('y shape down')
         #print(y.shape)
         loss = loss_fn(pred, y)
+        r2 = r2_score(y, pred)
         #print('pred down')
         #print(pred)
         #print(y)
@@ -68,8 +71,9 @@ def train(dataloader, model, loss_fn, optimizer, device, epoch):
         #optimizer.zero_grad()
         
         train_losses_epoch.append(loss.item())
+        train_r2_epoch.append(r2.item())
     
-    return np.mean(train_losses_epoch)
+    return np.mean(train_losses_epoch), np.mean(train_r2_epoch)
 
 
 def validate(dataloader, model, loss_fn, device, y_parameter):
@@ -82,6 +86,7 @@ def validate(dataloader, model, loss_fn, device, y_parameter):
 
     model.eval()  # Set the model to evaluation mode
     val_losses_epoch = []
+    val_r2_epoch = []
     #val_real_epoch = []
 
     with torch.no_grad():
@@ -94,6 +99,7 @@ def validate(dataloader, model, loss_fn, device, y_parameter):
             # Compute predictions
             pred = model(X)
             loss = loss_fn(pred, y)
+            r2 = r2_score(y, pred)
 
             #print(X)
             #print(y)        # y is inf?
@@ -119,8 +125,9 @@ def validate(dataloader, model, loss_fn, device, y_parameter):
                 #val_real_epoch.append(lossr.item())
 
             val_losses_epoch.append(loss.item())
+            val_r2_epoch.append(r2.item())
 
-    return np.mean(val_losses_epoch) #, np.mean(val_real_epoch)
+    return np.mean(val_losses_epoch) , np.mean(val_r2_epoch)
 
 def validate_notscaled(dataloader, model, loss_fn, device, y_parameter):
 

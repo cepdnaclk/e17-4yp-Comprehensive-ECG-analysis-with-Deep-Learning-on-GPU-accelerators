@@ -71,17 +71,17 @@ class ConvolutionalResNet():
             epochs.append(epoch)
 
             # train
-            train_loss = train(train_dataloader, self.model, self.loss_fn, self.optimizer, self.device, epoch)
+            train_loss, train_r2 = train(train_dataloader, self.model, self.loss_fn, self.optimizer, self.device, epoch)
             train_losses.append(train_loss)
 
             # validation
             #val_loss, val_real_loss = validate(validate_dataloader, self.model, self.loss_fn, self.device, y_parameter)
-            val_loss = validate(validate_dataloader, self.model, self.loss_fn, self.device, y_parameter)
+            val_loss, val_r2 = validate(validate_dataloader, self.model, self.loss_fn, self.device, y_parameter)
             #val_loss_real = validate_notscaled(validate_notscaled_dataloader, self.model, self.loss_fn, self.device, y_parameter)
             val_losses.append(val_loss)
             #val_real_losses.append(val_loss_real)
 
-            print(f"{epoch} tarainning loss : {train_loss} validation loss : {val_loss}")
+            print(f"{epoch} training loss : {train_loss} training r2 score: {train_r2} validation loss: {val_loss} valdation R2 score : {val_r2}")
 
             # early_stopping needs the validation loss to check if it has decresed, 
             # and if it has, it will make a checkpoint of the current model

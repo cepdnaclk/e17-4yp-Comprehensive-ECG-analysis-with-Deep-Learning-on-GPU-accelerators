@@ -33,10 +33,11 @@ class ConvolutionalResNet():
         #self.optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
 
         # Create a StepLR scheduler that reduces the learning rate by a factor of 0.5 every 10 epochs
-        self.scheduler = optim.lr_scheduler.StepLR(self.optimizer, step_size=10, gamma=0.5)
+        #self.scheduler = optim.lr_scheduler.StepLR(self.optimizer, step_size=30, gamma=0.1)
         
         # Loss function for linear values (e.g., regression)
         self.loss_fn = nn.MSELoss()  # Mean Squared Error loss
+        #self.loss_fn =  nn.L1Loss()
 
 
     def plot_graph(self, epochs, train_losses, val_losses, val_real_losses=None):
@@ -66,6 +67,10 @@ class ConvolutionalResNet():
         # initialize the early_stopping object
         early_stopping = EarlyStopping(patience=self.patience, verbose=True)
 
+        # Define and initialize ReduceLROnPlateau scheduler
+        #scheduler_2 = optim.lr_scheduler.ReduceLROnPlateau(optimizer=self.optimizer, factor=0.8, patience=5, verbose=False)
+
+
         for epoch in range(self.epochs):
             # print(f"Epoch {epoch+1}\n-------------------------------")
             epochs.append(epoch)
@@ -80,6 +85,8 @@ class ConvolutionalResNet():
             #val_loss_real = validate_notscaled(validate_notscaled_dataloader, self.model, self.loss_fn, self.device, y_parameter)
             val_losses.append(val_loss)
             #val_real_losses.append(val_loss_real)
+            # Update scheduler with validation loss
+            #self.scheduler.step()
 
             print(f"{epoch} training loss : {train_loss} training r2 score: {train_r2} validation loss: {val_loss} valdation R2 score : {val_r2}")
 

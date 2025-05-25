@@ -24,7 +24,7 @@ output_size = 1
 number_of_epochs = 1000
 #
 # lr = 0.0005
-learning_rate = 0.0005
+learning_rate = 0.01
 #
 #y_parameters = ['hr', 'pr', 'qt', 'qrs']
 y_parameters = [ 'pr', 'qt', 'qrs', 'hr']

@@ -1,6 +1,7 @@
 import torch.nn.functional as F
 from torch import nn
 
+
 class KanResInit(nn.Module):
     def __init__(self, in_channels, filterno_1, filterno_2, filtersize_1, filtersize_2, stride):
         #print(in_channels) --> 8

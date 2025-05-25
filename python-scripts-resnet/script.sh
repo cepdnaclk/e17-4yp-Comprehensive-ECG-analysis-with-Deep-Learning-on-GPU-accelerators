@@ -13,7 +13,7 @@ while true; do
     # Compare the free memory percentage with the threshold
     if (( free_memory > threshold )); then
         echo "GPU memory is free enough. Running Python script..."
-        CUDA_VISIBLE_DEVICES=0 python -u Main_PTBXL_attention.py
+        CUDA_VISIBLE_DEVICES=1 python -u Main_PTBXL_attention.py
 
         break
     else

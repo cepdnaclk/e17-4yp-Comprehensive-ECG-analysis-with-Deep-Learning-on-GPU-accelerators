@@ -1,6 +1,7 @@
 import torch.nn.functional as F
 from KanResInit import KanResInit
 from KanResModuleAttention import KanResModuleAttention
+from KanResInitAttention import KanResInitAttention
 from torch import nn
 import torch
 
@@ -14,8 +15,9 @@ class KanResWide_X2_attention(nn.Module):
 
         self.input_shape = input_shape
         self.output_size = output_size
+        self.dropout = nn.Dropout(p=0.5)
         
-        self.init_block = KanResInit(input_shape[0], 64, 32, 8, 3, 1)
+        self.init_block = KanResInitAttention(input_shape[0], 64, 32, 8, 3, 1)
         self.pool = nn.AvgPool1d(kernel_size=2)
         
         self.module_blocks = nn.Sequential(
@@ -49,6 +51,7 @@ class KanResWide_X2_attention(nn.Module):
         x = self.global_avg_pool(x)
         #print(x.shape)
         x = x.view(x.size(0), -1)
+        x= self.dropout(x)
         #q: explain the above line
         #a: it flattens the input
         x = self.fc(x)

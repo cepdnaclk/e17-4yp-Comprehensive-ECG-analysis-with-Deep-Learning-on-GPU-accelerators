@@ -20,13 +20,13 @@ input_shape = (8, 5000)
 # Number of output units
 output_size = 1 
 # number of epochs
-number_of_epochs = 1000
+number_of_epochs = 5000
 #
 # lr = 0.0005
 learning_rate = 0.1
 #
-#y_parameters = ['hr', 'pr', 'qt', 'qrs']
-y_parameters = [ 'pr', 'qt', 'qrs', 'hr']
+y_parameters = ['pr', 'qt', 'qrs', 'hr','rpa', 'twa', 'stj']
+#y_parameters = [ 'pr', 'qt', 'qrs', 'hr']
 #y_parameters = ['pr']
 
 for y_parameter in y_parameters:
@@ -66,11 +66,11 @@ for y_parameter in y_parameters:
 
     
     # data loaders
-    train_dataloader = DataLoader(dataset=train_dataset, batch_size=256, shuffle=True, num_workers=32)
+    train_dataloader = DataLoader(dataset=train_dataset, batch_size=300, shuffle=True, num_workers=32)
     #get the shape of the train dataloader
     #print(train_dataloader.dataset[0][0].shape)
-    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=256, shuffle=False, num_workers=32)
-    validate_notscaled_dataloader = DataLoader(dataset=validate_notscaled_dataset, batch_size=256, shuffle=False, num_workers=32)
+    validate_dataloader = DataLoader(dataset=validate_dataset, batch_size=300, shuffle=False, num_workers=32)
+    validate_notscaled_dataloader = DataLoader(dataset=validate_notscaled_dataset, batch_size=300, shuffle=False, num_workers=32)
     print("Dataloaders loaded successfully")
 
     #exit()

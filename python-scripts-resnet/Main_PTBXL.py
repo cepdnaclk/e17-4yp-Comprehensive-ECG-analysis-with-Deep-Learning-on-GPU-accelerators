@@ -26,7 +26,8 @@ number_of_epochs = 1000
 learning_rate = 0.1
 #
 #y_parameters = ['hr', 'pr', 'qt', 'qrs']
-y_parameters = [ 'pr', 'qt', 'qrs', 'hr']
+y_parameters = [ 'pr', 'qt', 'qrs', 'hr', 'rpa', 'twa', 'stj'] # e18149_modified
+#y_parameters = [ 'rpa', 'twa', 'stj'] # e18149_modified
 #y_parameters = ['pr']
 
 for y_parameter in y_parameters:

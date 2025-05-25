@@ -61,6 +61,7 @@ class ECGDataSet_PTB_XL(Dataset):
 
         #print("Before train")
 
+        
 
         if (parameter == 'pr'):
             train = train.dropna(subset=['PR_Int_Global']) 
@@ -89,6 +90,21 @@ class ECGDataSet_PTB_XL(Dataset):
             self.qrs_min_val = column.min()
             self.qrs_max_val = column.max()
 
+        #e18149_modified_down******************************
+
+        elif (parameter == 'stj'):
+            train = train.dropna(subset=['ST_Amp_V5'])
+            column = train['ST_Amp_V5']
+        
+        elif (parameter == 'twa'):
+            train = train.dropna(subset=['T_Amp_V5'])
+            column = train['T_Amp_V5']
+        
+        elif (parameter == 'rpa'):
+            train = train.dropna(subset=['R_Amp_V5'])
+            column = train['R_Amp_V5']
+
+        #e18149_modified_up***********************************************
         
         if split=="train":
             self.df = train
@@ -195,6 +211,22 @@ class ECGDataSet_PTB_XL(Dataset):
                     self.df = self.df.dropna(subset=['PR_Int_Global'])
                     self.y = torch.tensor(self.df['PR_Int_Global'].values, dtype=torch.float32)
                 
+                #e18149_modified_down******************************
+
+                elif parameter == 'stj':
+                    self.df = self.df.dropna(subset=['ST_Amp_V5']) 
+                    self.y = torch.tensor(self.df['ST_Amp_V5'].values, dtype=torch.float32)
+
+                elif parameter == 'twa':
+                    self.df = self.df.dropna(subset=['T_Amp_V5']) 
+                    self.y = torch.tensor(self.df['T_Amp_V5'].values, dtype=torch.float32)
+        
+                elif parameter == 'rpa': 
+                    self.df = self.df.dropna(subset=['R_Amp_V5'])
+                    self.y = torch.tensor(self.df['R_Amp_V5'].values, dtype=torch.float32)
+
+                #e18149_modified_up******************************
+
         # Size of the dataset
         self.samples = self.df.shape[0]
 

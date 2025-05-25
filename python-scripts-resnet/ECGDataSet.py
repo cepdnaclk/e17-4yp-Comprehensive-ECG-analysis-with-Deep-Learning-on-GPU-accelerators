@@ -20,8 +20,8 @@ class ECGDataSet(Dataset):
         # data loading
         current_directory = os.getcwd()
         self.parent_directory = os.path.dirname(current_directory)
-        #train_small_path = os.path.join(self.parent_directory, 'data/data', 'deepfake_ecg_full_train_validation_test/clean', str(self.split) + '.csv')
-        train_small_path = os.path.join(self.parent_directory, 'data/data', 'deepfake-ecg-small', str(self.split) + '.csv')
+        train_small_path = os.path.join(self.parent_directory, 'data/data', 'deepfake_ecg_full_train_validation_test/clean', str(self.split) + '.csv')
+        #train_small_path = os.path.join(self.parent_directory, 'data/data', 'deepfake-ecg-small', str(self.split) + '.csv')
         # Skip the header row
         self.df = pd.read_csv(train_small_path)  
 
@@ -126,9 +126,9 @@ class ECGDataSet(Dataset):
         
         # file path
         filename= self.df['patid'].values[index]
-        #asc_path = os.path.join(self.parent_directory,  'data/data', 'deepfake_ecg_full_train_validation_test', str(self.split), str(filename) + '.asc')
+        asc_path = os.path.join(self.parent_directory,  'data/data', 'deepfake_ecg_full_train_validation_test', str(self.split), str(filename) + '.asc')
         #asc_path = os.path.join(os.getcwd(),  'data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
-        asc_path = os.path.join(self.parent_directory,  'data/data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
+        #asc_path = os.path.join(self.parent_directory,  'data/data', 'deepfake-ecg-small', str(self.split), str(filename) + '.asc')
         
         ecg_signals = pd.read_csv( asc_path, header=None, sep=" ") # read into dataframe
         ecg_signals = torch.tensor(ecg_signals.values) # convert dataframe values to tensor

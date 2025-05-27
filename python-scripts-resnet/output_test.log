@@ -1,0 +1,995 @@
+-------------pr---------------
+/home/e17006/miniconda3/envs/testA/lib/python3.12/site-packages/torch/nn/modules/conv.py:306: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /opt/conda/conda-bld/pytorch_1711403380481/work/aten/src/ATen/native/Convolution.cpp:1040.)
+  return F.conv1d(input, weight, bias, self.stride,
+0 training loss : 19030.477917416556 training r2 score: -103109.36500413505 validation loss: 13791.852986653646 valdation R2 score : -1104.240982055664
+Validation loss decreased (inf --> 13791.852987).  Saving model ...
+1 training loss : 7996.909141340805 training r2 score: -289.49375371283884 validation loss: 4148.8930257161455 valdation R2 score : -64.32951951026917
+Validation loss decreased (13791.852987 --> 4148.893026).  Saving model ...
+2 training loss : 1273.0257108997923 training r2 score: -10.30197001814218 validation loss: 1004.3734715779623 valdation R2 score : -10.639131406943003
+Validation loss decreased (4148.893026 --> 1004.373472).  Saving model ...
+3 training loss : 101.809102173251 training r2 score: 0.48209772809013646 validation loss: 153.47682825724283 valdation R2 score : 0.42783192296822864
+Validation loss decreased (1004.373472 --> 153.476828).  Saving model ...
+4 training loss : 55.90174185667987 training r2 score: 0.7485962686426353 validation loss: 67.85852392514546 valdation R2 score : 0.5643550418317318
+Validation loss decreased (153.476828 --> 67.858524).  Saving model ...
+5 training loss : 52.556573318561334 training r2 score: 0.768823196906694 validation loss: 82.49658219019572 valdation R2 score : 0.724310419211785
+EarlyStopping counter: 1 out of 100
+6 training loss : 51.01719900201128 training r2 score: 0.7780739499636345 validation loss: 59.920345862706505 valdation R2 score : 0.7633564819892248
+Validation loss decreased (67.858524 --> 59.920346).  Saving model ...
+7 training loss : 49.56660181814463 training r2 score: 0.7859102272238406 validation loss: 58.16825747489929 valdation R2 score : 0.7083196565508842
+Validation loss decreased (59.920346 --> 58.168257).  Saving model ...
+8 training loss : 49.010651253904975 training r2 score: 0.7890449620354238 validation loss: 53.239239851633705 valdation R2 score : 0.7807662909229597
+Validation loss decreased (58.168257 --> 53.239240).  Saving model ...
+9 training loss : 48.245581522037845 training r2 score: 0.7931443934977367 validation loss: 51.88698919614156 valdation R2 score : 0.8081239946186543
+Validation loss decreased (53.239240 --> 51.886989).  Saving model ...
+10 training loss : 47.57859889125324 training r2 score: 0.7967985802920077 validation loss: 48.99309357007345 valdation R2 score : 0.7823293854792913
+Validation loss decreased (51.886989 --> 48.993094).  Saving model ...
+11 training loss : 46.82587587646165 training r2 score: 0.800664215499818 validation loss: 58.464717388153076 valdation R2 score : 0.7382845766842365
+EarlyStopping counter: 1 out of 100
+12 training loss : 46.236041563343626 training r2 score: 0.8038117690548223 validation loss: 97.56274016698201 valdation R2 score : 0.5888642792900404
+EarlyStopping counter: 2 out of 100
+13 training loss : 45.53694348060648 training r2 score: 0.8075503093721978 validation loss: 51.207848946253456 valdation R2 score : 0.794605782876412
+EarlyStopping counter: 3 out of 100
+14 training loss : 45.25982456307137 training r2 score: 0.8087058263923486 validation loss: 80.04629564285278 valdation R2 score : 0.6964394946893057
+EarlyStopping counter: 4 out of 100
+
+15 training loss : 44.900100742959225 training r2 score: 0.810912923038942 validation loss: 47.68358866373698 valdation R2 score : 0.7763902954757214
+Validation loss decreased (48.993094 --> 47.683589).  Saving model ...
+16 training loss : 44.677188658589465 training r2 score: 0.8122499603875645 validation loss: 64.10416150093079 valdation R2 score : 0.6923004587491354
+EarlyStopping counter: 1 out of 100
+17 training loss : 44.471084190288764 training r2 score: 0.8128205929439105 validation loss: 61.247589111328125 valdation R2 score : 0.6679000183939934
+EarlyStopping counter: 2 out of 100
+18 training loss : 44.06633729585178 training r2 score: 0.8150396312718616 validation loss: 45.87190659840902 valdation R2 score : 0.7916693203151226
+Validation loss decreased (47.683589 --> 45.871907).  Saving model ...
+19 training loss : 43.76072346852088 training r2 score: 0.8165168373684608 validation loss: 46.457072019577026 valdation R2 score : 0.7884498052299023
+EarlyStopping counter: 1 out of 100
+20 training loss : 43.63252407093947 training r2 score: 0.8174042636187289 validation loss: 47.8707369963328 valdation R2 score : 0.7640072045226892
+EarlyStopping counter: 2 out of 100
+21 training loss : 43.422446455630954 training r2 score: 0.8184005000204316 validation loss: 52.48974943161011 valdation R2 score : 0.7844243894020716
+EarlyStopping counter: 3 out of 100
+22 training loss : 42.92383466590761 training r2 score: 0.8206339311537318 validation loss: 48.303450187047325 valdation R2 score : 0.8146772347390652
+EarlyStopping counter: 4 out of 100
+23 training loss : 42.89972253869341 training r2 score: 0.8207006690077757 validation loss: 45.482879956563316 valdation R2 score : 0.7980680453280607
+Validation loss decreased (45.871907 --> 45.482880).  Saving model ...
+24 training loss : 42.78989852286134 training r2 score: 0.8214736487228833 validation loss: 56.9521373907725 valdation R2 score : 0.7454104349017143
+EarlyStopping counter: 1 out of 100
+25 training loss : 42.399443052201995 training r2 score: 0.823453527938633 validation loss: 45.37011750539144 valdation R2 score : 0.810722354799509
+Validation loss decreased (45.482880 --> 45.370118).  Saving model ...
+26 training loss : 42.10353501304906 training r2 score: 0.8246412394246506 validation loss: 44.90263803799947 valdation R2 score : 0.8143874431649843
+Validation loss decreased (45.370118 --> 44.902638).  Saving model ...
+27 training loss : 42.110643002375255 training r2 score: 0.8248685910439616 validation loss: 45.69012713432312 valdation R2 score : 0.8166581243276596
+EarlyStopping counter: 1 out of 100
+28 training loss : 41.56765863907899 training r2 score: 0.8276375961241298 validation loss: 47.88799897829691 valdation R2 score : 0.807137398670117
+EarlyStopping counter: 2 out of 100
+29 training loss : 41.43312308426303 training r2 score: 0.8279087214257704 validation loss: 45.65709129969279 valdation R2 score : 0.7826513436933359
+EarlyStopping counter: 3 out of 100
+30 training loss : 41.227755616472656 training r2 score: 0.8291778041742235 validation loss: 47.71264894803365 valdation R2 score : 0.7658434323966503
+EarlyStopping counter: 4 out of 100
+31 training loss : 40.870181533054534 training r2 score: 0.830704148215149 validation loss: 47.933412869771324 valdation R2 score : 0.8082009305556616
+EarlyStopping counter: 5 out of 100
+32 training loss : 40.824593603923056 training r2 score: 0.8308935095190377 validation loss: 52.97172872225443 valdation R2 score : 0.8117038483421007
+EarlyStopping counter: 6 out of 100
+33 training loss : 40.43278968771091 training r2 score: 0.8330695075202362 validation loss: 46.650737047195435 valdation R2 score : 0.824683390557766
+EarlyStopping counter: 7 out of 100
+34 training loss : 40.58933651010403 training r2 score: 0.8320498034280008 validation loss: 45.04767823219299 valdation R2 score : 0.7979597846666971
+EarlyStopping counter: 8 out of 100
+35 training loss : 40.16727674194655 training r2 score: 0.8340786965417613 validation loss: 45.45776875813802 valdation R2 score : 0.805797565728426
+EarlyStopping counter: 9 out of 100
+36 training loss : 39.88254034831262 training r2 score: 0.8354582870817934 validation loss: 46.86433498064677 valdation R2 score : 0.8147103103498617
+EarlyStopping counter: 10 out of 100
+37 training loss : 39.680597215422786 training r2 score: 0.8367950371734759 validation loss: 47.44395168622335 valdation R2 score : 0.8207902498543262
+EarlyStopping counter: 11 out of 100
+38 training loss : 39.44750186660527 training r2 score: 0.837660100603603 validation loss: 48.031771183013916 valdation R2 score : 0.8331841913362344
+EarlyStopping counter: 12 out of 100
+39 training loss : 39.0496026333714 training r2 score: 0.83956625261856 validation loss: 49.23057222366333 valdation R2 score : 0.7958497429887453
+EarlyStopping counter: 13 out of 100
+40 training loss : 38.6942410793604 training r2 score: 0.8412972794777436 validation loss: 45.469710191090904 valdation R2 score : 0.7953279304007689
+EarlyStopping counter: 14 out of 100
+41 training loss : 38.34535856896046 training r2 score: 0.8429845264132735 validation loss: 46.24579739570618 valdation R2 score : 0.8244187968472639
+EarlyStopping counter: 15 out of 100
+42 training loss : 38.48733577927994 training r2 score: 0.8422085596004706 validation loss: 48.04388244946798 valdation R2 score : 0.8242004128793875
+EarlyStopping counter: 16 out of 100
+43 training loss : 38.248324314337125 training r2 score: 0.8435141640807946 validation loss: 46.17053333918253 valdation R2 score : 0.8331038132309914
+EarlyStopping counter: 17 out of 100
+44 training loss : 38.02117164971317 training r2 score: 0.844414464934334 validation loss: 48.17670186360677 valdation R2 score : 0.8161104594667753
+EarlyStopping counter: 18 out of 100
+45 training loss : 37.49591935741964 training r2 score: 0.8468143660672672 validation loss: 44.527645905812584 valdation R2 score : 0.8217947830756506
+Validation loss decreased (44.902638 --> 44.527646).  Saving model ...
+46 training loss : 37.71356129271822 training r2 score: 0.8460393601063034 validation loss: 46.88529682159424 valdation R2 score : 0.8232285641133785
+EarlyStopping counter: 1 out of 100
+47 training loss : 37.15167914884877 training r2 score: 0.8485049382242232 validation loss: 44.253806352615356 valdation R2 score : 0.8191695685187975
+Validation loss decreased (44.527646 --> 44.253806).  Saving model ...
+48 training loss : 36.89641693374873 training r2 score: 0.8497279874629375 validation loss: 47.73658482233683 valdation R2 score : 0.8332822496692339
+EarlyStopping counter: 1 out of 100
+49 training loss : 36.73006418737442 training r2 score: 0.8504909919818658 validation loss: 49.73656360308329 valdation R2 score : 0.7864128351211548
+EarlyStopping counter: 2 out of 100
+50 training loss : 36.46039421520932 training r2 score: 0.851619933600201 validation loss: 45.48505290349325 valdation R2 score : 0.8221484323342642
+EarlyStopping counter: 3 out of 100
+51 training loss : 36.29453605132577 training r2 score: 0.8524435028355783 validation loss: 60.37524048487345 valdation R2 score : 0.7492472678422928
+EarlyStopping counter: 4 out of 100
+52 training loss : 36.074113696033415 training r2 score: 0.8533411428566379 validation loss: 47.472684144973755 valdation R2 score : 0.8003167137503624
+EarlyStopping counter: 5 out of 100
+53 training loss : 35.8428915383304 training r2 score: 0.8545651346913183 validation loss: 45.39312553405762 valdation R2 score : 0.817037875453631
+EarlyStopping counter: 6 out of 100
+54 training loss : 35.56088646294559 training r2 score: 0.8555487422418844 validation loss: 45.610203425089516 valdation R2 score : 0.8196249107519785
+EarlyStopping counter: 7 out of 100
+55 training loss : 35.44675660757494 training r2 score: 0.8563860036939851 validation loss: 52.621631145477295 valdation R2 score : 0.8006349379817644
+EarlyStopping counter: 8 out of 100
+56 training loss : 35.34642553079815 training r2 score: 0.8568164058692792 validation loss: 46.76126495997111 valdation R2 score : 0.8055696313579878
+EarlyStopping counter: 9 out of 100
+57 training loss : 34.858661791416985 training r2 score: 0.8592888207335747 validation loss: 47.008532206217446 valdation R2 score : 0.7998706363141537
+EarlyStopping counter: 10 out of 100
+58 training loss : 34.6850839684771 training r2 score: 0.8599821494511909 validation loss: 47.836143016815186 valdation R2 score : 0.7978440870841345
+EarlyStopping counter: 11 out of 100
+59 training loss : 34.62149499224118 training r2 score: 0.8602230463040437 validation loss: 49.68870838483175 valdation R2 score : 0.8132512172063192
+EarlyStopping counter: 12 out of 100
+60 training loss : 34.55353067807502 training r2 score: 0.8604321692002381 validation loss: 46.97660605112711 valdation R2 score : 0.8050434937079748
+EarlyStopping counter: 13 out of 100
+61 training loss : 34.220284706635 training r2 score: 0.8618915371245739 validation loss: 45.779557863871254 valdation R2 score : 0.8124749213457108
+EarlyStopping counter: 14 out of 100
+62 training loss : 33.92834452933666 training r2 score: 0.8633090755390247 validation loss: 47.072043895721436 valdation R2 score : 0.8245781709750494
+EarlyStopping counter: 15 out of 100
+63 training loss : 34.00683864873117 training r2 score: 0.8631347341375201 validation loss: 47.466572999954224 valdation R2 score : 0.8219618685543537
+EarlyStopping counter: 16 out of 100
+64 training loss : 33.70220681634873 training r2 score: 0.8644207681660877 validation loss: 48.69137152036031 valdation R2 score : 0.8128610402345657
+EarlyStopping counter: 17 out of 100
+65 training loss : 33.6773017314092 training r2 score: 0.8645125496449895 validation loss: 48.11648869514465 valdation R2 score : 0.820617325603962
+EarlyStopping counter: 18 out of 100
+66 training loss : 33.42223862952587 training r2 score: 0.865660423695729 validation loss: 48.193694750467934 valdation R2 score : 0.8207251640657584
+EarlyStopping counter: 19 out of 100
+67 training loss : 33.29863186781319 training r2 score: 0.8662518379887986 validation loss: 48.466278394063316 valdation R2 score : 0.8086692293485006
+EarlyStopping counter: 20 out of 100
+68 training loss : 33.393811325752296 training r2 score: 0.8656784035460487 validation loss: 45.72355596224467 valdation R2 score : 0.8158242367208004
+EarlyStopping counter: 21 out of 100
+69 training loss : 33.07945048247333 training r2 score: 0.8672787345828811 validation loss: 47.19304164250692 valdation R2 score : 0.8100292024513086
+EarlyStopping counter: 22 out of 100
+70 training loss : 37.887149096783546 training r2 score: 0.8453233566583763 validation loss: 47.22888604799906 valdation R2 score : 0.8047895754377047
+EarlyStopping counter: 23 out of 100
+71 training loss : 37.472633651413844 training r2 score: 0.8468411376026912 validation loss: 45.74863282839457 valdation R2 score : 0.8131992717583975
+EarlyStopping counter: 24 out of 100
+72 training loss : 37.37379100060588 training r2 score: 0.8475348487574392 validation loss: 45.528376499811806 valdation R2 score : 0.8087067616482576
+EarlyStopping counter: 25 out of 100
+73 training loss : 37.40193819874868 training r2 score: 0.8471805713875755 validation loss: 45.82886481285095 valdation R2 score : 0.8154978019495805
+EarlyStopping counter: 26 out of 100
+74 training loss : 37.324474169945844 training r2 score: 0.8475676169570204 validation loss: 51.27942967414856 valdation R2 score : 0.7907824205855528
+EarlyStopping counter: 27 out of 100
+75 training loss : 37.1468859218178 training r2 score: 0.8485306482664577 validation loss: 48.664072116216026 valdation R2 score : 0.818147212266922
+EarlyStopping counter: 28 out of 100
+76 training loss : 37.14249063162279 training r2 score: 0.8485691291499512 validation loss: 49.74047438303629 valdation R2 score : 0.8153602778911591
+EarlyStopping counter: 29 out of 100
+77 training loss : 37.10471689513841 training r2 score: 0.8487106121647421 validation loss: 50.46773568789164 valdation R2 score : 0.7941816089053949
+EarlyStopping counter: 30 out of 100
+78 training loss : 36.862640915116714 training r2 score: 0.8497344342825924 validation loss: 59.66821893056234 valdation R2 score : 0.7783416211605072
+EarlyStopping counter: 31 out of 100
+79 training loss : 36.71710338392807 training r2 score: 0.8505664514621515 validation loss: 48.279053926467896 valdation R2 score : 0.800599937637647
+EarlyStopping counter: 32 out of 100
+80 training loss : 36.522640293181254 training r2 score: 0.8515920454919026 validation loss: 49.327524741490684 valdation R2 score : 0.820087139805158
+EarlyStopping counter: 33 out of 100
+81 training loss : 36.31780726747363 training r2 score: 0.8522621026525947 validation loss: 51.25961192448934 valdation R2 score : 0.7870127484202385
+EarlyStopping counter: 34 out of 100
+82 training loss : 36.2735451004268 training r2 score: 0.8526573906706266 validation loss: 55.7011886437734 valdation R2 score : 0.7837212048470974
+EarlyStopping counter: 35 out of 100
+83 training loss : 36.16354244292094 training r2 score: 0.8529122462447402 validation loss: 49.82271464665731 valdation R2 score : 0.7956183316806952
+EarlyStopping counter: 36 out of 100
+84 training loss : 35.54683034707114 training r2 score: 0.8557053620278523 validation loss: 49.62799151738485 valdation R2 score : 0.8043675646185875
+EarlyStopping counter: 37 out of 100
+85 training loss : 35.57535061162179 training r2 score: 0.8557307412799117 validation loss: 49.1985015074412 valdation R2 score : 0.8073793624838194
+EarlyStopping counter: 38 out of 100
+86 training loss : 35.27401331956474 training r2 score: 0.8571115476298706 validation loss: 50.57832519213358 valdation R2 score : 0.8145265231529871
+EarlyStopping counter: 39 out of 100
+87 training loss : 35.13234768612847 training r2 score: 0.8577196910119181 validation loss: 47.079928398132324 valdation R2 score : 0.8212338897089163
+EarlyStopping counter: 40 out of 100
+88 training loss : 34.96434217722628 training r2 score: 0.8586710962949623 validation loss: 49.113938887914024 valdation R2 score : 0.7979752123355865
+EarlyStopping counter: 41 out of 100
+89 training loss : 34.51830317711955 training r2 score: 0.8605184675199199 validation loss: 47.81352416674296 valdation R2 score : 0.8070685702065626
+EarlyStopping counter: 42 out of 100
+90 training loss : 34.368511983861474 training r2 score: 0.8614428012158858 validation loss: 53.023587226867676 valdation R2 score : 0.7935734341541926
+EarlyStopping counter: 43 out of 100
+91 training loss : 34.10185744500285 training r2 score: 0.8623964577445185 validation loss: 48.586646954218544 valdation R2 score : 0.7973255080481371
+EarlyStopping counter: 44 out of 100
+92 training loss : 33.82373515223957 training r2 score: 0.863770149141082 validation loss: 55.410313844680786 valdation R2 score : 0.7766716033220291
+EarlyStopping counter: 45 out of 100
+93 training loss : 33.76392161284442 training r2 score: 0.8640789244499506 validation loss: 48.913259506225586 valdation R2 score : 0.7921564454833666
+EarlyStopping counter: 46 out of 100
+94 training loss : 33.460057742932705 training r2 score: 0.8654625890142631 validation loss: 59.88058948516846 valdation R2 score : 0.7567786338428656
+EarlyStopping counter: 47 out of 100
+95 training loss : 33.17710576381983 training r2 score: 0.8667334954776065 validation loss: 49.95450909932455 valdation R2 score : 0.8065654089053472
+EarlyStopping counter: 48 out of 100
+96 training loss : 32.98629647399743 training r2 score: 0.8677138968600029 validation loss: 49.632724603017174 valdation R2 score : 0.8067243347565333
+EarlyStopping counter: 49 out of 100
+97 training loss : 32.76070095481673 training r2 score: 0.8685214223037839 validation loss: 53.0096283753713 valdation R2 score : 0.8149290432532629
+EarlyStopping counter: 50 out of 100
+98 training loss : 32.5503744105394 training r2 score: 0.8695472194886332 validation loss: 51.994029680887856 valdation R2 score : 0.8133327414592108
+EarlyStopping counter: 51 out of 100
+99 training loss : 32.0567828622788 training r2 score: 0.8717389738684549 validation loss: 49.0282367070516 valdation R2 score : 0.8102652902404467
+EarlyStopping counter: 52 out of 100
+100 training loss : 31.96941912985597 training r2 score: 0.8724122495239318 validation loss: 46.58397658665975 valdation R2 score : 0.7863147060076395
+EarlyStopping counter: 53 out of 100
+101 training loss : 31.606761228351694 training r2 score: 0.8739172682088083 validation loss: 54.916643381118774 valdation R2 score : 0.7692527696490288
+EarlyStopping counter: 54 out of 100
+102 training loss : 31.63490960984954 training r2 score: 0.8736591640255214 validation loss: 53.34655404090881 valdation R2 score : 0.7926826017598311
+EarlyStopping counter: 55 out of 100
+103 training loss : 31.360500635276914 training r2 score: 0.875212659230407 validation loss: 52.41198865572611 valdation R2 score : 0.8182344697415829
+EarlyStopping counter: 56 out of 100
+104 training loss : 31.018518268125845 training r2 score: 0.8764517620908028 validation loss: 48.53211943308512 valdation R2 score : 0.7967430477341017
+EarlyStopping counter: 57 out of 100
+105 training loss : 30.87380905550812 training r2 score: 0.8770878909458041 validation loss: 48.480998833974205 valdation R2 score : 0.8123496485253175
+EarlyStopping counter: 58 out of 100
+106 training loss : 30.696788732918144 training r2 score: 0.8778741479856181 validation loss: 51.630640268325806 valdation R2 score : 0.8034726915260156
+EarlyStopping counter: 59 out of 100
+107 training loss : 30.44799534562995 training r2 score: 0.8790613979257215 validation loss: 47.191416343053184 valdation R2 score : 0.7968211794892947
+EarlyStopping counter: 60 out of 100
+108 training loss : 30.08696652956658 training r2 score: 0.8805326615016498 validation loss: 50.51692978541056 valdation R2 score : 0.810959250976642
+EarlyStopping counter: 61 out of 100
+109 training loss : 29.862938471489553 training r2 score: 0.8817739182429788 validation loss: 49.26772848765055 valdation R2 score : 0.8096880242228508
+EarlyStopping counter: 62 out of 100
+110 training loss : 29.604817784893577 training r2 score: 0.8827045708114564 validation loss: 50.58795960744222 valdation R2 score : 0.7965492084622383
+EarlyStopping counter: 63 out of 100
+111 training loss : 29.26637001936348 training r2 score: 0.8843347473918456 validation loss: 49.17485213279724 valdation R2 score : 0.8011268886427084
+EarlyStopping counter: 64 out of 100
+112 training loss : 29.250073677582268 training r2 score: 0.884237844438453 validation loss: 53.16699210802714 valdation R2 score : 0.8027231134474277
+EarlyStopping counter: 65 out of 100
+113 training loss : 29.0070567006216 training r2 score: 0.8854296803474426 validation loss: 49.91420269012451 valdation R2 score : 0.8037064112722874
+EarlyStopping counter: 66 out of 100
+114 training loss : 28.755269450042885 training r2 score: 0.8862374688630329 validation loss: 52.37246592839559 valdation R2 score : 0.8007408728202184
+EarlyStopping counter: 67 out of 100
+115 training loss : 28.565262699626505 training r2 score: 0.8874014854743218 validation loss: 51.22283331553141 valdation R2 score : 0.7999084653953711
+EarlyStopping counter: 68 out of 100
+116 training loss : 28.37890604029151 training r2 score: 0.8880816446861047 validation loss: 58.42731467882792 valdation R2 score : 0.7929803058505058
+EarlyStopping counter: 69 out of 100
+117 training loss : 28.2574889397746 training r2 score: 0.8886910477233807 validation loss: 52.639971017837524 valdation R2 score : 0.8022053552170595
+EarlyStopping counter: 70 out of 100
+118 training loss : 28.040468775165017 training r2 score: 0.889552162423808 validation loss: 55.367621660232544 valdation R2 score : 0.786638737966617
+EarlyStopping counter: 71 out of 100
+119 training loss : 27.624864348566344 training r2 score: 0.8914976747248186 validation loss: 50.40061457951864 valdation R2 score : 0.8029007452229658
+EarlyStopping counter: 72 out of 100
+120 training loss : 27.718660030065408 training r2 score: 0.8909283593999153 validation loss: 49.402367194493614 valdation R2 score : 0.8035291321575642
+EarlyStopping counter: 73 out of 100
+121 training loss : 27.273312124282278 training r2 score: 0.8928570093596793 validation loss: 50.61862428983053 valdation R2 score : 0.7956958239277204
+EarlyStopping counter: 74 out of 100
+122 training loss : 27.192206462640414 training r2 score: 0.8933070425275733 validation loss: 50.60330843925476 valdation R2 score : 0.7970017045736313
+EarlyStopping counter: 75 out of 100
+123 training loss : 26.95540559978385 training r2 score: 0.8944935787722702 validation loss: 50.874867836634316 valdation R2 score : 0.7925710156559944
+EarlyStopping counter: 76 out of 100
+124 training loss : 26.884378393283065 training r2 score: 0.8943298039323997 validation loss: 50.603740294774376 valdation R2 score : 0.8130011806885401
+EarlyStopping counter: 77 out of 100
+125 training loss : 26.71248488900549 training r2 score: 0.8951445970859827 validation loss: 48.792247931162514 valdation R2 score : 0.8038905623058478
+EarlyStopping counter: 78 out of 100
+126 training loss : 26.463758218974966 training r2 score: 0.8965347214206976 validation loss: 51.00307106971741 valdation R2 score : 0.8029171663026015
+EarlyStopping counter: 79 out of 100
+127 training loss : 26.49092761134602 training r2 score: 0.8962501382640519 validation loss: 48.76431393623352 valdation R2 score : 0.7930713593959808
+EarlyStopping counter: 80 out of 100
+128 training loss : 26.227264469206645 training r2 score: 0.897423676327261 validation loss: 50.38972385724386 valdation R2 score : 0.8102796884874502
+EarlyStopping counter: 81 out of 100
+129 training loss : 26.066973516454247 training r2 score: 0.897983862155395 validation loss: 51.57683269182841 valdation R2 score : 0.8111304913957914
+EarlyStopping counter: 82 out of 100
+130 training loss : 25.895166606803215 training r2 score: 0.8989166684487727 validation loss: 49.12643416722616 valdation R2 score : 0.8070305660367012
+EarlyStopping counter: 83 out of 100
+131 training loss : 25.86825048236947 training r2 score: 0.8991030192500009 validation loss: 49.91188383102417 valdation R2 score : 0.8111279048025608
+EarlyStopping counter: 84 out of 100
+132 training loss : 25.7344889715704 training r2 score: 0.8995771718586927 validation loss: 50.30657823880514 valdation R2 score : 0.8078883637984594
+EarlyStopping counter: 85 out of 100
+133 training loss : 25.554326831358267 training r2 score: 0.9003149611163513 validation loss: 49.00731595357259 valdation R2 score : 0.8071737090746561
+EarlyStopping counter: 86 out of 100
+134 training loss : 25.607253354257313 training r2 score: 0.9000605507046765 validation loss: 50.1144495010376 valdation R2 score : 0.8062252861758074
+EarlyStopping counter: 87 out of 100
+135 training loss : 25.373699018468407 training r2 score: 0.9010937902003683 validation loss: 50.23678421974182 valdation R2 score : 0.8033836906154951
+EarlyStopping counter: 88 out of 100
+136 training loss : 25.413705136763486 training r2 score: 0.9009981760803941 validation loss: 50.922340393066406 valdation R2 score : 0.8018076891700426
+EarlyStopping counter: 89 out of 100
+137 training loss : 25.17965763151958 training r2 score: 0.9017711865340228 validation loss: 50.08416509628296 valdation R2 score : 0.791019274542729
+EarlyStopping counter: 90 out of 100
+138 training loss : 25.16691507469297 training r2 score: 0.9016576733888756 validation loss: 49.62000449498495 valdation R2 score : 0.8067013757924238
+EarlyStopping counter: 91 out of 100
+139 training loss : 25.06813834724626 training r2 score: 0.9023758769035339 validation loss: 50.81218655904134 valdation R2 score : 0.8037349556883177
+EarlyStopping counter: 92 out of 100
+140 training loss : 30.202288093367173 training r2 score: 0.8802166578033208 validation loss: 48.26395956675211 valdation R2 score : 0.7844161254664263
+EarlyStopping counter: 93 out of 100
+141 training loss : 30.09578540562335 training r2 score: 0.8807481352571418 validation loss: 49.66777761777242 valdation R2 score : 0.7958230786025524
+EarlyStopping counter: 94 out of 100
+142 training loss : 29.929957160150817 training r2 score: 0.8813370517723224 validation loss: 49.885669231414795 valdation R2 score : 0.8003806782265505
+EarlyStopping counter: 95 out of 100
+143 training loss : 29.880895474818363 training r2 score: 0.8813508196651 validation loss: 50.45592323939005 valdation R2 score : 0.8020432603855928
+EarlyStopping counter: 96 out of 100
+144 training loss : 29.980650337578737 training r2 score: 0.8811530946749043 validation loss: 50.79091556866964 valdation R2 score : 0.796097781509161
+EarlyStopping counter: 97 out of 100
+145 training loss : 29.7954359104496 training r2 score: 0.8820382211532892 validation loss: 49.16335082054138 valdation R2 score : 0.7797860813637575
+EarlyStopping counter: 98 out of 100
+146 training loss : 29.688929393029337 training r2 score: 0.8824328951810667 validation loss: 49.69115138053894 valdation R2 score : 0.7811022661626339
+EarlyStopping counter: 99 out of 100
+147 training loss : 29.826801369951657 training r2 score: 0.8816315531730652 validation loss: 51.39832536379496 valdation R2 score : 0.784499271462361
+EarlyStopping counter: 100 out of 100
+Early stopping
+
+
+-------------qt---------------
+0 training loss : 142288.29208933245 training r2 score: -660117.0210446662 validation loss: 127985.01025390625 valdation R2 score : -126458.49731445312
+Validation loss decreased (inf --> 127985.010254).  Saving model ...
+1 training loss : 109168.79732493455 training r2 score: -48816.531409138785 validation loss: 86970.37906901042 valdation R2 score : -3072.0601247151694
+Validation loss decreased (127985.010254 --> 86970.379069).  Saving model ...
+2 training loss : 65720.19093586388 training r2 score: -1179.36237227355 validation loss: 43136.29728190104 valdation R2 score : -264.78237501780194
+Validation loss decreased (86970.379069 --> 43136.297282).  Saving model ...
+3 training loss : 27846.72509254336 training r2 score: -184.6921597725434 validation loss: 13285.952901204428 valdation R2 score : -61.166581312815346
+Validation loss decreased (43136.297282 --> 13285.952901).  Saving model ...
+4 training loss : 7426.81025224456 training r2 score: -28.474084202531746 validation loss: 1806.1228205362956 valdation R2 score : -2.351448873678843
+Validation loss decreased (13285.952901 --> 1806.122821).  Saving model ...
+5 training loss : 1153.4044297303205 training r2 score: -2.619083073126708 validation loss: 640.2363001505533 valdation R2 score : -0.8860810920596123
+Validation loss decreased (1806.122821 --> 640.236300).  Saving model ...
+6 training loss : 132.39883336970942 training r2 score: 0.6283646999853444 validation loss: 795.3099072774252 valdation R2 score : -1.531008372704188
+EarlyStopping counter: 1 out of 100
+7 training loss : 44.411545069429884 training r2 score: 0.8806547957877214 validation loss: 165.68205801645914 valdation R2 score : 0.5966732911765575
+Validation loss decreased (640.236300 --> 165.682058).  Saving model ...
+8 training loss : 37.08540337247998 training r2 score: 0.9013370136627976 validation loss: 46.65099811553955 valdation R2 score : 0.8831559109191099
+Validation loss decreased (165.682058 --> 46.650998).  Saving model ...
+9 training loss : 35.118189911567725 training r2 score: 0.9072057249034262 validation loss: 107.0021185874939 valdation R2 score : 0.7405933526655039
+EarlyStopping counter: 1 out of 100
+10 training loss : 33.97432925439006 training r2 score: 0.9109099059516846 validation loss: 498.68055089314777 valdation R2 score : -0.48585838576157886
+EarlyStopping counter: 2 out of 100
+11 training loss : 32.74631886207621 training r2 score: 0.9142573591302202 validation loss: 37.97459884484609 valdation R2 score : 0.9033837169408798
+Validation loss decreased (46.650998 --> 37.974599).  Saving model ...
+12 training loss : 32.22983042232653 training r2 score: 0.9160489404076682 validation loss: 55.46214056015015 valdation R2 score : 0.8770760595798492
+EarlyStopping counter: 1 out of 100
+13 training loss : 31.603353819922003 training r2 score: 0.9178977510379871 validation loss: 101.28667275110881 valdation R2 score : 0.7704351941744486
+EarlyStopping counter: 2 out of 100
+14 training loss : 31.400354015889594 training r2 score: 0.9182754196421639 validation loss: 70.11580387751262 valdation R2 score : 0.8097160533070564
+EarlyStopping counter: 3 out of 100
+15 training loss : 30.885816554124442 training r2 score: 0.919753898344739 validation loss: 162.74604002634683 valdation R2 score : 0.4909745194017887
+EarlyStopping counter: 4 out of 100
+16 training loss : 30.54093459763452 training r2 score: 0.9208760732755611 validation loss: 33.500675121943154 valdation R2 score : 0.9147124253213406
+Validation loss decreased (37.974599 --> 33.500675).  Saving model ...
+17 training loss : 30.057337361480553 training r2 score: 0.922124911197193 validation loss: 1045.009957631429 valdation R2 score : -2.7777210672696433
+EarlyStopping counter: 1 out of 100
+18 training loss : 29.753610251461648 training r2 score: 0.9227898904166296 validation loss: 30.25626762708028 valdation R2 score : 0.923160637418429
+Validation loss decreased (33.500675 --> 30.256268).  Saving model ...
+19 training loss : 29.47907702960269 training r2 score: 0.9239587568487796 validation loss: 47.059825817743935 valdation R2 score : 0.8536144917209944
+EarlyStopping counter: 1 out of 100
+20 training loss : 28.963316433092686 training r2 score: 0.9253185603631104 validation loss: 49.077861388524376 valdation R2 score : 0.882301926612854
+EarlyStopping counter: 2 out of 100
+21 training loss : 28.945919750872708 training r2 score: 0.925387666487569 validation loss: 56.29595955212911 valdation R2 score : 0.8681954368948936
+EarlyStopping counter: 3 out of 100
+22 training loss : 28.86366193581626 training r2 score: 0.9256073311361342 validation loss: 44.99518243471781 valdation R2 score : 0.8649726969500383
+EarlyStopping counter: 4 out of 100
+23 training loss : 28.37122397897131 training r2 score: 0.9270252633781333 validation loss: 34.18784236907959 valdation R2 score : 0.9010258577764034
+EarlyStopping counter: 5 out of 100
+24 training loss : 28.229013682660007 training r2 score: 0.9273969914900695 validation loss: 282.47289594014484 valdation R2 score : 0.06803690269589424
+EarlyStopping counter: 6 out of 100
+25 training loss : 27.765085939337446 training r2 score: 0.9286760734637994 validation loss: 28.98819649219513 valdation R2 score : 0.9271091719468435
+Validation loss decreased (30.256268 --> 28.988196).  Saving model ...
+26 training loss : 27.673551494538472 training r2 score: 0.9289636173485462 validation loss: 55.78765821456909 valdation R2 score : 0.8619915855427583
+EarlyStopping counter: 1 out of 100
+27 training loss : 27.803525460328107 training r2 score: 0.9286520660547686 validation loss: 34.383812626202904 valdation R2 score : 0.9077494107186794
+EarlyStopping counter: 2 out of 100
+28 training loss : 27.07481707827583 training r2 score: 0.9306395550048788 validation loss: 53.300102869669594 valdation R2 score : 0.861841960499684
+EarlyStopping counter: 3 out of 100
+29 training loss : 27.096551470731566 training r2 score: 0.9306779531908285 validation loss: 47.19683726628622 valdation R2 score : 0.8976132037738959
+EarlyStopping counter: 4 out of 100
+30 training loss : 27.025395912649746 training r2 score: 0.9306994996457824 validation loss: 53.83944169680277 valdation R2 score : 0.8518498154977957
+EarlyStopping counter: 5 out of 100
+31 training loss : 26.590096738325986 training r2 score: 0.9320596581354191 validation loss: 83.71396239598592 valdation R2 score : 0.7501953368385633
+EarlyStopping counter: 6 out of 100
+32 training loss : 26.579235865807657 training r2 score: 0.9319645522152566 validation loss: 29.493080695470173 valdation R2 score : 0.9300089677174886
+EarlyStopping counter: 7 out of 100
+33 training loss : 26.276901459818735 training r2 score: 0.9328291004240825 validation loss: 27.57718237241109 valdation R2 score : 0.9254012443125248
+Validation loss decreased (28.988196 --> 27.577182).  Saving model ...
+34 training loss : 26.06715640222839 training r2 score: 0.9333876525856437 validation loss: 30.8234707514445 valdation R2 score : 0.9244048881034056
+EarlyStopping counter: 1 out of 100
+35 training loss : 25.910621193691075 training r2 score: 0.9338384879197126 validation loss: 38.4856649239858 valdation R2 score : 0.8882719737788042
+EarlyStopping counter: 2 out of 100
+36 training loss : 25.90860712840295 training r2 score: 0.9338082786629961 validation loss: 65.36080733935039 valdation R2 score : 0.814422412465016
+EarlyStopping counter: 3 out of 100
+37 training loss : 25.58186002801226 training r2 score: 0.9346628097027384 validation loss: 27.563693404197693 valdation R2 score : 0.9315826160212358
+Validation loss decreased (27.577182 --> 27.563693).  Saving model ...
+38 training loss : 25.493392709662153 training r2 score: 0.9349931411406133 validation loss: 29.410172979036968 valdation R2 score : 0.9235647817452749
+EarlyStopping counter: 1 out of 100
+39 training loss : 25.261781303046263 training r2 score: 0.935539166028587 validation loss: 107.21914768218994 valdation R2 score : 0.7043223542471727
+EarlyStopping counter: 2 out of 100
+40 training loss : 24.956179623828508 training r2 score: 0.9363750929295704 validation loss: 45.49293740590414 valdation R2 score : 0.8815610321859518
+EarlyStopping counter: 3 out of 100
+41 training loss : 24.996695366205344 training r2 score: 0.936124464760276 validation loss: 27.18867572148641 valdation R2 score : 0.9325030955175558
+Validation loss decreased (27.563693 --> 27.188676).  Saving model ...
+42 training loss : 24.96394946812335 training r2 score: 0.9362520403886965 validation loss: 31.275947491327923 valdation R2 score : 0.9186521048347155
+EarlyStopping counter: 1 out of 100
+43 training loss : 24.89586240458863 training r2 score: 0.9364855504784909 validation loss: 33.700009981791176 valdation R2 score : 0.915280985335509
+EarlyStopping counter: 2 out of 100
+44 training loss : 24.549557935505014 training r2 score: 0.9373729388127152 validation loss: 26.746120015780132 valdation R2 score : 0.9386650857826074
+Validation loss decreased (27.188676 --> 26.746120).  Saving model ...
+45 training loss : 24.484699723608205 training r2 score: 0.9376600214636138 validation loss: 26.32726565996806 valdation R2 score : 0.9320102160175642
+Validation loss decreased (26.746120 --> 26.327266).  Saving model ...
+46 training loss : 24.14414503686715 training r2 score: 0.9385019419080924 validation loss: 31.819313049316406 valdation R2 score : 0.9209128854175409
+EarlyStopping counter: 1 out of 100
+47 training loss : 24.095641810232433 training r2 score: 0.9386026281960972 validation loss: 26.86436927318573 valdation R2 score : 0.9364599213004112
+EarlyStopping counter: 2 out of 100
+48 training loss : 23.99262809254112 training r2 score: 0.9388382105615126 validation loss: 24.771656195322674 valdation R2 score : 0.9377122049530348
+Validation loss decreased (26.327266 --> 24.771656).  Saving model ...
+49 training loss : 23.798457105746444 training r2 score: 0.9394516578207466 validation loss: 26.404603799184162 valdation R2 score : 0.9334022887051105
+EarlyStopping counter: 1 out of 100
+50 training loss : 23.630931544678372 training r2 score: 0.9398846424999038 validation loss: 32.479039470354714 valdation R2 score : 0.9166868304212888
+EarlyStopping counter: 2 out of 100
+51 training loss : 23.47235259710182 training r2 score: 0.9402657907982771 validation loss: 26.870458443959553 valdation R2 score : 0.9289732401569685
+EarlyStopping counter: 3 out of 100
+52 training loss : 23.316709411081842 training r2 score: 0.9407060497406265 validation loss: 24.786708911259968 valdation R2 score : 0.9367685131728649
+EarlyStopping counter: 4 out of 100
+53 training loss : 23.307020277252995 training r2 score: 0.9406492976930129 validation loss: 25.486405849456787 valdation R2 score : 0.9404600597918034
+EarlyStopping counter: 5 out of 100
+54 training loss : 23.0876891101218 training r2 score: 0.9412776623408832 validation loss: 27.431846380233765 valdation R2 score : 0.9307675076027712
+EarlyStopping counter: 6 out of 100
+55 training loss : 22.94551824399938 training r2 score: 0.9416706371681852 validation loss: 35.585968812306724 valdation R2 score : 0.9159473118682703
+EarlyStopping counter: 7 out of 100
+56 training loss : 22.8616685817379 training r2 score: 0.9418985119664857 validation loss: 27.350974162419636 valdation R2 score : 0.934135007361571
+EarlyStopping counter: 8 out of 100
+57 training loss : 22.70436024291353 training r2 score: 0.9423012265360168 validation loss: 27.722312490145367 valdation R2 score : 0.931982242812713
+EarlyStopping counter: 9 out of 100
+58 training loss : 22.61155232833942 training r2 score: 0.9426488948118 validation loss: 25.110612829526264 valdation R2 score : 0.9368800967931747
+EarlyStopping counter: 10 out of 100
+59 training loss : 22.503611394872216 training r2 score: 0.942901969424093 validation loss: 28.576500455538433 valdation R2 score : 0.9312191419303417
+EarlyStopping counter: 11 out of 100
+60 training loss : 22.344332362968885 training r2 score: 0.9433219551415968 validation loss: 31.952553272247314 valdation R2 score : 0.9108500219881535
+EarlyStopping counter: 12 out of 100
+61 training loss : 22.324143626927082 training r2 score: 0.9432059872836966 validation loss: 26.61063559850057 valdation R2 score : 0.931959563245376
+EarlyStopping counter: 13 out of 100
+62 training loss : 22.211864136900576 training r2 score: 0.94370067603301 validation loss: 27.060529152552288 valdation R2 score : 0.9309674799442291
+EarlyStopping counter: 14 out of 100
+63 training loss : 22.10915436919447 training r2 score: 0.9438972357680037 validation loss: 25.000120639801025 valdation R2 score : 0.9401195993026098
+EarlyStopping counter: 15 out of 100
+64 training loss : 21.87776207050104 training r2 score: 0.9445651924110832 validation loss: 27.351921319961548 valdation R2 score : 0.9289036418000857
+EarlyStopping counter: 16 out of 100
+65 training loss : 21.872957316992796 training r2 score: 0.9445655492587863 validation loss: 24.71880805492401 valdation R2 score : 0.9371786390741667
+Validation loss decreased (24.771656 --> 24.718808).  Saving model ...
+66 training loss : 21.645679129355866 training r2 score: 0.9452375281231565 validation loss: 25.096760789553326 valdation R2 score : 0.9370453258355459
+EarlyStopping counter: 1 out of 100
+67 training loss : 21.659482816126957 training r2 score: 0.9450707810087354 validation loss: 27.65562919775645 valdation R2 score : 0.9319385451575121
+EarlyStopping counter: 2 out of 100
+68 training loss : 21.586850068956146 training r2 score: 0.9453829400514433 validation loss: 25.135603149731953 valdation R2 score : 0.9351622499525547
+EarlyStopping counter: 3 out of 100
+69 training loss : 21.560436745588692 training r2 score: 0.9453699941410444 validation loss: 26.771718462308247 valdation R2 score : 0.9374959170818329
+EarlyStopping counter: 4 out of 100
+70 training loss : 24.229392653360417 training r2 score: 0.9383576860290548 validation loss: 45.289173205693565 valdation R2 score : 0.8866932280361652
+EarlyStopping counter: 5 out of 100
+71 training loss : 24.24666497844676 training r2 score: 0.9382566288503676 validation loss: 28.85868461926778 valdation R2 score : 0.9329976166288058
+EarlyStopping counter: 6 out of 100
+72 training loss : 24.196872706188582 training r2 score: 0.938333211456918 validation loss: 45.57726033528646 valdation R2 score : 0.8845368685821692
+EarlyStopping counter: 7 out of 100
+73 training loss : 24.191448975607987 training r2 score: 0.9384029534162651 validation loss: 84.03625297546387 valdation R2 score : 0.7870922150711218
+EarlyStopping counter: 8 out of 100
+74 training loss : 24.081005775491604 training r2 score: 0.9386462953078185 validation loss: 28.1530659198761 valdation R2 score : 0.933139535288016
+EarlyStopping counter: 9 out of 100
+75 training loss : 24.025836884663367 training r2 score: 0.9387925387365031 validation loss: 26.499804774920147 valdation R2 score : 0.93040814747413
+EarlyStopping counter: 10 out of 100
+76 training loss : 23.891175035406782 training r2 score: 0.9391129222839915 validation loss: 25.556270837783813 valdation R2 score : 0.9309608663121859
+EarlyStopping counter: 11 out of 100
+77 training loss : 23.79176572230474 training r2 score: 0.9394693466693319 validation loss: 38.90965350468954 valdation R2 score : 0.8947855470081171
+EarlyStopping counter: 12 out of 100
+78 training loss : 23.676319014963678 training r2 score: 0.9397736127776001 validation loss: 26.89179281393687 valdation R2 score : 0.9354223075012366
+EarlyStopping counter: 13 out of 100
+79 training loss : 23.777927982869574 training r2 score: 0.9394610208990686 validation loss: 37.48240005970001 valdation R2 score : 0.9115622403721014
+EarlyStopping counter: 14 out of 100
+80 training loss : 23.57050582126797 training r2 score: 0.9400712295352477 validation loss: 78.3432502746582 valdation R2 score : 0.7884904382129511
+EarlyStopping counter: 15 out of 100
+81 training loss : 23.537688544907496 training r2 score: 0.9401818248613967 validation loss: 24.88543776671092 valdation R2 score : 0.935342521717151
+EarlyStopping counter: 16 out of 100
+82 training loss : 23.26371478035812 training r2 score: 0.940881170215407 validation loss: 29.71986432870229 valdation R2 score : 0.925262867162625
+EarlyStopping counter: 17 out of 100
+83 training loss : 23.36465206695477 training r2 score: 0.9405741179800783 validation loss: 37.8700897693634 valdation R2 score : 0.908447561164697
+EarlyStopping counter: 18 out of 100
+84 training loss : 23.07922735014511 training r2 score: 0.941376267303347 validation loss: 33.420506040255226 valdation R2 score : 0.9242804534733295
+EarlyStopping counter: 19 out of 100
+85 training loss : 22.83820042934717 training r2 score: 0.942061268846402 validation loss: 31.287875533103943 valdation R2 score : 0.9163333016137282
+EarlyStopping counter: 20 out of 100
+86 training loss : 22.69670827975448 training r2 score: 0.9423838014377973 validation loss: 42.82626907030741 valdation R2 score : 0.8908876515924931
+EarlyStopping counter: 21 out of 100
+87 training loss : 22.67352924546646 training r2 score: 0.9424328701034266 validation loss: 25.279935240745544 valdation R2 score : 0.9342234693467617
+EarlyStopping counter: 22 out of 100
+88 training loss : 22.615004334774316 training r2 score: 0.9426216639149252 validation loss: 24.98274568716685 valdation R2 score : 0.937437837322553
+EarlyStopping counter: 23 out of 100
+89 training loss : 22.348989716375062 training r2 score: 0.9433024680115165 validation loss: 26.181925296783447 valdation R2 score : 0.9381243462363879
+EarlyStopping counter: 24 out of 100
+90 training loss : 22.21041016803362 training r2 score: 0.9436214447645617 validation loss: 36.53470091025034 valdation R2 score : 0.9090101532638073
+EarlyStopping counter: 25 out of 100
+91 training loss : 22.22876626908467 training r2 score: 0.9435634943827285 validation loss: 27.647687713305157 valdation R2 score : 0.9385784429808458
+EarlyStopping counter: 26 out of 100
+92 training loss : 22.055609837876563 training r2 score: 0.944092401035169 validation loss: 34.83878707885742 valdation R2 score : 0.9129667418698469
+EarlyStopping counter: 27 out of 100
+93 training loss : 21.931413183661654 training r2 score: 0.9444117343238511 validation loss: 25.05163546403249 valdation R2 score : 0.9364126237730185
+EarlyStopping counter: 28 out of 100
+94 training loss : 21.71932070417554 training r2 score: 0.9449757677722351 validation loss: 25.68623697757721 valdation R2 score : 0.9374628874162833
+EarlyStopping counter: 29 out of 100
+95 training loss : 21.59791584913643 training r2 score: 0.945209996394462 validation loss: 25.24306074778239 valdation R2 score : 0.9367327429354191
+EarlyStopping counter: 30 out of 100
+96 training loss : 21.318565138971618 training r2 score: 0.9459855645426904 validation loss: 25.898697296778362 valdation R2 score : 0.9370094512899717
+EarlyStopping counter: 31 out of 100
+97 training loss : 21.265581605322073 training r2 score: 0.9461353276100458 validation loss: 37.87500603993734 valdation R2 score : 0.9129800274968147
+EarlyStopping counter: 32 out of 100
+98 training loss : 21.15433587328926 training r2 score: 0.9464232905997032 validation loss: 25.38999903202057 valdation R2 score : 0.9374459708730379
+EarlyStopping counter: 33 out of 100
+99 training loss : 20.99126452550838 training r2 score: 0.9468351841284967 validation loss: 55.56303151448568 valdation R2 score : 0.8475922470291456
+EarlyStopping counter: 34 out of 100
+100 training loss : 20.9416357859267 training r2 score: 0.9470576551884257 validation loss: 25.694313128789265 valdation R2 score : 0.9375459576646487
+EarlyStopping counter: 35 out of 100
+101 training loss : 20.791801435161013 training r2 score: 0.9474906314417954 validation loss: 26.799493193626404 valdation R2 score : 0.9337340605755647
+EarlyStopping counter: 36 out of 100
+102 training loss : 20.688629439988063 training r2 score: 0.9477819984495952 validation loss: 26.06590445836385 valdation R2 score : 0.930824821194013
+EarlyStopping counter: 37 out of 100
+103 training loss : 20.4209831996738 training r2 score: 0.9484762137472942 validation loss: 27.86570918560028 valdation R2 score : 0.9361417802671591
+EarlyStopping counter: 38 out of 100
+104 training loss : 20.317106501594264 training r2 score: 0.9486958357988228 validation loss: 26.98792012532552 valdation R2 score : 0.9326863077779611
+EarlyStopping counter: 39 out of 100
+105 training loss : 20.310553940178835 training r2 score: 0.9487038245375868 validation loss: 29.232607285181682 valdation R2 score : 0.9291511078675588
+EarlyStopping counter: 40 out of 100
+106 training loss : 20.082150267056768 training r2 score: 0.9492917872224179 validation loss: 26.89077389240265 valdation R2 score : 0.9294967924555143
+EarlyStopping counter: 41 out of 100
+107 training loss : 19.876395545080694 training r2 score: 0.949876867819831 validation loss: 27.167874455451965 valdation R2 score : 0.9332317175964514
+EarlyStopping counter: 42 out of 100
+108 training loss : 19.79030139533637 training r2 score: 0.9500520319838799 validation loss: 44.444061597188316 valdation R2 score : 0.8886656686663628
+EarlyStopping counter: 43 out of 100
+109 training loss : 19.76307851981118 training r2 score: 0.9501162853228484 validation loss: 24.89601194858551 valdation R2 score : 0.9391408674418926
+EarlyStopping counter: 44 out of 100
+110 training loss : 19.60354473453542 training r2 score: 0.9505759146825181 validation loss: 28.29669912656148 valdation R2 score : 0.9310288342336813
+EarlyStopping counter: 45 out of 100
+111 training loss : 19.415632435164525 training r2 score: 0.9510529258176295 validation loss: 27.09259698788325 valdation R2 score : 0.9332038598755995
+EarlyStopping counter: 46 out of 100
+112 training loss : 19.322539631608894 training r2 score: 0.9513344811519403 validation loss: 26.30633060137431 valdation R2 score : 0.9368754016856352
+EarlyStopping counter: 47 out of 100
+113 training loss : 19.138103510072717 training r2 score: 0.9516704274409729 validation loss: 25.308520038922627 valdation R2 score : 0.9360230651994547
+EarlyStopping counter: 48 out of 100
+114 training loss : 19.05079068188892 training r2 score: 0.9520141597817705 validation loss: 26.09728221098582 valdation R2 score : 0.9352388593057791
+EarlyStopping counter: 49 out of 100
+115 training loss : 18.821327529028448 training r2 score: 0.9526177679056896 validation loss: 28.167177081108093 valdation R2 score : 0.9336235076189041
+EarlyStopping counter: 50 out of 100
+116 training loss : 18.80678108724624 training r2 score: 0.9526445874993089 validation loss: 24.889452477296192 valdation R2 score : 0.9367896268765131
+EarlyStopping counter: 51 out of 100
+117 training loss : 18.54775652461027 training r2 score: 0.9532550946268111 validation loss: 25.313120007514954 valdation R2 score : 0.9349010487397512
+EarlyStopping counter: 52 out of 100
+118 training loss : 18.521225332589673 training r2 score: 0.9533636367133774 validation loss: 27.44497875372569 valdation R2 score : 0.9362506990631422
+EarlyStopping counter: 53 out of 100
+119 training loss : 18.45761349812852 training r2 score: 0.9535666719781166 validation loss: 28.131952822208405 valdation R2 score : 0.9360643165806929
+EarlyStopping counter: 54 out of 100
+120 training loss : 18.32851791631489 training r2 score: 0.9538929871239588 validation loss: 25.2166588306427 valdation R2 score : 0.9361389192442099
+EarlyStopping counter: 55 out of 100
+121 training loss : 18.216203492349354 training r2 score: 0.9541420629199263 validation loss: 27.64895288149516 valdation R2 score : 0.9355975228051344
+EarlyStopping counter: 56 out of 100
+122 training loss : 18.08713589912934 training r2 score: 0.9546198824625365 validation loss: 25.604956309000652 valdation R2 score : 0.9357304684817791
+EarlyStopping counter: 57 out of 100
+123 training loss : 17.82545353105555 training r2 score: 0.9552271330231772 validation loss: 25.821974396705627 valdation R2 score : 0.9352179976801077
+EarlyStopping counter: 58 out of 100
+124 training loss : 17.808146728895096 training r2 score: 0.9552041401413722 validation loss: 30.294363101323444 valdation R2 score : 0.9241442456841469
+EarlyStopping counter: 59 out of 100
+125 training loss : 17.80413619385964 training r2 score: 0.9551989298840468 validation loss: 25.80337878068288 valdation R2 score : 0.9366778396070004
+EarlyStopping counter: 60 out of 100
+126 training loss : 17.702582838647654 training r2 score: 0.9554523591595795 validation loss: 26.63473403453827 valdation R2 score : 0.932119424144427
+EarlyStopping counter: 61 out of 100
+127 training loss : 17.486812329417123 training r2 score: 0.956080370704541 validation loss: 26.19878327846527 valdation R2 score : 0.9351717854539553
+EarlyStopping counter: 62 out of 100
+128 training loss : 17.531575023191763 training r2 score: 0.955956587928752 validation loss: 26.133650203545887 valdation R2 score : 0.936904389411211
+EarlyStopping counter: 63 out of 100
+129 training loss : 17.418165064606992 training r2 score: 0.9562823892575908 validation loss: 28.769969662030537 valdation R2 score : 0.9281883016228676
+EarlyStopping counter: 64 out of 100
+130 training loss : 17.280186688088623 training r2 score: 0.9566762130609981 validation loss: 26.775916576385498 valdation R2 score : 0.9320179869731268
+EarlyStopping counter: 65 out of 100
+131 training loss : 17.1909321690105 training r2 score: 0.9568985708408955 validation loss: 25.852874795595806 valdation R2 score : 0.9359260275959969
+EarlyStopping counter: 66 out of 100
+132 training loss : 17.187047411634037 training r2 score: 0.9568946643961662 validation loss: 25.87370793024699 valdation R2 score : 0.9373632731537024
+EarlyStopping counter: 67 out of 100
+133 training loss : 17.097935159793074 training r2 score: 0.9570528515346387 validation loss: 25.972573002179463 valdation R2 score : 0.9375069178640842
+EarlyStopping counter: 68 out of 100
+134 training loss : 17.01479581014024 training r2 score: 0.9572364829909739 validation loss: 26.14372980594635 valdation R2 score : 0.9343624214331309
+EarlyStopping counter: 69 out of 100
+135 training loss : 16.86611815147999 training r2 score: 0.9577055301965843 validation loss: 25.528390169143677 valdation R2 score : 0.936327671011289
+EarlyStopping counter: 70 out of 100
+136 training loss : 16.80649246844946 training r2 score: 0.9579133272795153 validation loss: 26.13337512811025 valdation R2 score : 0.9348999001085758
+EarlyStopping counter: 71 out of 100
+137 training loss : 16.849339859647902 training r2 score: 0.9577077230857929 validation loss: 26.738478461901348 valdation R2 score : 0.9349541080494722
+EarlyStopping counter: 72 out of 100
+138 training loss : 16.7831556285239 training r2 score: 0.9579957527015845 validation loss: 27.212478200594585 valdation R2 score : 0.9340143439670404
+EarlyStopping counter: 73 out of 100
+139 training loss : 16.686813686530627 training r2 score: 0.9582266440878364 validation loss: 26.14974816640218 valdation R2 score : 0.9351298188169798
+EarlyStopping counter: 74 out of 100
+140 training loss : 20.08799198160621 training r2 score: 0.9493310808823371 validation loss: 30.45110623041789 valdation R2 score : 0.9314999803900719
+EarlyStopping counter: 75 out of 100
+141 training loss : 19.69990069953559 training r2 score: 0.9503532233038497 validation loss: 29.3095060189565 valdation R2 score : 0.9282224041720232
+EarlyStopping counter: 76 out of 100
+142 training loss : 19.76568970006174 training r2 score: 0.9502349392905909 validation loss: 38.823405702908836 valdation R2 score : 0.9164859664936861
+EarlyStopping counter: 77 out of 100
+143 training loss : 19.604578377688743 training r2 score: 0.9506417136853902 validation loss: 27.571457107861836 valdation R2 score : 0.9234552805622419
+EarlyStopping counter: 78 out of 100
+144 training loss : 19.66403471612181 training r2 score: 0.9504659531628274 validation loss: 33.86388091246287 valdation R2 score : 0.906921441356341
+EarlyStopping counter: 79 out of 100
+145 training loss : 19.5257359275019 training r2 score: 0.9507546730690601 validation loss: 28.863670587539673 valdation R2 score : 0.9329592858751615
+EarlyStopping counter: 80 out of 100
+146 training loss : 19.53061806344237 training r2 score: 0.9507500933414978 validation loss: 30.246610800425213 valdation R2 score : 0.9244037084281445
+EarlyStopping counter: 81 out of 100
+147 training loss : 19.36105098774296 training r2 score: 0.951131757641338 validation loss: 33.11382699012756 valdation R2 score : 0.9176400465269884
+EarlyStopping counter: 82 out of 100
+148 training loss : 19.21809062408527 training r2 score: 0.9515777632828158 validation loss: 27.238197843233745 valdation R2 score : 0.9298340020080408
+EarlyStopping counter: 83 out of 100
+149 training loss : 19.27842080780349 training r2 score: 0.9513993938867958 validation loss: 26.829614400863647 valdation R2 score : 0.931579764932394
+EarlyStopping counter: 84 out of 100
+150 training loss : 19.15522582868007 training r2 score: 0.9517234800997829 validation loss: 48.77555354436239 valdation R2 score : 0.8676659911870956
+EarlyStopping counter: 85 out of 100
+151 training loss : 18.935453080382022 training r2 score: 0.9523171977534968 validation loss: 27.00660975774129 valdation R2 score : 0.9258489571511745
+EarlyStopping counter: 86 out of 100
+152 training loss : 18.86885074295923 training r2 score: 0.9525391507835288 validation loss: 31.178743998209637 valdation R2 score : 0.9252664893865585
+EarlyStopping counter: 87 out of 100
+153 training loss : 18.96957807141449 training r2 score: 0.9521717000070042 validation loss: 31.67946533362071 valdation R2 score : 0.9235980448623499
+EarlyStopping counter: 88 out of 100
+154 training loss : 18.91337032967213 training r2 score: 0.9523802245162545 validation loss: 27.38105611006419 valdation R2 score : 0.9346046311159929
+EarlyStopping counter: 89 out of 100
+155 training loss : 18.75747890122898 training r2 score: 0.9527931659633576 validation loss: 25.23434539635976 valdation R2 score : 0.9338766684134802
+EarlyStopping counter: 90 out of 100
+156 training loss : 18.61908483754902 training r2 score: 0.9531596981730136 validation loss: 25.831013997395832 valdation R2 score : 0.9332610182464123
+EarlyStopping counter: 91 out of 100
+157 training loss : 18.48815459106605 training r2 score: 0.9535365065667017 validation loss: 26.22110923131307 valdation R2 score : 0.9365261221925417
+EarlyStopping counter: 92 out of 100
+158 training loss : 18.382351990145537 training r2 score: 0.9537619538020089 validation loss: 27.353207151095074 valdation R2 score : 0.9325319913526376
+EarlyStopping counter: 93 out of 100
+159 training loss : 18.22979424012269 training r2 score: 0.9542019445234569 validation loss: 26.743624289830525 valdation R2 score : 0.9308256395161152
+EarlyStopping counter: 94 out of 100
+160 training loss : 18.156822331912856 training r2 score: 0.9543566204490462 validation loss: 29.37346080938975 valdation R2 score : 0.9264113480846087
+EarlyStopping counter: 95 out of 100
+161 training loss : 17.93210865190516 training r2 score: 0.9549278760455666 validation loss: 35.75033366680145 valdation R2 score : 0.9050702750682831
+EarlyStopping counter: 96 out of 100
+162 training loss : 18.044780436610676 training r2 score: 0.9547375793232343 validation loss: 29.49154607454936 valdation R2 score : 0.9229835147658983
+EarlyStopping counter: 97 out of 100
+163 training loss : 17.752381294809712 training r2 score: 0.9553986249481821 validation loss: 26.12052834033966 valdation R2 score : 0.9349350656072298
+EarlyStopping counter: 98 out of 100
+164 training loss : 17.758457643199343 training r2 score: 0.9553747061659529 validation loss: 27.351709842681885 valdation R2 score : 0.9325480237603188
+EarlyStopping counter: 99 out of 100
+165 training loss : 17.531893345698013 training r2 score: 0.9559299067364937 validation loss: 43.81817094484965 valdation R2 score : 0.8986601158976555
+EarlyStopping counter: 100 out of 100
+Early stopping
+
+
+-------------qrs---------------
+0 training loss : 6195.0798614661735 training r2 score: -12722.753398715513 validation loss: 3473.0352834065757 valdation R2 score : -371.3317178090413
+Validation loss decreased (inf --> 3473.035283).  Saving model ...
+1 training loss : 1861.3132619008968 training r2 score: -169.3144633807437 validation loss: 238.31135400136313 valdation R2 score : -6.464480092128118
+Validation loss decreased (3473.035283 --> 238.311354).  Saving model ...
+2 training loss : 142.41042903081285 training r2 score: -3.343497616614347 validation loss: 95.4115703900655 valdation R2 score : -1.9178315550088882
+Validation loss decreased (238.311354 --> 95.411570).  Saving model ...
+3 training loss : 28.471055215565947 training r2 score: 0.3695032295444249 validation loss: 94.40814812978108 valdation R2 score : -0.36975757280985516
+Validation loss decreased (95.411570 --> 94.408148).  Saving model ...
+4 training loss : 24.6602057861408 training r2 score: 0.4961100106776073 validation loss: 54.75540359814962 valdation R2 score : -0.827352431913217
+Validation loss decreased (94.408148 --> 54.755404).  Saving model ...
+5 training loss : 22.934701834673657 training r2 score: 0.5492689433210183 validation loss: 34.07494489351908 valdation R2 score : 0.3352862087388833
+Validation loss decreased (54.755404 --> 34.074945).  Saving model ...
+6 training loss : 21.754758652592205 training r2 score: 0.5848831715384079 validation loss: 32.845473845799766 valdation R2 score : -0.3533037429054578
+Validation loss decreased (34.074945 --> 32.845474).  Saving model ...
+7 training loss : 20.961875323849824 training r2 score: 0.6047165033392882 validation loss: 27.89318521817525 valdation R2 score : 0.5585423782467842
+Validation loss decreased (32.845474 --> 27.893185).  Saving model ...
+8 training loss : 20.227149985847674 training r2 score: 0.6258048280995554 validation loss: 31.158349712689716 valdation R2 score : 0.3484046111504237
+EarlyStopping counter: 1 out of 100
+9 training loss : 19.852349491019524 training r2 score: 0.6352162284688799 validation loss: 20.054232478141785 valdation R2 score : 0.6474797849853834
+Validation loss decreased (27.893185 --> 20.054232).  Saving model ...
+10 training loss : 19.53607676790647 training r2 score: 0.6437015165209146 validation loss: 20.80726319551468 valdation R2 score : 0.5610713176429272
+EarlyStopping counter: 1 out of 100
+11 training loss : 19.1841319044223 training r2 score: 0.6517647667080945 validation loss: 28.206964015960693 valdation R2 score : 0.5669485665857792
+EarlyStopping counter: 2 out of 100
+12 training loss : 18.889082948574845 training r2 score: 0.6594601335949922 validation loss: 21.397990067799885 valdation R2 score : 0.602817140519619
+EarlyStopping counter: 3 out of 100
+13 training loss : 18.653402980085442 training r2 score: 0.6655012676541093 validation loss: 33.17089009284973 valdation R2 score : 0.5069927138586839
+EarlyStopping counter: 4 out of 100
+14 training loss : 18.633862555339075 training r2 score: 0.6665757529398534 validation loss: 21.960614720980328 valdation R2 score : 0.4396827258169651
+EarlyStopping counter: 5 out of 100
+15 training loss : 18.366825700430347 training r2 score: 0.6726167624845555 validation loss: 24.11493643124898 valdation R2 score : 0.4036394792298476
+EarlyStopping counter: 6 out of 100
+16 training loss : 18.226607839474504 training r2 score: 0.6752969858221983 validation loss: 22.632718086242676 valdation R2 score : 0.6225509730478128
+EarlyStopping counter: 7 out of 100
+17 training loss : 18.046811852779687 training r2 score: 0.6804836863622615 validation loss: 20.358438591162365 valdation R2 score : 0.6923240472873052
+EarlyStopping counter: 8 out of 100
+18 training loss : 17.9277693738488 training r2 score: 0.6830212264784967 validation loss: 24.417569239934284 valdation R2 score : 0.5817568252484003
+EarlyStopping counter: 9 out of 100
+19 training loss : 17.792638354276487 training r2 score: 0.6865445021247365 validation loss: 21.652872403462727 valdation R2 score : 0.6996383008857568
+EarlyStopping counter: 10 out of 100
+20 training loss : 17.656453864112574 training r2 score: 0.6889000419546797 validation loss: 22.6332745552063 valdation R2 score : 0.6592754299441973
+EarlyStopping counter: 11 out of 100
+21 training loss : 17.514870970661104 training r2 score: 0.6925681387878837 validation loss: 38.56819887955984 valdation R2 score : 0.13569941620031992
+EarlyStopping counter: 12 out of 100
+22 training loss : 17.44445588076926 training r2 score: 0.6940893270270363 validation loss: 18.835267782211304 valdation R2 score : 0.6286696791648865
+Validation loss decreased (20.054232 --> 18.835268).  Saving model ...
+23 training loss : 17.28669766980316 training r2 score: 0.6973256175430658 validation loss: 19.671575387318928 valdation R2 score : 0.6790521927177906
+EarlyStopping counter: 1 out of 100
+24 training loss : 17.174936209673657 training r2 score: 0.7002567421079307 validation loss: 17.9968701004982 valdation R2 score : 0.7066552688678106
+Validation loss decreased (18.835268 --> 17.996870).  Saving model ...
+25 training loss : 17.094717565007233 training r2 score: 0.7014244114541258 validation loss: 29.05213487148285 valdation R2 score : 0.21131875117619833
+EarlyStopping counter: 1 out of 100
+26 training loss : 16.963497823445586 training r2 score: 0.7048182072439743 validation loss: 19.757535060246784 valdation R2 score : 0.6413872713843981
+EarlyStopping counter: 2 out of 100
+27 training loss : 16.920238637175235 training r2 score: 0.7056698615014241 validation loss: 20.990301966667175 valdation R2 score : 0.6359543266395727
+EarlyStopping counter: 3 out of 100
+28 training loss : 16.748178299809002 training r2 score: 0.7102306881500164 validation loss: 18.966311355431873 valdation R2 score : 0.5882544331252575
+EarlyStopping counter: 4 out of 100
+29 training loss : 16.67871672445567 training r2 score: 0.7114479343616525 validation loss: 18.88539199034373 valdation R2 score : 0.6240204734106859
+EarlyStopping counter: 5 out of 100
+30 training loss : 16.630880777748466 training r2 score: 0.7128087804891676 validation loss: 21.13886332511902 valdation R2 score : 0.7123727786044279
+EarlyStopping counter: 6 out of 100
+31 training loss : 16.489873906080636 training r2 score: 0.7157543910111432 validation loss: 20.022656361262005 valdation R2 score : 0.7134161752959093
+EarlyStopping counter: 7 out of 100
+32 training loss : 16.336437926866623 training r2 score: 0.7193403963331153 validation loss: 22.065319935480755 valdation R2 score : 0.6077951043844223
+EarlyStopping counter: 8 out of 100
+33 training loss : 16.26943673138843 training r2 score: 0.7200224330912086 validation loss: 19.740497410297394 valdation R2 score : 0.7008140161633492
+EarlyStopping counter: 9 out of 100
+34 training loss : 16.153799516368288 training r2 score: 0.7230233316022064 validation loss: 20.181957006454468 valdation R2 score : 0.6626499146223068
+EarlyStopping counter: 10 out of 100
+35 training loss : 16.052723966967996 training r2 score: 0.7257242801925898 validation loss: 17.238210062185924 valdation R2 score : 0.686504020045201
+Validation loss decreased (17.996870 --> 17.238210).  Saving model ...
+36 training loss : 15.983189475473933 training r2 score: 0.7268853813253772 validation loss: 17.719496210416157 valdation R2 score : 0.7303623942037424
+EarlyStopping counter: 1 out of 100
+37 training loss : 15.84579590103389 training r2 score: 0.7297760338683403 validation loss: 18.623149534066517 valdation R2 score : 0.7348402564724287
+EarlyStopping counter: 2 out of 100
+38 training loss : 15.77752320054938 training r2 score: 0.731455562314438 validation loss: 19.716951270898182 valdation R2 score : 0.7387263650695483
+EarlyStopping counter: 3 out of 100
+39 training loss : 15.616956204019916 training r2 score: 0.7348603581258764 validation loss: 18.556654771169026 valdation R2 score : 0.7276859084765116
+EarlyStopping counter: 4 out of 100
+40 training loss : 15.532471781625798 training r2 score: 0.7368135227582842 validation loss: 18.00424228111903 valdation R2 score : 0.6674584820866585
+EarlyStopping counter: 5 out of 100
+41 training loss : 15.419696008971849 training r2 score: 0.7387632140938524 validation loss: 17.693439304828644 valdation R2 score : 0.6720431571205457
+EarlyStopping counter: 6 out of 100
+42 training loss : 15.380477615676002 training r2 score: 0.73933078543678 validation loss: 19.348967671394348 valdation R2 score : 0.6889116168022156
+EarlyStopping counter: 7 out of 100
+43 training loss : 15.196257541316966 training r2 score: 0.7439946780342082 validation loss: 20.6035813887914 valdation R2 score : 0.6755794398486614
+EarlyStopping counter: 8 out of 100
+44 training loss : 15.138664932151116 training r2 score: 0.7450450626031266 validation loss: 18.19243727127711 valdation R2 score : 0.6873998468120893
+EarlyStopping counter: 9 out of 100
+45 training loss : 14.997561357408294 training r2 score: 0.7477422576612203 validation loss: 19.08553949991862 valdation R2 score : 0.7159236756463846
+EarlyStopping counter: 10 out of 100
+46 training loss : 14.877042261093699 training r2 score: 0.7506957495711861 validation loss: 18.834141612052917 valdation R2 score : 0.7088071120282015
+EarlyStopping counter: 11 out of 100
+47 training loss : 14.767950395014898 training r2 score: 0.7527218384580462 validation loss: 17.691675742467243 valdation R2 score : 0.6803253330290318
+EarlyStopping counter: 12 out of 100
+48 training loss : 14.669029235839844 training r2 score: 0.7544744102118527 validation loss: 18.50170310338338 valdation R2 score : 0.6976752728223801
+EarlyStopping counter: 13 out of 100
+49 training loss : 14.624213008980476 training r2 score: 0.7553337344324401 validation loss: 17.691409587860107 valdation R2 score : 0.7194619538883368
+EarlyStopping counter: 14 out of 100
+50 training loss : 14.47125689022204 training r2 score: 0.7590351039202425 validation loss: 19.242951810359955 valdation R2 score : 0.6879448567827543
+EarlyStopping counter: 15 out of 100
+51 training loss : 14.382057040149629 training r2 score: 0.7599583648886356 validation loss: 18.330127120018005 valdation R2 score : 0.7317557508746783
+EarlyStopping counter: 16 out of 100
+52 training loss : 14.245770604198515 training r2 score: 0.7630221988830267 validation loss: 17.8321386774381 valdation R2 score : 0.7077655345201492
+EarlyStopping counter: 17 out of 100
+53 training loss : 14.213059694979203 training r2 score: 0.7640087955597183 validation loss: 18.04972368478775 valdation R2 score : 0.7398569112022718
+EarlyStopping counter: 18 out of 100
+54 training loss : 14.082705972082328 training r2 score: 0.7665509236732703 validation loss: 17.68084200223287 valdation R2 score : 0.7138331184784571
+EarlyStopping counter: 19 out of 100
+55 training loss : 13.981200537756475 training r2 score: 0.7680194903730722 validation loss: 18.06216150522232 valdation R2 score : 0.7226033459107081
+EarlyStopping counter: 20 out of 100
+56 training loss : 13.933382823205118 training r2 score: 0.7695279985822309 validation loss: 18.187480608622234 valdation R2 score : 0.7218430091937383
+EarlyStopping counter: 21 out of 100
+57 training loss : 13.736289563603426 training r2 score: 0.7735973545081952 validation loss: 17.92582142353058 valdation R2 score : 0.7088277315100034
+EarlyStopping counter: 22 out of 100
+58 training loss : 13.73073891944286 training r2 score: 0.7735287998047174 validation loss: 18.122758269309998 valdation R2 score : 0.7001068269213041
+EarlyStopping counter: 23 out of 100
+59 training loss : 13.563113694415666 training r2 score: 0.7771319047942835 validation loss: 18.00371245543162 valdation R2 score : 0.7181802354753017
+EarlyStopping counter: 24 out of 100
+60 training loss : 13.55744716634301 training r2 score: 0.777316119190286 validation loss: 17.96210265159607 valdation R2 score : 0.6979845960934957
+EarlyStopping counter: 25 out of 100
+61 training loss : 13.511363593695675 training r2 score: 0.7782579357711432 validation loss: 18.614177107810974 valdation R2 score : 0.721102082480987
+EarlyStopping counter: 26 out of 100
+62 training loss : 13.360103724514627 training r2 score: 0.7813144079677722 validation loss: 17.91116048892339 valdation R2 score : 0.7260395362973213
+EarlyStopping counter: 27 out of 100
+63 training loss : 13.304879086179882 training r2 score: 0.7820127863846524 validation loss: 18.282510499159496 valdation R2 score : 0.7241002606848875
+EarlyStopping counter: 28 out of 100
+64 training loss : 13.190293681559139 training r2 score: 0.7840721348193304 validation loss: 19.03563916683197 valdation R2 score : 0.6945967450737953
+EarlyStopping counter: 29 out of 100
+65 training loss : 13.142003066876796 training r2 score: 0.7853957280438608 validation loss: 19.8799866437912 valdation R2 score : 0.7316605734328429
+EarlyStopping counter: 30 out of 100
+66 training loss : 13.073070146650544 training r2 score: 0.7870787684830072 validation loss: 18.745995084444683 valdation R2 score : 0.7282044378419718
+EarlyStopping counter: 31 out of 100
+67 training loss : 13.017942813054429 training r2 score: 0.7877497880558693 validation loss: 17.969576676686604 valdation R2 score : 0.7140310717125734
+EarlyStopping counter: 32 out of 100
+68 training loss : 12.979145759063242 training r2 score: 0.7885200331348399 validation loss: 19.028556128342945 valdation R2 score : 0.708313542107741
+EarlyStopping counter: 33 out of 100
+69 training loss : 12.918430365817086 training r2 score: 0.7897418220941933 validation loss: 18.62250832716624 valdation R2 score : 0.7129920360942682
+EarlyStopping counter: 34 out of 100
+70 training loss : 15.075140204105077 training r2 score: 0.7463662199949095 validation loss: 24.700802365938824 valdation R2 score : 0.5474637486040592
+EarlyStopping counter: 35 out of 100
+71 training loss : 15.00759192911118 training r2 score: 0.7470516982190896 validation loss: 19.80327518781026 valdation R2 score : 0.6957381976147493
+EarlyStopping counter: 36 out of 100
+72 training loss : 14.941983535027628 training r2 score: 0.7485037168283113 validation loss: 19.51703594128291 valdation R2 score : 0.7016876898705959
+EarlyStopping counter: 37 out of 100
+73 training loss : 15.002863194929992 training r2 score: 0.747937318854307 validation loss: 18.824805796146393 valdation R2 score : 0.695460882037878
+EarlyStopping counter: 38 out of 100
+74 training loss : 14.871190795099547 training r2 score: 0.7505107423709949 validation loss: 24.635647932688396 valdation R2 score : 0.6021437980234623
+EarlyStopping counter: 39 out of 100
+75 training loss : 14.798986697072134 training r2 score: 0.7516368728969733 validation loss: 18.359464367230732 valdation R2 score : 0.6851974589129289
+EarlyStopping counter: 40 out of 100
+76 training loss : 14.82109407105371 training r2 score: 0.7514142687408087 validation loss: 22.434044162432354 valdation R2 score : 0.6257220134139061
+EarlyStopping counter: 41 out of 100
+77 training loss : 14.697237424201367 training r2 score: 0.7540414375472443 validation loss: 19.184800386428833 valdation R2 score : 0.7073835494617621
+EarlyStopping counter: 42 out of 100
+78 training loss : 14.669266585904266 training r2 score: 0.7545122822541841 validation loss: 19.260411202907562 valdation R2 score : 0.707124392191569
+EarlyStopping counter: 43 out of 100
+79 training loss : 14.553056934117022 training r2 score: 0.7569107038812487 validation loss: 17.91544743378957 valdation R2 score : 0.6830261833965778
+EarlyStopping counter: 44 out of 100
+80 training loss : 14.557136796531877 training r2 score: 0.7573144518580112 validation loss: 19.642910361289978 valdation R2 score : 0.7520692969361941
+EarlyStopping counter: 45 out of 100
+81 training loss : 14.406631562098159 training r2 score: 0.7602215919507112 validation loss: 19.674178679784138 valdation R2 score : 0.6555876135826111
+EarlyStopping counter: 46 out of 100
+82 training loss : 14.35166318503974 training r2 score: 0.7609442533310795 validation loss: 19.140759726365406 valdation R2 score : 0.7249315306544304
+EarlyStopping counter: 47 out of 100
+83 training loss : 14.197669136586613 training r2 score: 0.7638298887856968 validation loss: 19.996548891067505 valdation R2 score : 0.724598478525877
+EarlyStopping counter: 48 out of 100
+84 training loss : 14.155281583676164 training r2 score: 0.7653835662372449 validation loss: 21.82695472240448 valdation R2 score : 0.6086218866209189
+EarlyStopping counter: 49 out of 100
+85 training loss : 14.068547383652932 training r2 score: 0.7670812542837951 validation loss: 18.961346824963886 valdation R2 score : 0.709234902014335
+EarlyStopping counter: 50 out of 100
+86 training loss : 14.074054623149452 training r2 score: 0.7671726854683841 validation loss: 21.277527689933777 valdation R2 score : 0.6629061674078306
+EarlyStopping counter: 51 out of 100
+87 training loss : 13.91039018606016 training r2 score: 0.7698956426837682 validation loss: 22.226592858632404 valdation R2 score : 0.6776725687086582
+EarlyStopping counter: 52 out of 100
+88 training loss : 13.813357398147982 training r2 score: 0.7723129196628851 validation loss: 17.761234641075134 valdation R2 score : 0.7172902884582678
+EarlyStopping counter: 53 out of 100
+89 training loss : 13.73678558908832 training r2 score: 0.7733750327719444 validation loss: 19.844938655694325 valdation R2 score : 0.706694595515728
+EarlyStopping counter: 54 out of 100
+90 training loss : 13.559351596532691 training r2 score: 0.7772774446697135 validation loss: 21.094747980435688 valdation R2 score : 0.7099230190118154
+EarlyStopping counter: 55 out of 100
+91 training loss : 13.417214718164574 training r2 score: 0.7803970420859871 validation loss: 22.113022168477375 valdation R2 score : 0.6521720811724663
+EarlyStopping counter: 56 out of 100
+92 training loss : 13.386362687455422 training r2 score: 0.7806874093897056 validation loss: 18.996828138828278 valdation R2 score : 0.6707701894144217
+EarlyStopping counter: 57 out of 100
+93 training loss : 13.296909394688631 training r2 score: 0.7822546384721526 validation loss: 19.903196533521015 valdation R2 score : 0.673801035930713
+EarlyStopping counter: 58 out of 100
+94 training loss : 13.144124310678212 training r2 score: 0.7855632060173294 validation loss: 18.964210271835327 valdation R2 score : 0.688491627573967
+EarlyStopping counter: 59 out of 100
+95 training loss : 12.999373765516031 training r2 score: 0.788287773494321 validation loss: 18.650131046772003 valdation R2 score : 0.7004674362639586
+EarlyStopping counter: 60 out of 100
+96 training loss : 12.857390248962721 training r2 score: 0.7909320700543089 validation loss: 19.54393583536148 valdation R2 score : 0.6831261602540811
+EarlyStopping counter: 61 out of 100
+97 training loss : 12.746856117747841 training r2 score: 0.7930860762820818 validation loss: 19.76346363623937 valdation R2 score : 0.709599606692791
+EarlyStopping counter: 62 out of 100
+98 training loss : 12.64913267115648 training r2 score: 0.7953686651759123 validation loss: 18.85139222939809 valdation R2 score : 0.7213551936050256
+EarlyStopping counter: 63 out of 100
+99 training loss : 12.554710003718032 training r2 score: 0.7967848383007249 validation loss: 19.78733593225479 valdation R2 score : 0.6770224769910177
+EarlyStopping counter: 64 out of 100
+100 training loss : 12.5342639778297 training r2 score: 0.7974727532938513 validation loss: 18.525735755761463 valdation R2 score : 0.7076129553218683
+EarlyStopping counter: 65 out of 100
+101 training loss : 12.267825270198403 training r2 score: 0.802566476985422 validation loss: 18.627365748087566 valdation R2 score : 0.7118138621250788
+EarlyStopping counter: 66 out of 100
+102 training loss : 12.161274572941645 training r2 score: 0.8043765745549926 validation loss: 20.108126123746235 valdation R2 score : 0.7112930044531822
+EarlyStopping counter: 67 out of 100
+103 training loss : 12.149811440113327 training r2 score: 0.8046066069790206 validation loss: 19.172026336193085 valdation R2 score : 0.6871886240939299
+EarlyStopping counter: 68 out of 100
+104 training loss : 11.998254181826926 training r2 score: 0.8076741873281789 validation loss: 19.51519278685252 valdation R2 score : 0.6415694157282511
+EarlyStopping counter: 69 out of 100
+105 training loss : 11.88629213427998 training r2 score: 0.8097176597068447 validation loss: 19.158912777900696 valdation R2 score : 0.6911065429449081
+EarlyStopping counter: 70 out of 100
+106 training loss : 11.814528497725881 training r2 score: 0.8111583876048083 validation loss: 20.460147221883137 valdation R2 score : 0.6737659461796284
+EarlyStopping counter: 71 out of 100
+107 training loss : 11.58255615159479 training r2 score: 0.815343641017744 validation loss: 19.288907368977863 valdation R2 score : 0.7189020998775959
+EarlyStopping counter: 72 out of 100
+108 training loss : 11.525393773123856 training r2 score: 0.8165424651812508 validation loss: 20.601846714814503 valdation R2 score : 0.6748257180054983
+EarlyStopping counter: 73 out of 100
+109 training loss : 11.427615859745684 training r2 score: 0.8187516305147041 validation loss: 18.960836549599964 valdation R2 score : 0.6994798729817072
+EarlyStopping counter: 74 out of 100
+110 training loss : 11.3122090369619 training r2 score: 0.8205064346340938 validation loss: 20.648675441741943 valdation R2 score : 0.7218358181416988
+EarlyStopping counter: 75 out of 100
+111 training loss : 11.224154373738154 training r2 score: 0.8219898594299536 validation loss: 21.916207551956177 valdation R2 score : 0.7063150256872177
+EarlyStopping counter: 76 out of 100112 training loss : 11.072468752636336 training r2 score: 0.8250598069572948 validation loss: 19.610833903153736 valdation R2 score : 0.7023796364665031
+EarlyStopping counter: 77 out of 100
+113 training loss : 11.006800465558836 training r2 score: 0.8266471237412298 validation loss: 19.776781102021534 valdation R2 score : 0.672769824663798
+EarlyStopping counter: 78 out of 100
+114 training loss : 10.845224353031337 training r2 score: 0.8291280179123603 validation loss: 20.031701664129894 valdation R2 score : 0.7328359559178352
+EarlyStopping counter: 79 out of 100
+115 training loss : 10.951918751781523 training r2 score: 0.8275086867247576 validation loss: 18.67871908346812 valdation R2 score : 0.6955495327711105
+EarlyStopping counter: 80 out of 100
+116 training loss : 10.649149821066732 training r2 score: 0.8326634535302666 validation loss: 20.686611851056416 valdation R2 score : 0.7206603921949863
+EarlyStopping counter: 81 out of 100
+117 training loss : 10.600025580191488 training r2 score: 0.8339380971424243 validation loss: 19.584460457166035 valdation R2 score : 0.7080072276294231
+EarlyStopping counter: 82 out of 100
+118 training loss : 10.531989287331466 training r2 score: 0.8350251253050659 validation loss: 19.897682428359985 valdation R2 score : 0.6923328613241514
+EarlyStopping counter: 83 out of 100
+119 training loss : 10.379351705780827 training r2 score: 0.838091157337758 validation loss: 19.843161821365356 valdation R2 score : 0.7219054835538069
+EarlyStopping counter: 84 out of 100
+120 training loss : 10.354880532669148 training r2 score: 0.838100907846271 validation loss: 19.917531371116638 valdation R2 score : 0.692495713631312
+EarlyStopping counter: 85 out of 100
+121 training loss : 10.267100000880776 training r2 score: 0.8398103829453752 validation loss: 19.442428688208263 valdation R2 score : 0.7038165678580602
+EarlyStopping counter: 86 out of 100
+122 training loss : 10.173986961704275 training r2 score: 0.8413361994383847 validation loss: 19.9094078540802 valdation R2 score : 0.7072211429476738
+EarlyStopping counter: 87 out of 100
+123 training loss : 10.100280770456603 training r2 score: 0.8425766047070787 validation loss: 20.301199674606323 valdation R2 score : 0.7166646520296732
+EarlyStopping counter: 88 out of 100
+124 training loss : 10.02297415034309 training r2 score: 0.84438551502078 validation loss: 20.368600686391193 valdation R2 score : 0.7009012997150421
+EarlyStopping counter: 89 out of 100
+125 training loss : 9.950379170672432 training r2 score: 0.8453874222895238 validation loss: 19.880114515622456 valdation R2 score : 0.69704361880819
+EarlyStopping counter: 90 out of 100
+126 training loss : 9.856419236248076 training r2 score: 0.8471687752851017 validation loss: 20.382598479588825 valdation R2 score : 0.7229886166751385
+EarlyStopping counter: 91 out of 100
+127 training loss : 9.783349681275054 training r2 score: 0.8482940702538215 validation loss: 20.743263602256775 valdation R2 score : 0.6763142632941405
+EarlyStopping counter: 92 out of 100
+128 training loss : 9.713097582312779 training r2 score: 0.8493963528365989 validation loss: 20.173223237196606 valdation R2 score : 0.7196796461939812
+EarlyStopping counter: 93 out of 100
+129 training loss : 9.655621810733336 training r2 score: 0.8505408913677276 validation loss: 20.294779936472576 valdation R2 score : 0.708021971086661
+EarlyStopping counter: 94 out of 100
+130 training loss : 9.649469790034269 training r2 score: 0.8508404288928546 validation loss: 19.538831452528637 valdation R2 score : 0.7204279142121474
+EarlyStopping counter: 95 out of 100
+131 training loss : 9.549809261142272 training r2 score: 0.8528291959100993 validation loss: 19.82563038667043 valdation R2 score : 0.7028553014000257
+EarlyStopping counter: 96 out of 100
+132 training loss : 9.505405460976805 training r2 score: 0.8533953340889896 validation loss: 19.603429118792217 valdation R2 score : 0.7108242437243462
+EarlyStopping counter: 97 out of 100
+133 training loss : 9.435035497106183 training r2 score: 0.8546645210675544 validation loss: 20.231006642182667 valdation R2 score : 0.7113587769369284
+EarlyStopping counter: 98 out of 100
+134 training loss : 9.38811276845283 training r2 score: 0.8554526150850725 validation loss: 19.64875340461731 valdation R2 score : 0.6970237754285336
+EarlyStopping counter: 99 out of 100
+135 training loss : 9.33083157389576 training r2 score: 0.8563540228374341 validation loss: 19.94709901014964 valdation R2 score : 0.7058772432307402
+EarlyStopping counter: 100 out of 100
+Early stopping
+
+
+-------------hr---------------
+0 training loss : 2958.1458695496563 training r2 score: -5443.279830253561 validation loss: 1821.0574544270833 valdation R2 score : -53.36796347300211
+Validation loss decreased (inf --> 1821.057454).  Saving model ...
+1 training loss : 576.8543359047455 training r2 score: -27.941571518700783 validation loss: 88.47530730565389 valdation R2 score : -0.6145190025369326
+Validation loss decreased (1821.057454 --> 88.475307).  Saving model ...
+2 training loss : 18.99782241124133 training r2 score: 0.6164554458950202 validation loss: 15.318746089935303 valdation R2 score : 0.7015237957239151
+Validation loss decreased (88.475307 --> 15.318746).  Saving model ...
+3 training loss : 0.6157604836278561 training r2 score: 0.9890252125512867 validation loss: 3.6048798064390817 valdation R2 score : 0.9337162760396799
+Validation loss decreased (15.318746 --> 3.604880).  Saving model ...
+4 training loss : 0.43481069196659233 training r2 score: 0.9922331067592062 validation loss: 0.21762819215655327 valdation R2 score : 0.9964757611354192
+Validation loss decreased (3.604880 --> 0.217628).  Saving model ...
+5 training loss : 0.4492708300264718 training r2 score: 0.9920515995375149 validation loss: 0.4266835208982229 valdation R2 score : 0.9925056658685207
+EarlyStopping counter: 1 out of 100
+6 training loss : 0.36446823288945 training r2 score: 0.993471104437144 validation loss: 0.9515136914948622 valdation R2 score : 0.983081515878439
+EarlyStopping counter: 2 out of 100
+7 training loss : 0.40094134429986567 training r2 score: 0.9928208578631516 validation loss: 2.0524505774180093 valdation R2 score : 0.9637338904043039
+EarlyStopping counter: 3 out of 100
+8 training loss : 0.3493496669329586 training r2 score: 0.9937625212195031 validation loss: 7.093146512905757 valdation R2 score : 0.8722215803960959
+EarlyStopping counter: 4 out of 100
+9 training loss : 0.39396394315268357 training r2 score: 0.9929496873735757 validation loss: 12.676220258076986 valdation R2 score : 0.7390131987631321
+EarlyStopping counter: 5 out of 100
+10 training loss : 0.38966834656309085 training r2 score: 0.9930447301003321 validation loss: 0.6197409828503927 valdation R2 score : 0.9899310966332754
+EarlyStopping counter: 6 out of 100
+11 training loss : 0.31688861516718775 training r2 score: 0.9943953922593781 validation loss: 4.04823259015878 valdation R2 score : 0.9320264408985773
+EarlyStopping counter: 7 out of 100
+12 training loss : 0.3009819782860772 training r2 score: 0.9946539135191453 validation loss: 2.9210921625296273 valdation R2 score : 0.9509613774716854
+EarlyStopping counter: 8 out of 100
+13 training loss : 0.29428932868451346 training r2 score: 0.9947556126180119 validation loss: 3.225476637482643 valdation R2 score : 0.9464843285580476
+EarlyStopping counter: 9 out of 100
+14 training loss : 0.31744584868325615 training r2 score: 0.9943206492830946 validation loss: 0.6365029979497194 valdation R2 score : 0.9869732198615869
+EarlyStopping counter: 10 out of 100
+15 training loss : 0.34262692058429667 training r2 score: 0.9938627868422663 validation loss: 0.038622847952259086 valdation R2 score : 0.9993233854571978
+Validation loss decreased (0.217628 --> 0.038623).  Saving model ...
+16 training loss : 0.30290549935002603 training r2 score: 0.9945985785641596 validation loss: 0.07660118311954041 valdation R2 score : 0.9986026970048746
+EarlyStopping counter: 1 out of 100
+17 training loss : 0.3280483210332575 training r2 score: 0.9941779855658247 validation loss: 0.5029559930165609 valdation R2 score : 0.9908202526470026
+EarlyStopping counter: 2 out of 100
+18 training loss : 0.2810058602039259 training r2 score: 0.9949571370142293 validation loss: 2.6717658638954163 valdation R2 score : 0.9541166213651499
+EarlyStopping counter: 3 out of 100
+19 training loss : 0.2491757376168255 training r2 score: 0.995551522957717 validation loss: 7.777840276559194 valdation R2 score : 0.8543401956558228
+EarlyStopping counter: 4 out of 100
+20 training loss : 0.2474809140552089 training r2 score: 0.9956663135458662 validation loss: 1.3441162581245105 valdation R2 score : 0.9771013744175434
+EarlyStopping counter: 5 out of 100
+21 training loss : 0.23586613660512482 training r2 score: 0.9958131558295944 validation loss: 0.08618148711199562 valdation R2 score : 0.9984688572585583
+EarlyStopping counter: 6 out of 100
+22 training loss : 0.2647501421185376 training r2 score: 0.9952520426967382 validation loss: 0.6995646779735883 valdation R2 score : 0.9876803097625574
+EarlyStopping counter: 7 out of 100
+23 training loss : 0.23741180657443264 training r2 score: 0.995832601922969 validation loss: 0.1895766475548347 valdation R2 score : 0.9967329042653242
+EarlyStopping counter: 8 out of 100
+24 training loss : 0.2443941822665602 training r2 score: 0.995697870148414 validation loss: 0.2883827642848094 valdation R2 score : 0.9950534142553806
+EarlyStopping counter: 9 out of 100
+25 training loss : 0.2280296020317062 training r2 score: 0.9959739215711024 validation loss: 2.3828749607006707 valdation R2 score : 0.9613568397859732
+EarlyStopping counter: 10 out of 100
+26 training loss : 0.2456677932565281 training r2 score: 0.9955570448131461 validation loss: 1.1046017458041508 valdation R2 score : 0.980248556782802
+EarlyStopping counter: 11 out of 100
+27 training loss : 0.23412162945142592 training r2 score: 0.995913871139756 validation loss: 0.06505584538293381 valdation R2 score : 0.9988549587627252
+EarlyStopping counter: 12 out of 100
+28 training loss : 0.2085206330076094 training r2 score: 0.9963197545855457 validation loss: 0.05116685487640401 valdation R2 score : 0.9991419464349747
+EarlyStopping counter: 13 out of 100
+29 training loss : 0.21419568512471715 training r2 score: 0.9960892715379206 validation loss: 1.5548128883043926 valdation R2 score : 0.9723722922305266
+EarlyStopping counter: 14 out of 100
+30 training loss : 0.1922966311271278 training r2 score: 0.9966302428258027 validation loss: 0.027744975057430565 valdation R2 score : 0.9995139837265015
+Validation loss decreased (0.038623 --> 0.027745).  Saving model ...
+31 training loss : 0.20911568586095308 training r2 score: 0.9962711101739194 validation loss: 0.1744955430428187 valdation R2 score : 0.9968442680935065
+EarlyStopping counter: 1 out of 100
+32 training loss : 0.18536181831781154 training r2 score: 0.9966732975076006 validation loss: 0.36152069829404354 valdation R2 score : 0.9935257037480673
+EarlyStopping counter: 2 out of 100
+33 training loss : 0.16784136825733628 training r2 score: 0.9969998000491976 validation loss: 2.2367672125498452 valdation R2 score : 0.960267748683691
+EarlyStopping counter: 3 out of 100
+34 training loss : 0.18830191060237547 training r2 score: 0.9966789956804345 validation loss: 2.9490294555823007 valdation R2 score : 0.9455015721420447
+EarlyStopping counter: 4 out of 100
+35 training loss : 0.15266334322032504 training r2 score: 0.9973257602197337 validation loss: 0.052730789640918374 valdation R2 score : 0.9990816277762254
+EarlyStopping counter: 5 out of 100
+36 training loss : 0.11199404884383317 training r2 score: 0.997999725229453 validation loss: 0.1699245491375526 valdation R2 score : 0.9970432780683041
+EarlyStopping counter: 6 out of 100
+37 training loss : 0.09770787780841139 training r2 score: 0.9982857181451708 validation loss: 0.711139403283596 valdation R2 score : 0.9876186860104402
+EarlyStopping counter: 7 out of 100
+38 training loss : 0.06948258755094718 training r2 score: 0.9987679949293586 validation loss: 0.048574843909591436 valdation R2 score : 0.9991475939750671
+EarlyStopping counter: 8 out of 100
+39 training loss : 0.05616489909979373 training r2 score: 0.999012435918079 validation loss: 0.039870180965711675 valdation R2 score : 0.9993140076597532
+EarlyStopping counter: 9 out of 100

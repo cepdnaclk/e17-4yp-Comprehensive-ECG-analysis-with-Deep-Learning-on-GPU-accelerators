@@ -139,9 +139,3 @@ The trained models, comprehensive source code, and data preprocessing scripts ar
 * **Dr. Mahanama Wickramasinghe** ([mahanamaw@eng.pdn.ac.lk](mailto:mahanamaw@eng.pdn.ac.lk))
 
 ---
-
-## Acknowledgements
-
-This work was supported by the Department of Computer Engineering, University of Peradeniya, and Simula Research Laboratory. 
-
----

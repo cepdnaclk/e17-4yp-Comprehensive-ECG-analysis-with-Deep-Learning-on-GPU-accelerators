@@ -72,7 +72,7 @@ AICRN integrates convolutional residual blocks to address gradient vanishing iss
 ---
 
 #### Deep Learning Architecture
-![alt text](docs/images/nn1.pdf "deep learning architecture")
+![alt text](docs/images/nn1.png "deep learning architecture")
 
 ---
 

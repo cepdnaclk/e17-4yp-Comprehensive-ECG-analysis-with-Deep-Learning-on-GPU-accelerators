@@ -56,7 +56,8 @@ The input ECG signal is initially processed by two convolutional layers, each ge
 ### Convolutional Block Attention Module (CBAM)
 
 CBAM sequentially employs Channel Attention Module (CAM) and Spatial Attention Module (SAM) to emphasize relevant features. CAM identifies important features using global pooling and a shared MLP, while SAM spatially locates these critical features through convolutional operations.
-
+![alt text](docs/images/cbam.png "Convolutional block attention module")
+![alt text](docs/images/cbam2.png "Detailed channel and spatial attention mechanisms")
 
 ### Attention-Integrated Convolutional Residual Network (AICRN)
 

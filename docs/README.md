@@ -15,7 +15,7 @@ Traditionally, the analysis of ECGs focused on classifying heartbeats and identi
 
 In the field of deep learning and ECG analysis, various deep learning architectures have been used to extract valuable insights from complex and dynamic ECG signals. The following paragraphs hope to explain some of the promising deep learning architectures so far used in this field of research.
 
-![alt text](/images/nn_layers.png "Convolutional neural networks and ECG. Visualizes how Convolutional layers identify the most important ECG parameters")
+![alt text](images/nn_layers.png "Convolutional neural networks and ECG. Visualizes how Convolutional layers identify the most important ECG parameters")
 
 The figure visualizes how Convolutional Neural networks identify the crucial intervals in the ECG signal.
 

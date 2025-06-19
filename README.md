@@ -49,9 +49,13 @@ The PTB-XL dataset, featuring 21,799 clinical 12-lead ECG recordings from 18,869
 #### *ResNet*
 A notable CNN architecture was proposed in the paper "Explaining deep neural networks for knowledge discovery in electrocardiogram analysis". In this paper, the authors propose a novel deep learning model, with the architecture of a standard CNN consisting of eight residual models (ResNet) to capture complex features and relationships in the standard ECG signal. 
 
-The input ECG signal is initially processed by two convolutional layers, each generating feature maps of 64 and 32, respectively, using kernel sizes of 8 and 3. The output of these convolutional layers is then subjected to average pooling. Subsequently, the processed signal is passed through eight residual blocks, each comprising two convolutional layers. Both convolutional layers within each residual block generate feature maps of 64 and 32, utilizing kernel sizes of 3. Figure demonstrates the architecture of this Residual Network.
-
 ![alt text](docs/images/Resnet.png "The Novel Resnet Architecture for a comprehensive ECG analysis using Deep Learning")
+
+The input ECG signal is initially processed by two convolutional layers, each generating feature maps of 64 and 32, respectively, using kernel sizes of 8 and 3. The output of these convolutional layers is then subjected to average pooling. Subsequently, the processed signal is passed through eight attention integrated residual blocks. 
+
+### Convolutional Block Attention Module (CBAM)
+
+CBAM sequentially employs Channel Attention Module (CAM) and Spatial Attention Module (SAM) to emphasize relevant features. CAM identifies important features using global pooling and a shared MLP, while SAM spatially locates these critical features through convolutional operations.
 
 
 ### Attention-Integrated Convolutional Residual Network (AICRN)
@@ -87,7 +91,16 @@ Extensive evaluation demonstrated AICRN's superior performance, notably achievin
 
 ### Ablation Study
 
-Incorporation of attention mechanisms consistently improved performance across all measured parameters, underscoring their importance in deep ECG analysis.
+Attention mechanisms significantly improved performance metrics across all ECG parameters, validating their integral role in deep ECG analysis.
+
+| Parameter             | RMSE with Attention | RMSE without Attention | R² with Attention | R² without Attention |
+| --------------------- | ------------------- | ---------------------- | ----------------- | -------------------- |
+| PR Interval (ms)      | 5.047 ± 0.687       | 5.343 ± 0.286          | 0.964 ± 0.010     | 0.941 ± 0.008        |
+| QT Interval (ms)      | 4.614 ± 0.288       | 5.108 ± 0.378          | 0.976 ± 0.001     | 0.970 ± 0.004        |
+| QRS Duration (ms)     | 2.379 ± 0.267       | 2.846 ± 0.219          | 0.936 ± 0.011     | 0.900 ± 0.015        |
+| Heart Rate (bpm)      | 0.473 ± 0.043       | 0.606 ± 0.122          | 0.998 ± 0.0001    | 0.997 ± 0.0009       |
+| R Wave Amplitude (mV) | 0.044 ± 0.004       | 0.053 ± 0.002          | 0.989 ± 0.003     | 0.985 ± 0.002        |
+| T Wave Amplitude (mV) | 0.031 ± 0.004       | 0.032 ± 0.001          | 0.961 ± 0.005     | 0.951 ± 0.002        |
 
 ---
 

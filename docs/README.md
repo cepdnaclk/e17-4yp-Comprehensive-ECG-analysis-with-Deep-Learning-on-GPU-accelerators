@@ -51,12 +51,14 @@ The input ECG signal is initially processed by two convolutional layers, each ge
 ### Convolutional Block Attention Module (CBAM)
 
 CBAM sequentially employs Channel Attention Module (CAM) and Spatial Attention Module (SAM) to emphasize relevant features. CAM identifies important features using global pooling and a shared MLP, while SAM spatially locates these critical features through convolutional operations.
+
 ![alt text](images/cbam.png "Convolutional block attention module")
 ![alt text](images/cbam2.png "Detailed channel and spatial attention mechanisms")
 
 ### Attention-Integrated Convolutional Residual Network (AICRN)
 
 AICRN integrates convolutional residual blocks to address gradient vanishing issues inherent in deep networks and enhances model precision through channel and spatial attention mechanisms (Convolutional Block Attention Module - CBAM).
+
 ![alt text](images/aicrn.png "Attention integrated convolutional residual network module")
 
 #### Key Architectural Components
@@ -67,6 +69,7 @@ AICRN integrates convolutional residual blocks to address gradient vanishing iss
 ---
 
 #### Deep Learning Architecture
+
 ![alt text](images/nn1.png "deep learning architecture")
 
 ---
@@ -111,6 +114,7 @@ Attention mechanisms significantly improved performance metrics across all ECG p
 ## Application and Impact
 
 The developed AICRN-based software facilitates automated, real-time monitoring and analysis of ECG parameters, drastically reducing manual interpretation time and errors. This tool is suitable for diverse clinical environments, supporting cardiologists, physicians, and patient self-monitoring.
+
 ![alt text](images/sa.png "application architecture")
 
 ---

@@ -109,6 +109,7 @@ Attention mechanisms significantly improved performance metrics across all ECG p
 ## Application and Impact
 
 The developed AICRN-based software facilitates automated, real-time monitoring and analysis of ECG parameters, drastically reducing manual interpretation time and errors. This tool is suitable for diverse clinical environments, supporting cardiologists, physicians, and patient self-monitoring.
+![alt text](docs/images/sa.png "application architecture")
 
 ---
 

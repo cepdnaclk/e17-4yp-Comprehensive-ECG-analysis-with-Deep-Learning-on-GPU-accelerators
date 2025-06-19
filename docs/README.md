@@ -44,20 +44,20 @@ The PTB-XL dataset, featuring 21,799 clinical 12-lead ECG recordings from 18,869
 #### *ResNet*
 A notable CNN architecture was proposed in the paper "Explaining deep neural networks for knowledge discovery in electrocardiogram analysis". In this paper, the authors propose a novel deep learning model, with the architecture of a standard CNN consisting of eight residual models (ResNet) to capture complex features and relationships in the standard ECG signal. 
 
-![alt text](docs/images/Resnet.png "The Novel Resnet Architecture for a comprehensive ECG analysis using Deep Learning")
+![alt text](images/Resnet.png "The Novel Resnet Architecture for a comprehensive ECG analysis using Deep Learning")
 
 The input ECG signal is initially processed by two convolutional layers, each generating feature maps of 64 and 32, respectively, using kernel sizes of 8 and 3. The output of these convolutional layers is then subjected to average pooling. Subsequently, the processed signal is passed through eight attention integrated residual blocks. 
 
 ### Convolutional Block Attention Module (CBAM)
 
 CBAM sequentially employs Channel Attention Module (CAM) and Spatial Attention Module (SAM) to emphasize relevant features. CAM identifies important features using global pooling and a shared MLP, while SAM spatially locates these critical features through convolutional operations.
-![alt text](docs/images/cbam.png "Convolutional block attention module")
-![alt text](docs/images/cbam2.png "Detailed channel and spatial attention mechanisms")
+![alt text](images/cbam.png "Convolutional block attention module")
+![alt text](images/cbam2.png "Detailed channel and spatial attention mechanisms")
 
 ### Attention-Integrated Convolutional Residual Network (AICRN)
 
 AICRN integrates convolutional residual blocks to address gradient vanishing issues inherent in deep networks and enhances model precision through channel and spatial attention mechanisms (Convolutional Block Attention Module - CBAM).
-![alt text](docs/images/aicrn.png "Attention integrated convolutional residual network module")
+![alt text](images/aicrn.png "Attention integrated convolutional residual network module")
 
 #### Key Architectural Components
 
@@ -67,7 +67,7 @@ AICRN integrates convolutional residual blocks to address gradient vanishing iss
 ---
 
 #### Deep Learning Architecture
-![alt text](docs/images/nn1.png "deep learning architecture")
+![alt text](images/nn1.png "deep learning architecture")
 
 ---
 
@@ -111,7 +111,7 @@ Attention mechanisms significantly improved performance metrics across all ECG p
 ## Application and Impact
 
 The developed AICRN-based software facilitates automated, real-time monitoring and analysis of ECG parameters, drastically reducing manual interpretation time and errors. This tool is suitable for diverse clinical environments, supporting cardiologists, physicians, and patient self-monitoring.
-![alt text](docs/images/sa.png "application architecture")
+![alt text](images/sa.png "application architecture")
 
 ---
 

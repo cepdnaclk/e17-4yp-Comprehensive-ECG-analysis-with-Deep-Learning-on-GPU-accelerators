@@ -23,12 +23,7 @@ There is a particular deep-learning architecture that stands out from the rest. 
 
 Transformers is another recent and popular deep learning architecture that is being widely used in natural language processing tasks. The self-attention mechanism of transformers allows the consideration of the entire sequence of an ECG signal, rather than a kernel or a sliding window potentially capturing complex temporal relationships that other architectures might miss. The self-attention mechanism is a key innovation of the Transformer model. This mechanism helps the model assess and prioritize different elements within the input sequence, capturing relationships between these elements independent of their sequential positions. This attention mechanism has proven successful across various domains, including computer vision and large language models, by enabling the model to highlight important features. Increasingly, researchers have used and adapted the self-attention transformer for ECG applications, achieving promising results.
 
-Although Transformer based ECG analysis is a growing research area, there is a huge obstacle of data scarcity that eventually hinders the progression of using Transformers for ECG analysis. This factor is also true for CNNs as well. This paper clearly demonstrates that data scarcity issues can be overcome by training on a deepfake dataset and then finetuning on a real smaller dataset.
-
-### *Transfer learning*
-Transfer learning is the improvement of learning in a new task through the transfer of knowledge from a related task that has already been learned. According to the surveys conducted for transfer learning, the methods of transfer learning are classified into three main categories with the relationship between the source domain and the target domain. However, in the deep learning domain, deep transfer learning is categorized as instances-based deep transfer learning, mapping-based deep transfer learning, network-based deep transfer learning, and adversarial-based deep transfer learning according to the techniques used in deep transfer learning.
-
-The deep transfer learning approach taken for this study is network-based transfer learning. Network-based transfer learning can be viewed as the re-usage of the partial network that is pre-trained in the source domain, including its network structure and connection parameters, and transfer it to be a part of a deep neural network used in the target domain.
+Although Transformer based ECG analysis is a growing research area, there is a huge obstacle of data scarcity that eventually hinders the progression of using Transformers for ECG analysis. This factor is also true for CNNs as well.
 
 ---
 
@@ -100,7 +95,7 @@ Extensive evaluation demonstrated AICRN's superior performance, notably achievin
 
 ### Ablation Study
 
-Attention mechanisms significantly improved performance metrics across all ECG parameters, validating their integral role in deep ECG analysis.
+Attention mechanisms significantly improved performance metrics across all ECG parameters, validating their integral role in deep ECG analysis. The performance of the models for 5 runs is depicted in the table below.
 
 | Parameter             | RMSE with Attention | RMSE without Attention | R² with Attention | R² without Attention |
 | --------------------- | ------------------- | ---------------------- | ----------------- | -------------------- |
@@ -147,4 +142,4 @@ The trained models, comprehensive source code, and data preprocessing scripts ar
 
 ## Acknowledgements
 
-We thank the Department of Computer Engineering, University of Peradeniya, and Simula Research Laboratory for their continuous support.
+This work was supported by the Department of Computer Engineering, University of Peradeniya, and Simula Research Laboratory. 

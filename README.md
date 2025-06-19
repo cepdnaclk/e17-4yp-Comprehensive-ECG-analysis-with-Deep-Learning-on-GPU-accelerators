@@ -69,6 +69,8 @@ AICRN integrates convolutional residual blocks to address gradient vanishing iss
 * **Residual Blocks:** Enhance model depth without gradient instability.
 * **Attention Modules (CBAM):** Dynamically emphasize critical ECG signal features through spatial and channel-specific attention.
 
+---
+
 #### Deep Learning Architecture
 
 ![alt text](docs/images/cbam2.png "Detailed channel and spatial attention mechanisms")

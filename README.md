@@ -62,6 +62,7 @@ CBAM sequentially employs Channel Attention Module (CAM) and Spatial Attention M
 ### Attention-Integrated Convolutional Residual Network (AICRN)
 
 AICRN integrates convolutional residual blocks to address gradient vanishing issues inherent in deep networks and enhances model precision through channel and spatial attention mechanisms (Convolutional Block Attention Module - CBAM).
+![alt text](docs/images/aicrn.png "Attention integrated convolutional residual network module")
 
 #### Key Architectural Components
 

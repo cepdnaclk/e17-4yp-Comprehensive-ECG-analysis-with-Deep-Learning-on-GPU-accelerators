@@ -73,7 +73,7 @@ AICRN integrates convolutional residual blocks to address gradient vanishing iss
 
 #### Deep Learning Architecture
 
-![alt text](docs/images/cbam2.png "Detailed channel and spatial attention mechanisms")
+![alt text](docs/images/nn1.png "Detailed channel and spatial attention mechanisms")
 
 ### Model Training
 
